@@ -184,7 +184,7 @@ class GuiContributors(private val prevGui: IGuiScreen) : WrappedGuiScreen() {
                 }
 
                 credits.add(Credit(gitHubContributor.author.name, gitHubContributor.author.avatarUrl, null, additions, deletions, commits, contributorInformation?.teamMember
-                        ?: false, contributorInformation?.contributions ?: Collections.emptyList()))
+                    ?: false, contributorInformation?.contributions ?: Collections.emptyList()))
             }
 
             credits.sortWith(object : Comparator<Credit> {
@@ -229,7 +229,7 @@ class GuiContributors(private val prevGui: IGuiScreen) : WrappedGuiScreen() {
     internal inner class Credit(val name: String, val avatarUrl: String, var avatar: CustomTexture?, val additions: Int, val deletions: Int, val commits: Int, val isTeamMember: Boolean, val contributions: List<String>)
 
     private inner class GuiList(gui: IGuiScreen) :
-            WrappedGuiSlot(mc, gui.width / 4, gui.height, 40, gui.height - 40, 15) {
+        WrappedGuiSlot(mc, gui.width / 4, gui.height, 40, gui.height - 40, 15) {
 
         init {
             this.represented.setListWidth(gui.width * 3 / 13)

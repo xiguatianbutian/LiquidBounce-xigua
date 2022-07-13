@@ -1,4 +1,4 @@
-Processing 142 files
+Processing 143 files
 Start Processing: co/uk/hexeption/utils/OutlineUtils.java
 Rename method net/minecraft/client/renderer/OpenGlHelper/setLightmapTextureCoords (IFF)V[1784,1808]::setLightmapTextureCoords->func_77475_a
 Rename field net/minecraft/client/renderer/OpenGlHelper/lightmapTexUnit[1810,1825]::lightmapTexUnit->field_77476_b
@@ -199,6 +199,7 @@ Import: net.ccbluex.liquidbounce.event.PacketEvent
 Import: net.ccbluex.liquidbounce.features.module.Module
 Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
 Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
+Import: net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle
 Import: net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.LiquidBounceStyle
 Import: net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.NullStyle
 Import: net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.SlowlyStyle
@@ -2673,6 +2674,40 @@ Import: net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement
 Import: net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement
 Import: net.ccbluex.liquidbounce.utils.MinecraftInstance
 End  Processing: net/ccbluex/liquidbounce/ui/client/clickgui/style/Style.java
+
+Start Processing: net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java
+Rename method net/minecraft/client/renderer/GlStateManager/resetColor ()V[2360,2370]::resetColor->func_179117_G
+Rename method net/minecraft/util/StringUtils/stripControlCodes (Ljava/lang/String;)Ljava/lang/String;[2450,2467]::stripControlCodes->func_76338_a
+Rename method net/minecraft/client/renderer/GlStateManager/resetColor ()V[2991,3001]::resetColor->func_179117_G
+Rename method net/minecraft/client/renderer/GlStateManager/resetColor ()V[3260,3270]::resetColor->func_179117_G
+Rename method net/minecraft/client/gui/Gui/drawRect (IIIII)V[3539,3547]::drawRect->func_73734_a
+Rename method net/minecraft/client/gui/Gui/drawRect (IIIII)V[3791,3799]::drawRect->func_73734_a
+Rename method net/minecraft/client/renderer/GlStateManager/resetColor ()V[4080,4090]::resetColor->func_179117_G
+Rename method net/minecraft/client/renderer/GlStateManager/resetColor ()V[9031,9041]::resetColor->func_179117_G
+New Key: class net/ccbluex/liquidbounce/ui/font/Fonts
+Rename method net/minecraft/client/renderer/GlStateManager/resetColor ()V[15751,15761]::resetColor->func_179117_G
+Import: net.ccbluex.liquidbounce.api.minecraft.client.gui.IFontRenderer
+Import: net.ccbluex.liquidbounce.ui.client.clickgui.Panel
+Import: net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement
+Import: net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement
+Import: net.ccbluex.liquidbounce.ui.client.clickgui.style.Style
+Import: net.ccbluex.liquidbounce.ui.font.AWTFontRenderer
+Import: net.ccbluex.liquidbounce.ui.font.Fonts
+Import: net.ccbluex.liquidbounce.ui.font.GameFontRenderer
+Import: net.ccbluex.liquidbounce.utils.block.BlockUtils
+Import: net.ccbluex.liquidbounce.utils.render.RenderUtils
+Import: net.ccbluex.liquidbounce.value.*
+Import: net.minecraft.client.audio.PositionedSoundRecord
+Import: net.minecraft.client.gui.FontRenderer
+Import: net.minecraft.client.gui.Gui
+Import: net.minecraft.client.renderer.GlStateManager
+Import: net.minecraft.util.ResourceLocation
+Import: net.minecraft.util.StringUtils
+Import: org.lwjgl.input.Mouse
+Import: java.awt.*
+Import: java.math.BigDecimal
+Import: java.util.List
+End  Processing: net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java
 
 Start Processing: net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/LiquidBounceStyle.java
 Rename method net/minecraft/util/StringUtils/stripControlCodes (Ljava/lang/String;)Ljava/lang/String;[1934,1951]::stripControlCodes->func_76338_a

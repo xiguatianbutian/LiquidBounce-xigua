@@ -2,7 +2,7 @@ Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\java\
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\kotlin\api
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
-Processing 142 files
+Processing 143 files
 startProcessing "co/uk/hexeption/utils/OutlineUtils.java" md5: 368b7316da3e0c976b96bdfed5b69819
 @|co/uk/hexeption/utils/OutlineUtils.java|8|29|co.uk.hexeption.utils|package|co.uk.hexeption.utils|(file)
 Class Start: co.uk.hexeption.utils.OutlineUtils
@@ -3244,7 +3244,7 @@ Class Start: net.ccbluex.liquidbounce.features.module.modules.movement.Sprint
 Class End  : net.ccbluex.liquidbounce.features.module.modules.movement.Sprint
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/movement/Sprint.java"
 
-startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java" md5: aff25228f19ccb829452af9239b5c20d
+startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java" md5: 7ae34070afdf83adbfa73f6adb31c648
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -3288,6 +3288,7 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGU
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
+    Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(2) EventTarget cannot be resolved to a type
     Compile Error! Pb(2) PacketEvent cannot be resolved to a type
     Compile Error! Pb(2) IPacket cannot be resolved to a type
@@ -3296,77 +3297,77 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGU
     Compile Error! Pb(50) mc cannot be resolved
 @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|184|239|net.ccbluex.liquidbounce.features.module.modules.render|package|net.ccbluex.liquidbounce.features.module.modules.render|(file)
 Class Start: net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1180|1190|ModuleInfo|class|ModuleInfo|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1256|1266|ModuleInfo|class|ModuleInfo|false
    ERROR SimpleName: name null
    ERROR SimpleName: description null
    ERROR SimpleName: category null
    ERROR SimpleName: ModuleCategory null
    ERROR SimpleName: RENDER null
    ERROR SimpleName: keyBind null
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1291|1299|Keyboard|class|org.lwjgl.input.Keyboard|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1300|1310|KEY_RSHIFT|field|org.lwjgl.input.Keyboard|KEY_RSHIFT
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1367|1375|Keyboard|class|org.lwjgl.input.Keyboard|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1376|1386|KEY_RSHIFT|field|org.lwjgl.input.Keyboard|KEY_RSHIFT
    ERROR SimpleName: canEnable null
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1344|1352|ClickGUI|class|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1361|1367|Module|class|Module|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1388|1397|ListValue|class|net.ccbluex.liquidbounce.features.module.modules.render.ListValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1388|1397|ListValue|class|net.ccbluex.liquidbounce.features.module.modules.render.ListValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1398|1408|styleValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|styleValue|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1415|1424|ListValue|class|ListValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1438|1444|String|class|java.lang.String|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1420|1428|ClickGUI|class|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1437|1443|Module|class|Module|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1464|1473|ListValue|class|net.ccbluex.liquidbounce.features.module.modules.render.ListValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1464|1473|ListValue|class|net.ccbluex.liquidbounce.features.module.modules.render.ListValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1474|1484|styleValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|styleValue|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1491|1500|ListValue|class|ListValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1514|1520|String|class|java.lang.String|false
    Anon Class Start: net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1
       Method Start: onChanged(Ljava/lang/String;Ljava/lang/String;)V
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1559|1567|oldValue|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1|onChanged|(Ljava/lang/String;Ljava/lang/String;)V|oldValue|0
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1582|1590|newValue|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1|onChanged|(Ljava/lang/String;Ljava/lang/String;)V|newValue|1
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1504|1512|Override|class|java.lang.Override|false
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1536|1545|onChanged|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1|onChanged|(Ljava/lang/String;Ljava/lang/String;)V
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1552|1558|String|class|java.lang.String|false
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1575|1581|String|class|java.lang.String|false
-         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1606|1617|updateStyle|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|updateStyle|()V
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1643|1651|oldValue|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1|onChanged|(Ljava/lang/String;Ljava/lang/String;)V|oldValue|0
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1666|1674|newValue|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1|onChanged|(Ljava/lang/String;Ljava/lang/String;)V|newValue|1
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1588|1596|Override|class|java.lang.Override|false
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1620|1629|onChanged|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1|onChanged|(Ljava/lang/String;Ljava/lang/String;)V
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1636|1642|String|class|java.lang.String|false
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1659|1665|String|class|java.lang.String|false
+         @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1690|1701|updateStyle|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|updateStyle|()V
       Method End: onChanged(Ljava/lang/String;Ljava/lang/String;)V
    Anon Class End: net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI$1
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1656|1666|FloatValue|class|net.ccbluex.liquidbounce.features.module.modules.render.FloatValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1656|1666|FloatValue|class|net.ccbluex.liquidbounce.features.module.modules.render.FloatValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1667|1677|scaleValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|scaleValue|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1684|1694|FloatValue|class|FloatValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1736|1748|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1736|1748|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1749|1765|maxElementsValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|maxElementsValue|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1772|1784|IntegerValue|class|IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1838|1850|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1838|1850|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1851|1864|colorRedValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRedValue|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1871|1883|IntegerValue|class|IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1926|1938|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1926|1938|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1939|1954|colorGreenValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorGreenValue|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1961|1973|IntegerValue|class|IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2018|2030|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2018|2030|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2031|2045|colorBlueValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorBlueValue|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2052|2064|IntegerValue|class|IntegerValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2109|2118|BoolValue|class|net.ccbluex.liquidbounce.features.module.modules.render.BoolValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2109|2118|BoolValue|class|net.ccbluex.liquidbounce.features.module.modules.render.BoolValue|false
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2119|2131|colorRainbow|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRainbow|
-   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2138|2147|BoolValue|class|BoolValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1740|1750|FloatValue|class|net.ccbluex.liquidbounce.features.module.modules.render.FloatValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1740|1750|FloatValue|class|net.ccbluex.liquidbounce.features.module.modules.render.FloatValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1751|1761|scaleValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|scaleValue|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1768|1778|FloatValue|class|FloatValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1820|1832|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1820|1832|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1833|1849|maxElementsValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|maxElementsValue|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1856|1868|IntegerValue|class|IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1922|1934|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1922|1934|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1935|1948|colorRedValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRedValue|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|1955|1967|IntegerValue|class|IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2010|2022|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2010|2022|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2023|2038|colorGreenValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorGreenValue|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2045|2057|IntegerValue|class|IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2102|2114|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2102|2114|IntegerValue|class|net.ccbluex.liquidbounce.features.module.modules.render.IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2115|2129|colorBlueValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorBlueValue|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2136|2148|IntegerValue|class|IntegerValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2193|2202|BoolValue|class|net.ccbluex.liquidbounce.features.module.modules.render.BoolValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2193|2202|BoolValue|class|net.ccbluex.liquidbounce.features.module.modules.render.BoolValue|false
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2203|2215|colorRainbow|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRainbow|
+   @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2222|2231|BoolValue|class|BoolValue|false
    Method Start: generateColor()Ljava/awt/Color;
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2186|2191|Color|class|java.awt.Color|false
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2192|2205|generateColor|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|generateColor|()Ljava/awt/Color;
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2225|2237|colorRainbow|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRainbow
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2270|2275|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2276|2289|generateColor|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|generateColor|()Ljava/awt/Color;
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2309|2321|colorRainbow|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRainbow
       ERROR SimpleName: get null
       ERROR SimpleName: ColorUtils null
       ERROR SimpleName: rainbow null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2273|2278|Color|class|java.awt.Color|false
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2279|2292|colorRedValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRedValue
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2357|2362|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2363|2376|colorRedValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorRedValue
       ERROR SimpleName: get null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2300|2315|colorGreenValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorGreenValue
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2384|2399|colorGreenValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorGreenValue
       ERROR SimpleName: get null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2323|2337|colorBlueValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorBlueValue
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2407|2421|colorBlueValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|colorBlueValue
       ERROR SimpleName: get null
    Method End: generateColor()Ljava/awt/Color;
    Method Start: onEnable()V
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2358|2366|Override|class|java.lang.Override|false
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2383|2391|onEnable|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onEnable|()V
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2404|2415|updateStyle|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|updateStyle|()V
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2442|2450|Override|class|java.lang.Override|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2467|2475|onEnable|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onEnable|()V
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2488|2499|updateStyle|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|updateStyle|()V
       ERROR SimpleName: mc null
       ERROR SimpleName: displayGuiScreen null
       ERROR SimpleName: classProvider null
@@ -3375,31 +3376,35 @@ Class Start: net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI
       ERROR SimpleName: clickGui null
    Method End: onEnable()V
    Method Start: updateStyle()V
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2525|2536|updateStyle|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|updateStyle|()V
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2556|2566|styleValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|styleValue
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2609|2620|updateStyle|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|updateStyle|()V
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2640|2650|styleValue|field|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|styleValue
       ERROR SimpleName: get null
       ERROR SimpleName: toLowerCase null
       ERROR SimpleName: LiquidBounce null
       ERROR SimpleName: clickGui null
       ERROR SimpleName: style null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2673|2690|LiquidBounceStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.LiquidBounceStyle|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2757|2774|LiquidBounceStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.LiquidBounceStyle|false
       ERROR SimpleName: LiquidBounce null
       ERROR SimpleName: clickGui null
       ERROR SimpleName: style null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2792|2801|NullStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.NullStyle|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2876|2885|NullStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.NullStyle|false
       ERROR SimpleName: LiquidBounce null
       ERROR SimpleName: clickGui null
       ERROR SimpleName: style null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2905|2916|SlowlyStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.SlowlyStyle|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2989|3000|SlowlyStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.SlowlyStyle|false
+      ERROR SimpleName: LiquidBounce null
+      ERROR SimpleName: clickGui null
+      ERROR SimpleName: style null
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3103|3113|BlackStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|false
    Method End: updateStyle()V
    Method Start: onPacket(PacketEvent)V
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3044|3049|event|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V|event|0
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|2965|2976|EventTarget|class|EventTarget|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3241|3246|event|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V|event|0
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3162|3173|EventTarget|class|EventTarget|false
       ERROR SimpleName: ignoreCondition null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3017|3025|onPacket|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3032|3043|PacketEvent|class|PacketEvent|false
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3067|3074|IPacket|class|IPacket|false
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3084|3089|event|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V|event|0
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3214|3222|onPacket|method|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3229|3240|PacketEvent|class|PacketEvent|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3264|3271|IPacket|class|IPacket|false
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3281|3286|event|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V|event|0
       ERROR SimpleName: getPacket null
       ERROR SimpleName: classProvider null
       ERROR SimpleName: isSPacketCloseWindow null
@@ -3407,7 +3412,7 @@ Class Start: net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI
       ERROR SimpleName: isClickGui null
       ERROR SimpleName: mc null
       ERROR SimpleName: getCurrentScreen null
-      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3225|3230|event|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V|event|0
+      @|net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java|3422|3427|event|param|net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI|onPacket|(PacketEvent)V|event|0
       ERROR SimpleName: cancelEvent null
    Method End: onPacket(PacketEvent)V
 Class End  : net.ccbluex.liquidbounce.features.module.modules.render.ClickGUI
@@ -17709,6 +17714,835 @@ Class Start: net.ccbluex.liquidbounce.ui.client.clickgui.style.Style
    Method End: drawModuleElement(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V
 Class End  : net.ccbluex.liquidbounce.ui.client.clickgui.style.Style
 endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/Style.java"
+
+startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java" md5: 2fad8ee294adb91b0101c5bd4fe895d3
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.AWTFontRenderer cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.GameFontRenderer cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) Value cannot be resolved to a type
+    Compile Error! Pb(120) The method getModule() from the type ModuleElement refers to the missing type Module
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) Value cannot be resolved to a type
+    Compile Error! Pb(50) AWTFontRenderer cannot be resolved
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) IMinecraft cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IMinecraft cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IMinecraft cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) FontValue cannot be resolved to a type
+    Compile Error! Pb(2) FontValue cannot be resolved to a type
+    Compile Error! Pb(2) FontValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) GameFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(120) The method getFonts() from the type Fonts refers to the missing type IFontRenderer
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+@|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|309|365|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles|package|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles|(file)
+Class Start: net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle
+   @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1421|1431|BlackStyle|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|false
+   @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1440|1445|Style|class|net.ccbluex.liquidbounce.ui.client.clickgui.style.Style|false
+   @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1469|1478|mouseDown|field|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|mouseDown|
+   @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1500|1514|rightMouseDown|field|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|rightMouseDown|
+   Method Start: drawPanel(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1561|1567|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1573|1579|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1587|1592|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1522|1530|Override|class|java.lang.Override|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1547|1556|drawPanel|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.Style|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1581|1586|Panel|class|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1604|1615|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1616|1632|drawBorderedRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawBorderedRect|(FFFFFII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1641|1646|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1647|1651|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1663|1668|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1669|1673|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1689|1694|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1695|1699|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1704|1709|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1710|1718|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1730|1735|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1736|1740|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1756|1761|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1774|1780|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1788|1793|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1804|1810|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1826|1831|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1832|1839|getFade|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getFade|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1861|1872|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1873|1889|drawBorderedRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawBorderedRect|(FFFFFII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1898|1903|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1904|1908|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1920|1925|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1926|1930|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1947|1952|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1953|1957|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1962|1967|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1968|1976|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1980|1985|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|1986|1990|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2000|2005|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2006|2013|getFade|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getFade|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2024|2029|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2040|2046|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2054|2059|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2070|2076|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2093|2104|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2105|2121|drawBorderedRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawBorderedRect|(FFFFFII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2130|2135|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2136|2140|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2144|2149|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2150|2154|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2164|2169|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2170|2177|getFade|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getFade|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2189|2194|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2195|2199|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2204|2209|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2210|2218|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2222|2227|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2228|2232|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2242|2247|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2248|2255|getFade|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getFade|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2270|2275|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2286|2292|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2300|2305|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2316|2322|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2345|2359|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2360|2370|resetColor|method|net.minecraft.client.renderer.GlStateManager|resetColor|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2400|2405|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2406|2412|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2435|2446|StringUtils|class|net.minecraft.util.StringUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2447|2464|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2465|2470|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2471|2478|getName|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getName|()Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2492|2497|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2498|2504|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2516|2521|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2522|2529|getName|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getName|()Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2540|2545|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2546|2550|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2583|2588|panel|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawPanel|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V|panel|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2589|2593|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.Panel|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2605|2610|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2611|2616|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2617|2623|getRGB|method|java.awt.Color|getRGB|()I
+   Method End: drawPanel(IILnet/ccbluex/liquidbounce/ui/client/clickgui/Panel;)V
+   Method Start: drawDescription(IILjava/lang/String;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2685|2691|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2697|2703|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2712|2716|text|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|text|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2640|2648|Override|class|java.lang.Override|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2665|2680|drawDescription|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.Style|drawDescription|(IILjava/lang/String;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2705|2711|String|class|java.lang.String|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2744|2749|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2750|2756|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2772|2776|text|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|text|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2788|2799|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2800|2816|drawBorderedRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawBorderedRect|(FFFFFII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2817|2823|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2829|2835|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2837|2843|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2862|2868|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2871|2876|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2877|2883|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getFontHeight null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2913|2918|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2929|2935|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2943|2948|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2959|2965|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2978|2992|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|2993|3003|resetColor|method|net.minecraft.client.renderer.GlStateManager|resetColor|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3015|3020|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3021|3027|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3039|3043|text|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|text|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3045|3051|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3058|3064|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawDescription|(IILjava/lang/String;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3068|3073|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3074|3080|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getFontHeight null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3103|3108|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3109|3114|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3115|3121|getRGB|method|java.awt.Color|getRGB|()I
+   Method End: drawDescription(IILjava/lang/String;)V
+   Method Start: drawButtonElement(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3185|3191|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3197|3203|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3219|3232|buttonElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V|buttonElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3138|3146|Override|class|java.lang.Override|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3163|3180|drawButtonElement|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.Style|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3205|3218|ButtonElement|class|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3244|3258|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3259|3269|resetColor|method|net.minecraft.client.renderer.GlStateManager|resetColor|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3282|3287|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3288|3294|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3306|3319|buttonElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V|buttonElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3320|3334|getDisplayName|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement|getDisplayName|()Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3338|3351|buttonElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V|buttonElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3352|3356|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3364|3377|buttonElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawButtonElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V|buttonElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3378|3382|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3390|3395|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3396|3401|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3402|3408|getRGB|method|java.awt.Color|getRGB|()I
+   Method End: drawButtonElement(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ButtonElement;)V
+   Method Start: drawModuleElement(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3472|3478|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3484|3490|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3506|3519|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3425|3433|Override|class|java.lang.Override|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3450|3467|drawModuleElement|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.Style|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3492|3505|ModuleElement|class|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3531|3534|Gui|class|net.minecraft.client.gui.Gui|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3535|3543|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3544|3557|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3558|3562|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3570|3583|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3584|3588|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3596|3609|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3610|3614|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3619|3632|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3633|3641|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3649|3662|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3663|3667|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3672|3685|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3686|3695|getHeight|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getHeight|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3703|3713|hoverColor|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3718|3723|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3735|3748|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3749|3758|hoverTime|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement|hoverTime
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3760|3766|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3779|3782|Gui|class|net.minecraft.client.gui.Gui|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3783|3791|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3792|3805|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3806|3810|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3818|3831|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3832|3836|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3844|3857|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3858|3862|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3867|3880|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3881|3889|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3897|3910|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3911|3915|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3920|3933|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3934|3943|getHeight|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getHeight|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3951|3961|hoverColor|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3966|3971|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3982|3995|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|3996|4006|slowlyFade|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlyFade
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4009|4022|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4023|4032|hoverTime|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement|hoverTime
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4034|4040|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4053|4067|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4068|4078|resetColor|method|net.minecraft.client.renderer.GlStateManager|resetColor|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4090|4095|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4096|4102|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4114|4127|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4128|4142|getDisplayName|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ButtonElement|getDisplayName|()Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4146|4159|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4160|4164|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4172|4185|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4186|4190|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4198|4203|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4204|4209|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4210|4216|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4261|4265|List|class|java.util.List|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4266|4271|Value|class|Value|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4291|4304|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4305|4314|getModule|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getModule|()Module
+      ERROR SimpleName: getValues null
+      ERROR SimpleName: isEmpty null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4381|4386|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4387|4393|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4410|4423|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4424|4428|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4433|4446|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4447|4455|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4463|4476|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4477|4481|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4489|4494|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4495|4500|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4501|4507|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4528|4541|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4542|4556|isShowSettings|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|isShowSettings|()Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4581|4594|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4595|4611|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4622|4635|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4636|4654|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4657|4670|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4671|4675|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4703|4714|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4715|4731|drawBorderedRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawBorderedRect|(FFFFFII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4732|4745|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4746|4750|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4755|4768|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4769|4777|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4785|4798|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4799|4803|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4811|4824|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4825|4829|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4834|4847|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4848|4856|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4861|4874|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4875|4891|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4895|4908|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4909|4927|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4941|4946|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4957|4963|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4971|4976|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|4987|4993|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5015|5028|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5029|5047|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5050|5063|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5064|5068|getY|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getY|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5102|5107|Value|class|Value|false
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5194|5200|Number|class|java.lang.Number|false
+      ERROR SimpleName: AWTFontRenderer null
+      ERROR SimpleName: Companion null
+      ERROR SimpleName: setAssumeNonVolatile null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5379|5388|BoolValue|class|BoolValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5422|5428|String|class|java.lang.String|false
+      ERROR SimpleName: getName null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5501|5506|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5507|5513|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5564|5577|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5578|5594|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5642|5655|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5656|5672|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5717|5723|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5727|5740|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5741|5745|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5750|5763|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5764|5772|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5782|5788|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5792|5805|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5806|5810|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5815|5828|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5829|5837|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5842|5855|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5856|5872|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5878|5884|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5888|5901|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5902|5920|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5924|5930|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5934|5947|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5948|5966|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5975|5980|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|5981|5993|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6000|6013|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6014|6025|isntPressed|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|isntPressed|()Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6065|6074|BoolValue|class|BoolValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6088|6097|BoolValue|class|BoolValue|false
+      ERROR SimpleName: set null
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6196|6198|mc|field|net.ccbluex.liquidbounce.utils.MinecraftInstance|mc
+      ERROR SimpleName: getSoundHandler null
+      ERROR SimpleName: playSound null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6305|6310|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6311|6317|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6335|6348|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6349|6353|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6358|6371|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6372|6380|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6388|6401|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6402|6420|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6428|6437|BoolValue|class|BoolValue|false
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6454|6459|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6460|6465|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6466|6472|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6477|6484|Integer|class|java.lang.Integer|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6485|6494|MAX_VALUE|field|java.lang.Integer|MAX_VALUE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6521|6534|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6535|6553|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6607|6616|ListValue|class|ListValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6650|6659|ListValue|class|ListValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6673|6682|ListValue|class|ListValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6722|6728|String|class|java.lang.String|false
+      ERROR SimpleName: getName null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6801|6806|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6807|6813|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6864|6877|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6878|6894|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6943|6956|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|6957|6973|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7016|7021|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7022|7028|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7046|7059|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7060|7064|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7069|7082|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7083|7091|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7099|7112|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7113|7131|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7172|7177|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7178|7184|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      ERROR SimpleName: openList null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7235|7248|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7249|7253|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7258|7271|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7272|7280|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7285|7298|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7299|7315|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      ERROR SimpleName: openList null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7351|7364|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7365|7383|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7428|7434|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7438|7451|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7452|7456|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7461|7474|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7475|7483|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7493|7499|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7503|7516|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7517|7521|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7526|7539|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7540|7548|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7553|7566|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7567|7583|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7589|7595|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7599|7612|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7613|7631|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7635|7641|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7645|7658|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7659|7677|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7680|7685|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7686|7692|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7717|7722|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7723|7735|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7742|7755|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7756|7767|isntPressed|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|isntPressed|()Z
+      ERROR SimpleName: openList null
+      ERROR SimpleName: openList null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7871|7873|mc|field|net.ccbluex.liquidbounce.utils.MinecraftInstance|mc
+      ERROR SimpleName: getSoundHandler null
+      ERROR SimpleName: playSound null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7980|7993|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|7994|8012|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8055|8061|String|class|java.lang.String|false
+      ERROR SimpleName: getValues null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8154|8159|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8160|8166|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8235|8248|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8249|8265|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8319|8332|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8333|8349|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      ERROR SimpleName: openList null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8458|8464|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8468|8481|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8482|8486|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8491|8504|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8505|8513|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8523|8529|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8533|8546|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8547|8551|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8556|8569|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8570|8578|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8583|8596|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8597|8613|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8619|8625|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8629|8642|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8643|8661|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8669|8675|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8679|8692|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8693|8711|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8720|8725|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8726|8738|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8745|8758|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8759|8770|isntPressed|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|isntPressed|()Z
+      ERROR SimpleName: set null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|8876|8878|mc|field|net.ccbluex.liquidbounce.utils.MinecraftInstance|mc
+      ERROR SimpleName: getSoundHandler null
+      ERROR SimpleName: playSound null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9001|9015|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9016|9026|resetColor|method|net.minecraft.client.renderer.GlStateManager|resetColor|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9062|9067|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9068|9074|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9106|9119|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9120|9124|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9129|9142|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9143|9151|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9159|9172|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9173|9191|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      ERROR SimpleName: get null
+      ERROR SimpleName: get null
+      ERROR SimpleName: equalsIgnoreCase null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9272|9277|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9278|9283|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9284|9290|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9295|9302|Integer|class|java.lang.Integer|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9303|9312|MAX_VALUE|field|java.lang.Integer|MAX_VALUE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9347|9360|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9361|9379|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9383|9388|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9389|9395|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      ERROR SimpleName: openList null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9558|9571|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9572|9590|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9669|9679|FloatValue|class|FloatValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9713|9723|FloatValue|class|FloatValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9738|9748|FloatValue|class|FloatValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9781|9787|String|class|java.lang.String|false
+      ERROR SimpleName: getName null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9824|9829|round|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|round|(F)Ljava/math/BigDecimal;
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9897|9902|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9903|9909|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9960|9973|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|9974|9990|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10038|10051|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10052|10068|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10137|10147|drawSlider|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F
+      ERROR SimpleName: get null
+      ERROR SimpleName: getMinimum null
+      ERROR SimpleName: getMaximum null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10223|10236|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10237|10241|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10246|10259|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10260|10268|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10276|10289|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10290|10308|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10321|10334|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10335|10351|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10360|10366|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10368|10374|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10380|10385|Color|class|java.awt.Color|false
+      ERROR SimpleName: get null
+      ERROR SimpleName: set null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10543|10548|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10549|10555|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10573|10586|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10587|10591|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10596|10609|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10610|10618|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10626|10639|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10640|10658|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10699|10712|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10713|10731|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10785|10797|IntegerValue|class|IntegerValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10831|10843|IntegerValue|class|IntegerValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10860|10872|IntegerValue|class|IntegerValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10905|10911|String|class|java.lang.String|false
+      ERROR SimpleName: getName null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|10948|10953|round|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|round|(F)Ljava/math/BigDecimal;
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11023|11028|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11029|11035|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11086|11099|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11100|11116|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11164|11177|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11178|11194|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11263|11273|drawSlider|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F
+      ERROR SimpleName: get null
+      ERROR SimpleName: getMinimum null
+      ERROR SimpleName: getMaximum null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11354|11367|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11368|11372|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11377|11390|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11391|11399|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11407|11420|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11421|11439|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11452|11465|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11466|11482|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11491|11497|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11499|11505|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11511|11516|Color|class|java.awt.Color|false
+      ERROR SimpleName: get null
+      ERROR SimpleName: set null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11684|11689|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11690|11696|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11714|11727|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11728|11732|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11737|11750|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11751|11759|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11767|11780|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11781|11799|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11840|11853|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11854|11872|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11926|11935|FontValue|class|FontValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11969|11978|FontValue|class|FontValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|11992|12001|FontValue|class|FontValue|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12040|12053|IFontRenderer|class|IFontRenderer|false
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12111|12117|String|class|java.lang.String|false
+      ERROR SimpleName: isGameFontRenderer null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12251|12267|GameFontRenderer|class|GameFontRenderer|false
+      ERROR SimpleName: getGameFontRenderer null
+      ERROR SimpleName: getDefaultFont null
+      ERROR SimpleName: getFont null
+      ERROR SimpleName: getName null
+      ERROR SimpleName: getDefaultFont null
+      ERROR SimpleName: getFont null
+      ERROR SimpleName: getSize null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12553|12558|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12559|12572|minecraftFont|field|net.ccbluex.liquidbounce.ui.font.Fonts|minecraftFont
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12701|12715|Fonts.FontInfo|class|net.ccbluex.liquidbounce.ui.font.Fonts.FontInfo|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12726|12731|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12732|12746|getFontDetails|method|net.ccbluex.liquidbounce.ui.font.Fonts|getFontDetails|(IFontRenderer)Lnet/ccbluex/liquidbounce/ui/font/Fonts$FontInfo;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12870|12877|getName|method|net.ccbluex.liquidbounce.ui.font.Fonts.FontInfo|getName|()Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12891|12902|getFontSize|method|net.ccbluex.liquidbounce.ui.font.Fonts.FontInfo|getFontSize|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|12929|12940|getFontSize|method|net.ccbluex.liquidbounce.ui.font.Fonts.FontInfo|getFontSize|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13031|13036|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13037|13043|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13070|13083|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13084|13088|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13093|13106|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13107|13115|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13123|13136|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13137|13155|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13161|13166|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13167|13172|WHITE|field|java.awt.Color|WHITE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13173|13179|getRGB|method|java.awt.Color|getRGB|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13226|13231|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13232|13238|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13298|13311|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13312|13328|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13378|13391|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13392|13408|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13456|13461|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13462|13474|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13482|13491|mouseDown|field|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|mouseDown
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13495|13500|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13501|13513|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13521|13535|rightMouseDown|field|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|rightMouseDown
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13540|13546|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13550|13563|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13564|13568|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13573|13586|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13587|13595|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13605|13611|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseX|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13615|13628|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13629|13633|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13638|13651|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13652|13660|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13665|13678|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13679|13695|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13701|13707|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13711|13724|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13725|13743|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13747|13753|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|mouseY|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13757|13770|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13771|13789|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13832|13836|List|class|java.util.List|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13837|13850|IFontRenderer|class|IFontRenderer|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13860|13865|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13866|13874|getFonts|method|net.ccbluex.liquidbounce.ui.font.Fonts|getFonts|()Ljava/util/List;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13910|13915|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|13916|13928|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      ERROR SimpleName: size null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|14049|14062|IFontRenderer|class|IFontRenderer|false
+      ERROR SimpleName: get null
+      ERROR SimpleName: equals null
+      ERROR SimpleName: size null
+      ERROR SimpleName: set null
+      ERROR SimpleName: get null
+      ERROR SimpleName: size null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|14655|14668|IFontRenderer|class|IFontRenderer|false
+      ERROR SimpleName: get null
+      ERROR SimpleName: equals null
+      ERROR SimpleName: size null
+      ERROR SimpleName: size null
+      ERROR SimpleName: set null
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15306|15319|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15320|15338|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15403|15409|String|class|java.lang.String|false
+      ERROR SimpleName: getName null
+      ERROR SimpleName: get null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15505|15510|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15511|15517|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: getStringWidth null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15568|15581|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15582|15598|getSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|getSettingsWidth|()F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15646|15659|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15660|15676|setSettingsWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|setSettingsWidth|(F)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15718|15732|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15733|15743|resetColor|method|net.minecraft.client.renderer.GlStateManager|resetColor|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15771|15776|Fonts|class|net.ccbluex.liquidbounce.ui.font.Fonts|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15777|15783|font35|field|net.ccbluex.liquidbounce.ui.font.Fonts|font35
+      ERROR SimpleName: drawString null
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15801|15814|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15815|15819|getX|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getX|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15824|15837|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15838|15846|getWidth|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.Element|getWidth|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15854|15867|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15868|15886|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15927|15940|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|15941|15959|slowlySettingsYPos|field|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|slowlySettingsYPos
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16024|16037|moduleElement|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawModuleElement|(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V|moduleElement|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16038|16051|updatePressed|method|net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement|updatePressed|()V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16071|16080|mouseDown|field|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|mouseDown
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16083|16088|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16089|16101|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16122|16136|rightMouseDown|field|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|rightMouseDown
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16139|16144|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16145|16157|isButtonDown|method|org.lwjgl.input.Mouse|isButtonDown|(I)Z
+   Method End: drawModuleElement(IILnet/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElement;)V
+   Method Start: round(F)Ljava/math/BigDecimal;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16710|16711|v|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|round|(F)Ljava/math/BigDecimal;|v|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16681|16691|BigDecimal|class|java.math.BigDecimal|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16692|16697|round|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|round|(F)Ljava/math/BigDecimal;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16723|16733|BigDecimal|class|java.math.BigDecimal|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16751|16761|BigDecimal|class|java.math.BigDecimal|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16762|16767|Float|class|java.lang.Float|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16768|16776|toString|method|java.lang.Float|toString|(F)Ljava/lang/String;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16777|16778|v|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|round|(F)Ljava/math/BigDecimal;|v|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16814|16822|setScale|method|java.math.BigDecimal|setScale|(II)Ljava/math/BigDecimal;
+   Method End: round(F)Ljava/math/BigDecimal;
+   Method Start: hoverColor(Ljava/awt/Color;I)Ljava/awt/Color;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16905|16910|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|color|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16922|16927|hover|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|hover|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16876|16881|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16882|16892|hoverColor|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16899|16904|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16953|16958|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|color|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16959|16965|getRed|method|java.awt.Color|getRed|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|16971|16976|hover|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|hover|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17005|17010|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|color|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17011|17019|getGreen|method|java.awt.Color|getGreen|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17025|17030|hover|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|hover|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17059|17064|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|color|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17065|17072|getBlue|method|java.awt.Color|getBlue|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17078|17083|hover|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|hover|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17110|17115|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17116|17120|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17121|17124|max|method|java.lang.Math|max|(II)I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17132|17136|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17137|17140|max|method|java.lang.Math|max|(II)I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17148|17152|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17153|17156|max|method|java.lang.Math|max|(II)I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17164|17169|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|hoverColor|(Ljava/awt/Color;I)Ljava/awt/Color;|color|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17170|17178|getAlpha|method|java.awt.Color|getAlpha|()I
+   Method End: hoverColor(Ljava/awt/Color;I)Ljava/awt/Color;
+   Method Start: drawSlider(FFFZIIIIILjava/awt/Color;)F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17237|17242|value|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|value|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17256|17259|min|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|min|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17273|17276|max|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|max|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17292|17296|inte|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|inte|3
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17308|17309|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17321|17322|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17334|17339|width|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|width|6
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17351|17357|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|mouseX|7
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17369|17375|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|mouseY|8
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17389|17394|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|color|9
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17214|17224|drawSlider|method|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17383|17388|Color|class|java.awt.Color|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17433|17437|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17438|17441|max|method|java.lang.Math|max|(FF)F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17442|17445|min|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|min|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17447|17451|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17452|17455|min|method|java.lang.Math|min|(FF)F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17456|17461|value|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|value|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17463|17466|max|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|max|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17513|17514|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17525|17530|width|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|width|6
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17549|17552|min|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|min|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17557|17560|max|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|max|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17563|17566|min|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|min|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17578|17589|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17590|17598|drawRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawRect|(IIIII)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17599|17600|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17602|17603|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17605|17606|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17609|17614|width|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|width|6
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17616|17617|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17623|17630|Integer|class|java.lang.Integer|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17631|17640|MAX_VALUE|field|java.lang.Integer|MAX_VALUE
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17651|17662|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17663|17671|drawRect|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawRect|(FFFFLjava/awt/Color;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17672|17673|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17675|17676|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17691|17692|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17698|17703|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|color|9
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17714|17725|RenderUtils|class|net.ccbluex.liquidbounce.utils.render.RenderUtils|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17726|17742|drawFilledCircle|method|net.ccbluex.liquidbounce.utils.render.RenderUtils|drawFilledCircle|(IIFLjava/awt/Color;)V
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17762|17763|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17772|17777|color|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|color|9
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17793|17799|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|mouseX|7
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17803|17804|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17808|17814|mouseX|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|mouseX|7
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17818|17819|x|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|x|4
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17822|17827|width|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|width|6
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17831|17837|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|mouseY|8
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17841|17842|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17846|17852|mouseY|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|mouseY|8
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17856|17857|y|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|y|5
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17890|17895|Mouse|class|org.lwjgl.input.Mouse|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17896|17905|getDWheel|method|org.lwjgl.input.Mouse|getDWheel|()I
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|17999|18003|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18004|18007|min|method|java.lang.Math|min|(FF)F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18008|18013|value|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|value|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18017|18021|inte|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|inte|3
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18037|18040|max|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|max|2
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18102|18106|Math|class|java.lang.Math|false
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18107|18110|max|method|java.lang.Math|max|(FF)F
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18111|18116|value|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|value|0
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18120|18124|inte|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|inte|3
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18140|18143|min|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|min|1
+      @|net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java|18186|18191|value|param|net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle|drawSlider|(FFFZIIIIILjava/awt/Color;)F|value|0
+   Method End: drawSlider(FFFZIIIIILjava/awt/Color;)F
+Class End  : net.ccbluex.liquidbounce.ui.client.clickgui.style.styles.BlackStyle
+endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/LiquidBounceStyle.java" md5: 734ee8890a10c7a54b8f4311f9fa98b6
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved

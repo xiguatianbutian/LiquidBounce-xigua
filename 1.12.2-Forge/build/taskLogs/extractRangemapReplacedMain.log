@@ -2,7 +2,7 @@ Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\java\
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\kotlin\api
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
-Processing 142 files
+Processing 143 files
 startProcessing "co/uk/hexeption/utils/OutlineUtils.java" md5: 368b7316da3e0c976b96bdfed5b69819
 endProcessing "co/uk/hexeption/utils/OutlineUtils.java"
 
@@ -618,7 +618,7 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/movement/Sprin
     Compile Error! Pb(50) mc cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/movement/Sprint.java"
 
-startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java" md5: aff25228f19ccb829452af9239b5c20d
+startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java" md5: 7ae34070afdf83adbfa73f6adb31c648
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -659,6 +659,7 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGU
     Compile Error! Pb(50) classProvider cannot be resolved
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
@@ -2188,6 +2189,71 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/elements/ModuleElemen
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/Style.java" md5: 6793452831a2a32c7ec2cc8e10a2d89c
 endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/Style.java"
+
+startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java" md5: 2fad8ee294adb91b0101c5bd4fe895d3
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.AWTFontRenderer cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.GameFontRenderer cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) Value cannot be resolved to a type
+    Compile Error! Pb(120) The method getModule() from the type ModuleElement refers to the missing type Module
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) Value cannot be resolved to a type
+    Compile Error! Pb(50) AWTFontRenderer cannot be resolved
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) IMinecraft cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IMinecraft cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IMinecraft cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) FontValue cannot be resolved to a type
+    Compile Error! Pb(2) FontValue cannot be resolved to a type
+    Compile Error! Pb(2) FontValue cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) GameFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(120) The method getFonts() from the type Fonts refers to the missing type IFontRenderer
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/LiquidBounceStyle.java" md5: 734ee8890a10c7a54b8f4311f9fa98b6
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved

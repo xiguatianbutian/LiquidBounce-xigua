@@ -9,6 +9,7 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
+
 object MovementUtils : MinecraftInstance() {
 
     val speed: Float
@@ -31,7 +32,10 @@ object MovementUtils : MinecraftInstance() {
         thePlayer.motionX = -sin(yaw) * speed
         thePlayer.motionZ = cos(yaw) * speed
     }
-
+    @JvmName("isMoving1")
+    fun isMoving(): Boolean {
+        return mc.thePlayer != null && (mc.thePlayer!!.movementInput.moveForward !== 0f || mc.thePlayer!!.movementInput.moveStrafe !== 0f)
+    }
     @JvmStatic
     fun forward(length: Double) {
         val thePlayer = mc.thePlayer!!
