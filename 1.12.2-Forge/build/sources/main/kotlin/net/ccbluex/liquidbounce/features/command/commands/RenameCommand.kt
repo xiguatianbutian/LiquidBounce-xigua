@@ -28,6 +28,7 @@ class RenameCommand : Command("rename") {
             }
 
             item.setStackDisplayName(ColorUtils.translateAlternateColorCodes(StringUtils.toCompleteString(args, 1)))
+            mc.netHandler.addToSendQueue(classProvider.createCPacketCreativeInventoryAction(36 + mc.thePlayer!!.inventory.currentItem, item))
             chat("§3Item renamed to '${item.displayName}§3'")
             return
         }

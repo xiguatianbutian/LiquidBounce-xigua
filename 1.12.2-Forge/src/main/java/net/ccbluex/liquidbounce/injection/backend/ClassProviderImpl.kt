@@ -39,7 +39,6 @@ import net.ccbluex.liquidbounce.api.minecraft.network.play.client.*
 import net.ccbluex.liquidbounce.api.minecraft.potion.IPotion
 import net.ccbluex.liquidbounce.api.minecraft.potion.IPotionEffect
 import net.ccbluex.liquidbounce.api.minecraft.potion.PotionType
-import net.ccbluex.liquidbounce.api.minecraft.potion.PotionType.*
 import net.ccbluex.liquidbounce.api.minecraft.stats.IStatBase
 import net.ccbluex.liquidbounce.api.minecraft.util.*
 import net.ccbluex.liquidbounce.api.network.IPacketBuffer
@@ -295,9 +294,6 @@ object ClassProviderImpl : IClassProvider {
     override fun isCPacketChatMessage(obj: Any?): Boolean = obj is PacketImpl<*> && obj.wrapped is CPacketChatMessage
 
     override fun isCPacketKeepAlive(obj: Any?): Boolean = obj is PacketImpl<*> && obj.wrapped is CPacketKeepAlive
-    override fun isSPacketKeepAlive(obj: Any?): Boolean {
-        TODO("Not yet implemented")
-    }
 
     override fun isCPacketPlayerPosition(obj: Any?): Boolean = obj is PacketImpl<*> && obj.wrapped is CPacketPlayer.Position
 
@@ -318,9 +314,6 @@ object ClassProviderImpl : IClassProvider {
     override fun isCPacketCustomPayload(obj: Any?): Boolean = obj is PacketImpl<*> && obj.wrapped is CPacketCustomPayload
 
     override fun isCPacketHandshake(obj: Any?): Boolean = obj is PacketImpl<*> && obj.wrapped is C00Handshake
-    override fun isCPacketInput(obj: Any?): Boolean {
-        TODO("Not yet implemented")
-    }
 
     override fun isItemSword(obj: Any?): Boolean = obj is ItemImpl<*> && obj.wrapped is ItemSword
 
@@ -409,20 +402,19 @@ object ClassProviderImpl : IClassProvider {
 
     override fun getPotionEnum(type: PotionType): IPotion {
         return PotionImpl(when (type) {
-            HEAL -> MobEffects.INSTANT_HEALTH
-            REGENERATION -> MobEffects.REGENERATION
-            BLINDNESS -> MobEffects.BLINDNESS
-            MOVE_SPEED -> MobEffects.SPEED
-            HUNGER -> MobEffects.HUNGER
-            DIG_SLOWDOWN -> MobEffects.MINING_FATIGUE
-            CONFUSION -> MobEffects.NAUSEA
-            WEAKNESS -> MobEffects.WEAKNESS
-            MOVE_SLOWDOWN -> MobEffects.SLOWNESS
-            HARM -> MobEffects.INSTANT_DAMAGE
-            WITHER -> MobEffects.WITHER
-            POISON -> MobEffects.POISON
-            NIGHT_VISION -> MobEffects.NIGHT_VISION
-            GLOWING -> TODO()
+            PotionType.HEAL -> MobEffects.INSTANT_HEALTH
+            PotionType.REGENERATION -> MobEffects.REGENERATION
+            PotionType.BLINDNESS -> MobEffects.BLINDNESS
+            PotionType.MOVE_SPEED -> MobEffects.SPEED
+            PotionType.HUNGER -> MobEffects.HUNGER
+            PotionType.DIG_SLOWDOWN -> MobEffects.MINING_FATIGUE
+            PotionType.CONFUSION -> MobEffects.NAUSEA
+            PotionType.WEAKNESS -> MobEffects.WEAKNESS
+            PotionType.MOVE_SLOWDOWN -> MobEffects.SLOWNESS
+            PotionType.HARM -> MobEffects.INSTANT_DAMAGE
+            PotionType.WITHER -> MobEffects.WITHER
+            PotionType.POISON -> MobEffects.POISON
+            PotionType.NIGHT_VISION -> MobEffects.NIGHT_VISION
         })
     }
 

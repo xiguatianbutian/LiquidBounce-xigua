@@ -6,17 +6,17 @@
 package net.ccbluex.liquidbounce.features.module.modules.render
 
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntity
-import net.ccbluex.liquidbounce.api.minecraft.potion.PotionType
 import net.ccbluex.liquidbounce.event.EventTarget
 import net.ccbluex.liquidbounce.event.Render2DEvent
 import net.ccbluex.liquidbounce.event.Render3DEvent
-import net.ccbluex.liquidbounce.event.UpdateEvent
 import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
+import net.ccbluex.liquidbounce.features.module.modules.misc.AntiBot
 import net.ccbluex.liquidbounce.ui.font.GameFontRenderer.Companion.getColorIndex
 import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.EntityUtils
+import net.ccbluex.liquidbounce.utils.extensions.isClientFriend
 import net.ccbluex.liquidbounce.utils.render.ColorUtils
 import net.ccbluex.liquidbounce.utils.render.ColorUtils.rainbow
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
@@ -30,12 +30,13 @@ import net.ccbluex.liquidbounce.value.ListValue
 import org.lwjgl.opengl.GL11
 import org.lwjgl.util.vector.Vector3f
 import java.awt.Color
+import kotlin.math.max
 import kotlin.math.min
 
 @ModuleInfo(name = "ESP", description = "Allows you to see targets through walls.", category = ModuleCategory.RENDER)
 class ESP : Module() {
     @JvmField
-    val modeValue = ListValue("Mode", arrayOf("Box", "OtherBox", "WireFrame", "2D", "Real2D", "Outline", "ShaderOutline", "ShaderGlow", "Glow"), "Box")
+    val modeValue = ListValue("Mode", arrayOf("Box", "OtherBox", "WireFrame", "2D", "Real2D", "Outline", "ShaderOutline", "ShaderGlow"), "Box")
 
     @JvmField
     val outlineWidth = FloatValue("Outline-Width", 3f, 0.5f, 5f)
@@ -49,22 +50,7 @@ class ESP : Module() {
     private val colorBlueValue = IntegerValue("B", 255, 0, 255)
     private val colorRainbow = BoolValue("Rainbow", false)
     private val colorTeam = BoolValue("Team", false)
-
-    @EventTarget
-    fun onUpdate(event: UpdateEvent) {
-        val mode = modeValue.get()
-        for (entity in mc.theWorld!!.loadedEntityList) {
-            if (entity != mc.thePlayer && EntityUtils.isSelected(entity, false)) {
-                val entityLiving = entity.asEntityLivingBase()
-
-                when (mode.toLowerCase()) {
-                    "glow" -> {
-                        entityLiving.addPotionEffect(classProvider.createPotionEffect(classProvider.getPotionEnum(PotionType.GLOWING).id, 1337, 1))
-                    }
-                }
-            }
-        }
-    }
+    private val botValue = BoolValue("Bots", true)
 
     @EventTarget
     fun onRender3D(event: Render3DEvent?) {
@@ -73,7 +59,6 @@ class ESP : Module() {
         val projectionMatrix = WorldToScreen.getMatrix(GL11.GL_PROJECTION_MATRIX)
         val real2d = mode.equals("real2d", ignoreCase = true)
 
-        //<editor-fold desc="Real2D-Setup">
         if (real2d) {
             GL11.glPushAttrib(GL11.GL_ENABLE_BIT)
             GL11.glEnable(GL11.GL_BLEND)
@@ -92,8 +77,9 @@ class ESP : Module() {
             GL11.glDepthMask(true)
             GL11.glLineWidth(1.0f)
         }
-        //</editor-fold>
+
         for (entity in mc.theWorld!!.loadedEntityList) {
+            if (!classProvider.isEntityLivingBase(entity) || !botValue.get() && AntiBot.isBot(entity.asEntityLivingBase())) continue
             if (entity != mc.thePlayer && EntityUtils.isSelected(entity, false)) {
                 val entityLiving = entity.asEntityLivingBase()
                 val color = getColor(entityLiving)
@@ -127,8 +113,8 @@ class ESP : Module() {
                                     ?: continue
                             minX = min(screenPos.x, minX)
                             minY = min(screenPos.y, minY)
-                            maxX = Math.max(screenPos.x, maxX)
-                            maxY = Math.max(screenPos.y, maxY)
+                            maxX = max(screenPos.x, maxX)
+                            maxY = max(screenPos.y, maxY)
                         }
                         if (minX > 0 || minY > 0 || maxX <= mc.displayWidth || maxY <= mc.displayWidth) {
                             GL11.glColor4f(color.red / 255.0f, color.green / 255.0f, color.blue / 255.0f, 1.0f)
@@ -143,6 +129,7 @@ class ESP : Module() {
                 }
             }
         }
+
         if (real2d) {
             GL11.glEnable(GL11.GL_DEPTH_TEST)
             GL11.glMatrixMode(GL11.GL_PROJECTION)
@@ -156,20 +143,37 @@ class ESP : Module() {
     @EventTarget
     fun onRender2D(event: Render2DEvent) {
         val mode = modeValue.get().toLowerCase()
+        val partialTicks = event.partialTicks
         val shader = (if (mode.equals("shaderoutline", ignoreCase = true)) OutlineShader.OUTLINE_SHADER else if (mode.equals("shaderglow", ignoreCase = true)) GlowShader.GLOW_SHADER else null)
                 ?: return
-        shader.startDraw(event.partialTicks)
+        val radius = if (mode.equals("shaderoutline", ignoreCase = true)) shaderOutlineRadius.get() else if (mode.equals("shaderglow", ignoreCase = true)) shaderGlowRadius.get() else 1f
+
         renderNameTags = false
         try {
+            //search entities
+            val entityMap = HashMap<Color, ArrayList<IEntity>>()
             for (entity in mc.theWorld!!.loadedEntityList) {
                 if (!EntityUtils.isSelected(entity, false)) continue
-                mc.renderManager.renderEntityStatic(entity, mc.timer.renderPartialTicks, true)
+                if (AntiBot.isBot(entity.asEntityLivingBase()) && !botValue.get()) continue
+                //can draw
+                val color = getColor(entity)
+                if (!entityMap.containsKey(color)) {
+                    entityMap.put(color, ArrayList())
+                }
+                entityMap[color]!!.add(entity)
+            }
+            //then draw it
+            for ((color, arr) in entityMap) {
+                shader.startDraw(partialTicks)
+                for (entity in arr) {
+                    mc.renderManager.renderEntityStatic(entity, partialTicks, true)
+                }
+                shader.stopDraw(color, radius, 1f)
             }
         } catch (ex: Exception) {
             ClientUtils.getLogger().error("An error occurred while rendering all entities for shader esp", ex)
         }
         renderNameTags = true
-        val radius = if (mode.equals("shaderoutline", ignoreCase = true)) shaderOutlineRadius.get() else if (mode.equals("shaderglow", ignoreCase = true)) shaderGlowRadius.get() else 1f
         shader.stopDraw(getColor(null), radius, 1f)
     }
 
@@ -181,8 +185,11 @@ class ESP : Module() {
             if (entity != null && classProvider.isEntityLivingBase(entity)) {
                 val entityLivingBase = entity.asEntityLivingBase()
 
-                if (entityLivingBase.hurtTime > 0) return Color.RED
-                if (EntityUtils.isFriend(entityLivingBase)) return Color.BLUE
+                if (entityLivingBase.hurtTime > 0)
+                    return Color.RED
+                if (classProvider.isEntityPlayer(entityLivingBase) && entityLivingBase.asEntityPlayer().isClientFriend())
+                    return Color.BLUE
+
                 if (colorTeam.get()) {
                     val chars: CharArray = (entityLivingBase.displayName ?: return@run).formattedText.toCharArray()
                     var color = Int.MAX_VALUE
@@ -193,10 +200,12 @@ class ESP : Module() {
                         color = ColorUtils.hexColors[index]
                         break
                     }
+
                     return Color(color)
                 }
             }
         }
+
         return if (colorRainbow.get()) rainbow() else Color(colorRedValue.get(), colorGreenValue.get(), colorBlueValue.get())
     }
 

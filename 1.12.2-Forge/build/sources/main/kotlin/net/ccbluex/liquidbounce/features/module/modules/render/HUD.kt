@@ -12,7 +12,7 @@ import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
 import net.ccbluex.liquidbounce.value.BoolValue
 
-@ModuleInfo(name = "HUD", description = "Toggles visibility of the HUD.", category = ModuleCategory.RENDER)
+@ModuleInfo(name = "HUD", description = "Toggles visibility of the HUD.", category = ModuleCategory.RENDER, array = false)
 class HUD : Module() {
     val blackHotbarValue = BoolValue("BlackHotbar", true)
     val inventoryParticle = BoolValue("InventoryParticle", false)
@@ -30,7 +30,6 @@ class HUD : Module() {
     @EventTarget
     fun onUpdate(event: UpdateEvent?) {
         LiquidBounce.hud.update()
-
     }
 
     @EventTarget

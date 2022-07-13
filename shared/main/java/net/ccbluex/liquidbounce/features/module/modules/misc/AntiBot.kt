@@ -13,7 +13,7 @@ import net.ccbluex.liquidbounce.event.WorldEvent
 import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
-import net.ccbluex.liquidbounce.utils.EntityUtils
+import net.ccbluex.liquidbounce.utils.extensions.getFullName
 import net.ccbluex.liquidbounce.utils.render.ColorUtils.stripColor
 import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.FloatValue
@@ -41,8 +41,8 @@ object AntiBot : Module() {
     private val needHitValue = BoolValue("NeedHit", false)
     private val duplicateInWorldValue = BoolValue("DuplicateInWorld", false)
     private val duplicateInTabValue = BoolValue("DuplicateInTab", false)
-    private val alwaysInRadiusValue = BoolValue("AlwaysInRadius", false)
-    private val alwaysRadiusValue = FloatValue("AlwaysInRadiusBlocks", 20f, 5f, 30f)
+    private val allwaysInRadiusValue = BoolValue("AlwaysInRadius", false)
+    private val allwaysRadiusValue = FloatValue("AlwaysInRadiusBlocks", 20f, 5f, 30f)
 
     private val ground = mutableListOf<Int>()
     private val air = mutableListOf<Int>()
@@ -116,7 +116,7 @@ object AntiBot : Module() {
 
             if (targetName != null) {
                 for (networkPlayerInfo in mc.netHandler.playerInfoMap) {
-                    val networkName = stripColor(EntityUtils.getName(networkPlayerInfo)) ?: continue
+                    val networkName = stripColor(networkPlayerInfo.getFullName()) ?: continue
 
                     if (if (equals) targetName == networkName else targetName.contains(networkName))
                         return false
@@ -131,10 +131,10 @@ object AntiBot : Module() {
             return true
 
         if (duplicateInTabValue.get() &&
-                mc.netHandler.playerInfoMap.filter { entity.name == stripColor(EntityUtils.getName(it)) }.count() > 1)
+                mc.netHandler.playerInfoMap.filter { entity.name == stripColor(it.getFullName()) }.count() > 1)
             return true
 
-        if (alwaysInRadiusValue.get() && !notAlwaysInRadius.contains(entity.entityId))
+        if (allwaysInRadiusValue.get() && !notAlwaysInRadius.contains(entity.entityId))
             return true
 
         return entity.name!!.isEmpty() || entity.name == mc.thePlayer!!.name
@@ -177,8 +177,8 @@ object AntiBot : Module() {
                 if (entity.invisible && !invisible.contains(entity.entityId))
                     invisible.add(entity.entityId)
 
-                if (!notAlwaysInRadius.contains(entity.entityId) && mc.thePlayer!!.getDistanceToEntity(entity) > alwaysRadiusValue.get())
-                    notAlwaysInRadius.add(entity.entityId)
+                if (!notAlwaysInRadius.contains(entity.entityId) && mc.thePlayer!!.getDistanceToEntity(entity) > allwaysRadiusValue.get())
+                    notAlwaysInRadius.add(entity.entityId);
             }
         }
 

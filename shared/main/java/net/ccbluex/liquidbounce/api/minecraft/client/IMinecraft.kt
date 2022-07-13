@@ -25,13 +25,6 @@ import net.ccbluex.liquidbounce.api.minecraft.renderer.entity.IRenderManager
 import net.ccbluex.liquidbounce.api.minecraft.util.IMovingObjectPosition
 import net.ccbluex.liquidbounce.api.minecraft.util.ISession
 import net.ccbluex.liquidbounce.api.minecraft.util.ITimer
-import net.minecraft.client.entity.EntityPlayerSP
-import net.minecraft.client.gui.GuiScreen
-import net.minecraft.client.multiplayer.PlayerControllerMP
-import net.minecraft.client.multiplayer.WorldClient
-import net.minecraft.client.particle.ParticleManager
-import net.minecraft.client.settings.GameSettings
-import net.minecraft.network.play.INetHandlerPlayClient
 import java.io.File
 
 interface IMinecraft {
@@ -61,13 +54,6 @@ interface IMinecraft {
     val currentServerData: IServerData?
     val gameSettings: IGameSettings
     val fontRendererObj: IFontRenderer
-    val effectRenderer: ParticleManager
-    val thePlayer2: EntityPlayerSP?
-    val playerController2: PlayerControllerMP
-    val theWorld2: WorldClient?
-    val gameSettings2: GameSettings
-    val netHandler2: INetHandlerPlayClient
-    val currentScreen2: GuiScreen?
 
     fun displayGuiScreen(screen: IGuiScreen?)
     fun rightClickMouse()

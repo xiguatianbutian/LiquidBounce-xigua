@@ -61,6 +61,7 @@ public abstract class MixinGuiConnecting extends GuiScreen {
         ServerUtils.serverData = ServerDataImplKt.wrap(new ServerData("", ip + ":" + port, false));
     }
 
+    @Inject(method = "connect", at = @At(value = "NEW", target = "net/minecraft/network/login/client/CPacketLoginStart"), cancellable = true)
     private void mcLeaks(CallbackInfo callbackInfo) {
         if (MCLeaks.isAltActive()) {
             networkManager.sendPacket(new CPacketLoginStart(new GameProfile(null, MCLeaks.getSession().getUsername())));

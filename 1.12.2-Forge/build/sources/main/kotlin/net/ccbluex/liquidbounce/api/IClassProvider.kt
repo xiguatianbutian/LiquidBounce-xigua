@@ -153,7 +153,6 @@ interface IClassProvider {
     fun isCPacketCloseWindow(obj: Any?): Boolean
     fun isCPacketChatMessage(obj: Any?): Boolean
     fun isCPacketKeepAlive(obj: Any?): Boolean
-    fun isSPacketKeepAlive(obj: Any?): Boolean
     fun isCPacketPlayerPosition(obj: Any?): Boolean
     fun isCPacketPlayerPosLook(obj: Any?): Boolean
     fun isCPacketClientStatus(obj: Any?): Boolean
@@ -164,7 +163,6 @@ interface IClassProvider {
     fun isCPacketPlayerLook(obj: Any?): Boolean
     fun isCPacketCustomPayload(obj: Any?): Boolean
     fun isCPacketHandshake(obj: Any?): Boolean
-    fun isCPacketInput(obj: Any?): Boolean
 
     fun isItemSword(obj: Any?): Boolean
     fun isItemTool(obj: Any?): Boolean

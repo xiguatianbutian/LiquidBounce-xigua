@@ -6,9 +6,9 @@
 package net.ccbluex.liquidbounce.features.module.modules.combat
 
 import net.ccbluex.liquidbounce.LiquidBounce
+import net.ccbluex.liquidbounce.api.MinecraftVersion
 import net.ccbluex.liquidbounce.api.enums.EnumFacingType
 import net.ccbluex.liquidbounce.api.enums.WEnumHand
-import net.ccbluex.liquidbounce.api.MinecraftVersion
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntity
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntityLivingBase
 import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayerDigging
@@ -28,6 +28,9 @@ import net.ccbluex.liquidbounce.features.module.modules.render.FreeCam
 import net.ccbluex.liquidbounce.injection.backend.Backend
 import net.ccbluex.liquidbounce.utils.*
 import net.ccbluex.liquidbounce.utils.extensions.getDistanceToEntityBox
+import net.ccbluex.liquidbounce.utils.extensions.isAnimal
+import net.ccbluex.liquidbounce.utils.extensions.isClientFriend
+import net.ccbluex.liquidbounce.utils.extensions.isMob
 import net.ccbluex.liquidbounce.utils.misc.RandomUtils
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
 import net.ccbluex.liquidbounce.utils.timer.MSTimer
@@ -36,6 +39,7 @@ import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
+import net.minecraft.client.settings.KeyBinding
 import org.lwjgl.input.Keyboard
 import java.awt.Color
 import java.util.*
@@ -82,14 +86,11 @@ class KillAura : Module() {
 
     // Bypass
     private val swingValue = BoolValue("Swing", true)
-    public val noSwingValue = BoolValue("NoSwing", false)
-    public val serverSideNoSwingValue = BoolValue("ServerSideNoSwing", false)
     private val keepSprintValue = BoolValue("KeepSprint", true)
 
     // AutoBlock
-    private val autoBlockValue = BoolValue("AutoBlock", false)
+    private val autoBlockValue = ListValue("AutoBlock", arrayOf("Off", "Packet", "AfterTick"), "Packet")
     private val interactAutoBlockValue = BoolValue("InteractAutoBlock", true)
-    private val delayedBlockValue = BoolValue("DelayedBlock", true)
     private val blockRate = IntegerValue("BlockRate", 100, 1, 100)
 
     // Raycast
@@ -164,8 +165,6 @@ class KillAura : Module() {
     private var attackDelay = 0L
     private var clicks = 0
 
-    public var noSwingState = false
-
     // Container Delay
     private var containerOpen = -1L
 
@@ -213,7 +212,7 @@ class KillAura : Module() {
             updateHitable()
 
             // AutoBlock
-            if (autoBlockValue.get() && delayedBlockValue.get() && canBlock)
+            if (autoBlockValue.get().equals("AfterTick", true) && canBlock)
                 startBlocking(currentTarget!!, hitable)
 
             return
@@ -222,13 +221,6 @@ class KillAura : Module() {
         if (rotationStrafeValue.get().equals("Off", true))
             update()
     }
-
-    /**
-     * Check if player is able to block
-     */
-    private val canBlock: Boolean
-        inline get() = mc.thePlayer!!.heldItem != null && classProvider.isItemSword(mc.thePlayer!!.heldItem!!.item)
-
 
     /**
      * Strafe event
@@ -311,10 +303,6 @@ class KillAura : Module() {
             hitable = false
             stopBlocking()
             return
-        }
-
-        if(noSwingValue.get()) {
-            noSwingState = true
         }
 
         if (noInventoryAttackValue.get() && (classProvider.isGuiContainer(mc.currentScreen) ||
@@ -503,10 +491,12 @@ class KillAura : Module() {
                 return false
 
             if (EntityUtils.targetPlayer && classProvider.isEntityPlayer(entity)) {
-                if (entity.asEntityPlayer().spectator || AntiBot.isBot(entity.asEntityLivingBase()))
+                val player = entity.asEntityPlayer()
+
+                if (player.spectator || AntiBot.isBot(player))
                     return false
 
-                if (EntityUtils.isFriend(entity) && !LiquidBounce.moduleManager[NoFriends::class.java].state)
+                if (player.isClientFriend() && !LiquidBounce.moduleManager[NoFriends::class.java].state)
                     return false
 
                 val teams = LiquidBounce.moduleManager[Teams::class.java] as Teams
@@ -514,8 +504,7 @@ class KillAura : Module() {
                 return !teams.state || !teams.isInYourTeam(entity.asEntityLivingBase())
             }
 
-            return EntityUtils.targetMobs && EntityUtils.isMob(entity) || EntityUtils.targetAnimals &&
-                    EntityUtils.isAnimal(entity)
+            return EntityUtils.targetMobs && entity.isMob() || EntityUtils.targetAnimals && entity.isAnimal()
         }
 
         return false
@@ -528,13 +517,8 @@ class KillAura : Module() {
         // Stop blocking
         val thePlayer = mc.thePlayer!!
 
-        if (thePlayer.isBlocking || blockingStatus) {
-            mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM,
-                    WBlockPos.ORIGIN, classProvider.getEnumFacing(EnumFacingType.DOWN)))
-            blockingStatus = false
-        }
-
-
+        if (thePlayer.isBlocking || blockingStatus)
+            stopBlocking()
 
         // Call attack event
         LiquidBounce.eventManager.callEvent(AttackEvent(entity))
@@ -562,17 +546,6 @@ class KillAura : Module() {
                 thePlayer.attackTargetEntityWithCurrentItem(entity)
         }
 
-        // Start blocking after attack
-        if (thePlayer.isBlocking || (autoBlockValue.get() && canBlock)) {
-            if (!(blockRate.get() > 0 && Random().nextInt(100) <= blockRate.get()))
-                return
-
-            if (delayedBlockValue.get())
-                return
-
-            startBlocking(entity, interactAutoBlockValue.get())
-        }
-
         // Extra critical effects
         val criticals = LiquidBounce.moduleManager[Criticals::class.java] as Criticals
 
@@ -585,6 +558,10 @@ class KillAura : Module() {
             if (functions.getModifierForCreature(thePlayer.heldItem, target!!.creatureAttribute) > 0.0f || fakeSharpValue.get())
                 thePlayer.onEnchantmentCritical(target!!)
         }
+
+        // Start blocking after attack
+        if (autoBlockValue.get().equals("Packet", true) && (thePlayer.isBlocking || canBlock))
+            startBlocking(entity, interactAutoBlockValue.get())
 
         @Suppress("ConstantConditionIf")
         if (Backend.MINECRAFT_VERSION_MINOR != 8) {
@@ -608,7 +585,7 @@ class KillAura : Module() {
                     (entity.posZ - entity.prevPosZ - (mc.thePlayer!!.posZ - mc.thePlayer!!.prevPosZ)) * RandomUtils.nextFloat(minPredictSize.get(), maxPredictSize.get())
             )
 
-        val (vec, rotation) = RotationUtils.searchCenter(
+        val (_, rotation) = RotationUtils.searchCenter(
                 boundingBox,
                 outborderValue.get() && !attackTimer.hasTimePassed(attackDelay / 2),
                 randomCenterValue.get(),
@@ -649,9 +626,8 @@ class KillAura : Module() {
 
             })
 
-
             if (raycastValue.get() && raycastedEntity != null && classProvider.isEntityLivingBase(raycastedEntity)
-                    && (LiquidBounce.moduleManager[NoFriends::class.java].state || !EntityUtils.isFriend(raycastedEntity)))
+                    && (LiquidBounce.moduleManager[NoFriends::class.java].state || !(classProvider.isEntityPlayer(raycastedEntity) && raycastedEntity.asEntityPlayer().isClientFriend())))
                 currentTarget = raycastedEntity.asEntityLivingBase()
 
             hitable = if (maxTurnSpeed.get() > 0F) currentTarget == raycastedEntity else true
@@ -663,6 +639,9 @@ class KillAura : Module() {
      * Start blocking
      */
     private fun startBlocking(interactEntity: IEntity, interact: Boolean) {
+        if (!(blockRate.get() > 0 && Random().nextInt(100) <= blockRate.get()))
+            return
+
         if (interact) {
             val positionEye = mc.renderViewEntity?.getPositionEyes(1F)
 
@@ -688,8 +667,9 @@ class KillAura : Module() {
             mc.netHandler.addToSendQueue(classProvider.createCPacketUseEntity(interactEntity, ICPacketUseEntity.WAction.INTERACT))
         }
 
-        mc.netHandler.addToSendQueue(createUseItemPacket(mc.thePlayer!!.inventory.getCurrentItemInHand(), WEnumHand.MAIN_HAND))
-        blockingStatus = false
+        mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerBlockPlacement(WBlockPos(-1, -1, -1),
+                255, mc.thePlayer!!.inventory.getCurrentItemInHand(), 0.0F, 0.0F, 0.0F))
+        blockingStatus = true
     }
 
 
@@ -716,7 +696,11 @@ class KillAura : Module() {
     private fun isAlive(entity: IEntityLivingBase) = entity.entityAlive && entity.health > 0 ||
             aacValue.get() && entity.hurtTime > 5
 
-
+    /**
+     * Check if player is able to block
+     */
+    private val canBlock: Boolean
+        inline get() = mc.thePlayer!!.heldItem != null && classProvider.isItemSword(mc.thePlayer!!.heldItem!!.item) && Backend.MINECRAFT_VERSION_MINOR == 8
 
     /**
      * Range
@@ -732,4 +716,7 @@ class KillAura : Module() {
      */
     override val tag: String?
         get() = targetModeValue.get()
+
+    val isBlockingChestAura: Boolean
+        get() = state && target != null
 }

@@ -14,6 +14,7 @@ import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
 import net.ccbluex.liquidbounce.features.module.modules.movement.Speed
+import net.ccbluex.liquidbounce.script.api.global.Chat
 import net.ccbluex.liquidbounce.utils.MovementUtils
 import net.ccbluex.liquidbounce.utils.timer.MSTimer
 import net.ccbluex.liquidbounce.value.BoolValue
@@ -30,8 +31,8 @@ class Velocity : Module() {
      */
     private val horizontalValue = FloatValue("Horizontal", 0F, 0F, 1F)
     private val verticalValue = FloatValue("Vertical", 0F, 0F, 1F)
-    private val modeValue = ListValue("Mode", arrayOf("Simple", "AAC", "AACPush", "AACZero",
-            "Reverse", "SmoothReverse", "Jump", "Glitch", "Full"), "Simple")
+    private val modeValue = ListValue("Mode", arrayOf("Simple", "AAC", "AACPush", "AACZero", "AACv4",
+            "Reverse", "SmoothReverse", "Jump", "Glitch"), "Simple")
 
     // Reverse
     private val reverseStrengthValue = FloatValue("ReverseStrength", 1F, 0.1F, 1F)
@@ -40,6 +41,9 @@ class Velocity : Module() {
     // AAC Push
     private val aacPushXZReducerValue = FloatValue("AACPushXZReducer", 2F, 1F, 3F)
     private val aacPushYReducerValue = BoolValue("AACPushYReducer", true)
+
+    // AAc v4
+    private val aacv4MotionReducerValue = FloatValue("AACv4MotionReducer", 0.62F,0F,1F)
 
     /**
      * VALUES
@@ -117,8 +121,16 @@ class Velocity : Module() {
             "aac" -> if (velocityInput && velocityTimer.hasTimePassed(80L)) {
                 thePlayer.motionX *= horizontalValue.get()
                 thePlayer.motionZ *= horizontalValue.get()
-                thePlayer.motionY *= verticalValue.get()
+                //mc.thePlayer.motionY *= verticalValue.get() ?
                 velocityInput = false
+            }
+
+            "aacv4" -> {
+                if (thePlayer.hurtTime>0 && !thePlayer.onGround){
+                    val reduce=aacv4MotionReducerValue.get();
+                    thePlayer.motionX *= reduce
+                    thePlayer.motionZ *= reduce
+                }
             }
 
             "aacpush" -> {
@@ -144,6 +156,7 @@ class Velocity : Module() {
                     thePlayer.motionZ /= reduce
                 }
             }
+
             "aaczero" -> if (thePlayer.hurtTime > 0) {
                 if (!velocityInput || thePlayer.onGround || thePlayer.fallDistance > 2F)
                     return
@@ -165,6 +178,7 @@ class Velocity : Module() {
         if (classProvider.isSPacketEntityVelocity(packet)) {
             val packetEntityVelocity = packet.asSPacketEntityVelocity()
 
+
             if ((mc.theWorld?.getEntityByID(packetEntityVelocity.entityID) ?: return) != thePlayer)
                 return
 
@@ -174,7 +188,10 @@ class Velocity : Module() {
                 "simple" -> {
                     val horizontal = horizontalValue.get()
                     val vertical = verticalValue.get()
-                    
+
+                    if (horizontal == 0F && vertical == 0F)
+                        event.cancelEvent()
+
                     packetEntityVelocity.motionX = (packetEntityVelocity.motionX * horizontal).toInt()
                     packetEntityVelocity.motionY = (packetEntityVelocity.motionY * vertical).toInt()
                     packetEntityVelocity.motionZ = (packetEntityVelocity.motionZ * horizontal).toInt()
@@ -190,13 +207,8 @@ class Velocity : Module() {
                     event.cancelEvent()
                 }
             }
-        }
-
-        if (classProvider.isSPacketExplosion(packet)) {
+        } else if (classProvider.isSPacketExplosion(packet)) {
             // TODO: Support velocity for explosions
-            event.cancelEvent()
-        }
-        if (classProvider.isSPacketEntityVelocity(packet) && modeValue.get().equals("Full", ignoreCase = true)) {
             event.cancelEvent()
         }
     }

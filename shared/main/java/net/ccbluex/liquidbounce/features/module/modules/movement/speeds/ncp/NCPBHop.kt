@@ -14,7 +14,6 @@ import java.math.RoundingMode
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.sin
-import kotlin.math.sqrt
 
 class NCPBHop : SpeedMode("NCPBHop") {
     private var level = 1
@@ -35,7 +34,7 @@ class NCPBHop : SpeedMode("NCPBHop") {
     override fun onMotion() {
         val xDist = mc.thePlayer!!.posX - mc.thePlayer!!.prevPosX
         val zDist = mc.thePlayer!!.posZ - mc.thePlayer!!.prevPosZ
-        lastDist = sqrt(xDist * xDist + zDist * zDist)
+        lastDist = Math.sqrt(xDist * xDist + zDist * zDist)
     }
 
     override fun onUpdate() {}

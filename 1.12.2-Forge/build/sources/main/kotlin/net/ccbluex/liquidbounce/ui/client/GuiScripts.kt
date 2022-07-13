@@ -167,14 +167,15 @@ class GuiScripts(private val prevGui: IGuiScreen) : WrappedGuiScreen() {
 
         override fun getSize() = LiquidBounce.scriptManager.scripts.size
 
-        public override fun elementClicked(id: Int, doubleClick: Boolean, var3: Int, var4: Int) {
+        override fun elementClicked(id: Int, doubleClick: Boolean, var3: Int, var4: Int) {
             selectedSlot = id
         }
 
         override fun drawSlot(id: Int, x: Int, y: Int, var4: Int, var5: Int, var6: Int) {
             val script = LiquidBounce.scriptManager.scripts[id]
+
             Fonts.font40.drawCenteredString("§9" + script.scriptName + " §7v" + script.scriptVersion, representedScreen.width / 2.0f, y + 2.0f, Color.LIGHT_GRAY.rgb)
-            Fonts.font40.drawCenteredString("by §c" + script.scriptAuthors.joinToString(", "), representedScreen.width / 2.0f, y + 15.0f, Color.LIGHT_GRAY.rgb)
+            Fonts.font40.drawCenteredString("by §c" + script.scriptAuthors.joinToString(", "), representedScreen.width / 2.0f, y + 15.0f, Color.LIGHT_GRAY.rgb).coerceAtLeast(x)
         }
 
         override fun drawBackground() { }

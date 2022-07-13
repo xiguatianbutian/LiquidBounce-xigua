@@ -16,7 +16,6 @@ import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.MovementUtils
 
 class MineplexGround : SpeedMode("MineplexGround") {
-
     private var spoofSlot = false
     private var speed = 0f
 
@@ -35,6 +34,10 @@ class MineplexGround : SpeedMode("MineplexGround") {
     override fun onUpdate() {
         if (!MovementUtils.isMoving || !mc.thePlayer!!.onGround || mc.thePlayer!!.isUsingItem) {
             speed = 0f
+            return
+        }
+        if (!spoofSlot && mc.thePlayer!!.inventory.getCurrentItemInHand() != null) {
+            ClientUtils.displayChatMessage("§8[§c§lMineplex§aSpeed§8] §cYou need one empty slot.")
             return
         }
         val blockPos = WBlockPos(mc.thePlayer!!.posX, mc.thePlayer!!.entityBoundingBox.minY - 1, mc.thePlayer!!.posZ)

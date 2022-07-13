@@ -12,9 +12,12 @@ import net.ccbluex.liquidbounce.event.Render3DEvent
 import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
+import net.ccbluex.liquidbounce.features.module.modules.misc.AntiBot
 import net.ccbluex.liquidbounce.utils.EntityUtils
+import net.ccbluex.liquidbounce.utils.extensions.isClientFriend
 import net.ccbluex.liquidbounce.utils.render.ColorUtils
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
+import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
@@ -32,6 +35,8 @@ class Tracers : Module() {
     private val colorGreenValue = IntegerValue("G", 160, 0, 255)
     private val colorBlueValue = IntegerValue("B", 255, 0, 255)
 
+    private val botValue = BoolValue("Bots", true)
+
     @EventTarget
     fun onRender3D(event: Render3DEvent) {
         val thePlayer = mc.thePlayer ?: return
@@ -47,6 +52,7 @@ class Tracers : Module() {
         GL11.glBegin(GL11.GL_LINES)
 
         for (entity in mc.theWorld!!.loadedEntityList) {
+            if (!classProvider.isEntityLivingBase(entity) || !botValue.get() && AntiBot.isBot(entity.asEntityLivingBase())) continue
             if (entity != thePlayer && EntityUtils.isSelected(entity, false)) {
                 var dist = (thePlayer.getDistanceToEntity(entity) * 2).toInt()
 
@@ -54,10 +60,10 @@ class Tracers : Module() {
 
                 val colorMode = colorMode.get().toLowerCase()
                 val color = when {
-                    EntityUtils.isFriend(entity) -> Color(0, 0, 255, 150)
-                    colorMode.equals("custom") -> Color(colorRedValue.get(), colorGreenValue.get(), colorBlueValue.get(), 150)
-                    colorMode.equals("distancecolor") -> Color(255 - dist, dist, 0, 150)
-                    colorMode.equals("rainbow") -> ColorUtils.rainbow()
+                    classProvider.isEntityPlayer(entity) && entity.asEntityPlayer().isClientFriend() -> Color(0, 0, 255, 150)
+                    colorMode == "custom" -> Color(colorRedValue.get(), colorGreenValue.get(), colorBlueValue.get(), 150)
+                    colorMode == "distancecolor" -> Color(255 - dist, dist, 0, 150)
+                    colorMode == "rainbow" -> ColorUtils.rainbow()
                     else -> Color(255, 255, 255, 150)
                 }
 

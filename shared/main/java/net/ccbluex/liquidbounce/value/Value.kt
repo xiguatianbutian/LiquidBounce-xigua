@@ -62,22 +62,6 @@ open class BoolValue(name: String, value: Boolean) : Value<Boolean>(name, value)
 
 }
 
-open class DoubleValue(name: String, value: Double, val minimum: Double = 0.0, val maximum: Double = Double.MAX_VALUE)
-    : Value<Double>(name, value) {
-
-    fun set(newValue: Number) {
-        set(newValue.toDouble())
-    }
-
-    override fun toJson() = JsonPrimitive(value)
-
-    override fun fromJson(element: JsonElement) {
-        if (element.isJsonPrimitive)
-            value = element.asDouble
-    }
-
-}
-
 /**
  * Integer value represents a value with a integer
  */

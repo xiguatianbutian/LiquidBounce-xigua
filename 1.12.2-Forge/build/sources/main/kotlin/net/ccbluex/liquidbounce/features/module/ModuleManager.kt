@@ -10,7 +10,6 @@ import net.ccbluex.liquidbounce.event.EventTarget
 import net.ccbluex.liquidbounce.event.KeyEvent
 import net.ccbluex.liquidbounce.event.Listenable
 import net.ccbluex.liquidbounce.features.module.modules.`fun`.Derp
-import net.ccbluex.liquidbounce.features.module.modules.`fun`.Experimental
 import net.ccbluex.liquidbounce.features.module.modules.`fun`.SkinDerp
 import net.ccbluex.liquidbounce.features.module.modules.combat.*
 import net.ccbluex.liquidbounce.features.module.modules.exploit.*
@@ -40,30 +39,21 @@ class ModuleManager : Listenable {
         ClientUtils.getLogger().info("[ModuleManager] Loading modules...")
 
         registerModules(
-                IlIl111Ill1::class.java,
-                Experimental::class.java,
-                ClientSpoof::class.java,
-                VehicleFly::class.java,
-                InvMove::class.java,
                 AutoArmor::class.java,
                 AutoBow::class.java,
                 AutoLeave::class.java,
-                AntiBot::class.java,
-                NoBob::class.java,
                 AutoPot::class.java,
                 AutoSoup::class.java,
-                Bobbing::class.java,
                 AutoWeapon::class.java,
                 BowAimbot::class.java,
                 Criticals::class.java,
                 KillAura::class.java,
-                Disabler::class.java,
                 Trigger::class.java,
                 Velocity::class.java,
                 Fly::class.java,
                 ClickGUI::class.java,
-                KeepSprint::class.java,
                 HighJump::class.java,
+                InventoryMove::class.java,
                 NoSlow::class.java,
                 LiquidWalk::class.java,
                 SafeWalk::class.java,
@@ -110,7 +100,6 @@ class ModuleManager : Listenable {
                 Timer::class.java,
                 Sneak::class.java,
                 SkinDerp::class.java,
-                Paralyze::class.java,
                 GhostHand::class.java,
                 AutoWalk::class.java,
                 AutoBreak::class.java,
@@ -129,6 +118,7 @@ class ModuleManager : Listenable {
                 MultiActions::class.java,
                 AirJump::class.java,
                 AutoClicker::class.java,
+                NoBob::class.java,
                 BlockOverlay::class.java,
                 NoFriends::class.java,
                 BlockESP::class.java,
@@ -192,6 +182,7 @@ class ModuleManager : Listenable {
         registerModule(NoScoreboard)
         registerModule(Fucker)
         registerModule(ChestAura)
+        registerModule(AntiBot)
 
         ClientUtils.getLogger().info("[ModuleManager] Loaded ${modules.size} modules.")
     }

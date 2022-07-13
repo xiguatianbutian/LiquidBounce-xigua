@@ -24,8 +24,6 @@ class FreeCam : Module() {
 
     private var fakePlayer: IEntityOtherPlayerMP? = null
 
-    private var cancelKeepAliveValue = BoolValue("CancelKeepAlive", true)
-
     private var oldX = 0.0
     private var oldY = 0.0
     private var oldZ = 0.0
@@ -99,14 +97,7 @@ class FreeCam : Module() {
     fun onPacket(event: PacketEvent) {
         val packet = event.packet
 
-        if (classProvider.isCPacketPlayer(packet) || classProvider.isCPacketEntityAction(packet)) {
+        if (classProvider.isCPacketPlayer(packet) || classProvider.isCPacketEntityAction(packet))
             event.cancelEvent()
-        }
-
-        if(cancelKeepAliveValue.get()) {
-            if (classProvider.isCPacketKeepAlive(packet) || classProvider.isSPacketKeepAlive(packet)) {
-                event.cancelEvent()
-            }
-        }
     }
 }

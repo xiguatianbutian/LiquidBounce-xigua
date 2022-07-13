@@ -5,8 +5,10 @@
  */
 package net.ccbluex.liquidbounce.features.module.modules.movement
 
-import net.ccbluex.liquidbounce.LiquidBounce
-import net.ccbluex.liquidbounce.event.*
+import net.ccbluex.liquidbounce.event.EventTarget
+import net.ccbluex.liquidbounce.event.JumpEvent
+import net.ccbluex.liquidbounce.event.MoveEvent
+import net.ccbluex.liquidbounce.event.UpdateEvent
 import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
@@ -17,7 +19,7 @@ import net.ccbluex.liquidbounce.value.ListValue
 
 @ModuleInfo(name = "LongJump", description = "Allows you to jump further.", category = ModuleCategory.MOVEMENT)
 class LongJump : Module() {
-    private val modeValue = ListValue("Mode", arrayOf("NCP", "AACv1", "AACv2", "AACv3", "Mineplex", "Mineplex2", "Mineplex3"), "NCP")
+    private val modeValue = ListValue("Mode", arrayOf("NCP", "AACv1", "AACv2", "AACv3", "Mineplex", "Mineplex2", "Mineplex3", "Redesky"), "NCP")
     private val ncpBoostValue = FloatValue("NCPBoost", 4.25f, 1f, 10f)
     private val autoJumpValue = BoolValue("AutoJump", false)
     private var jumped = false
@@ -98,6 +100,10 @@ class LongJump : Module() {
 
                         MovementUtils.strafe()
                     }
+                    "redesky" -> {
+                        thePlayer.jumpMovementFactor = 0.15f
+                        thePlayer.motionY += 0.05f
+                    }
                 }
             }
         }
@@ -105,11 +111,6 @@ class LongJump : Module() {
             jumped = true
             thePlayer.jump()
         }
-    }
-
-    override fun onDisable() {
-        mc.timer.timerSpeed = 1.0F
-        super.onDisable()
     }
 
     @EventTarget

@@ -25,8 +25,7 @@ import java.util.*
 
 @ModuleInfo(name = "Speed", description = "Allows you to move faster.", category = ModuleCategory.MOVEMENT)
 class Speed : Module() {
-    private val speedModes = arrayOf(
-            // NCP
+    private val speedModes = arrayOf( // NCP
             NCPBHop(),
             NCPFHop(),
             SNCPBHop(),
@@ -37,9 +36,7 @@ class Speed : Module() {
             Boost(),
             Frame(),
             MiJump(),
-            OnGround(),
-
-            // AAC
+            OnGround(),  // AAC
             AACBHop(),
             AAC2BHop(),
             AAC3BHop(),
@@ -57,25 +54,17 @@ class Speed : Module() {
             AACYPort(),
             AACYPort2(),
             AACPort(),
-            OldAACBHop(),
-
-            // Spartan
-            SpartanYPort(),
-
-            // Spectre
+            OldAACBHop(),  // Spartan
+            SpartanYPort(),  // Spectre
             SpectreLowHop(),
             SpectreBHop(),
             SpectreOnGround(),
-
-            // Server
-            TeleportCubeCraft(),
-            CubeCraftGround(),
+            TeleportCubeCraft(),  // Server
             HiveHop(),
             HypixelHop(),
-            MineplexGround(),
-            MineplexHop(),
-
-            // Other
+            Mineplex(),
+            MineplexGround(),  // Other
+            Matrix(),
             SlowHop(),
             CustomSpeed()
     )

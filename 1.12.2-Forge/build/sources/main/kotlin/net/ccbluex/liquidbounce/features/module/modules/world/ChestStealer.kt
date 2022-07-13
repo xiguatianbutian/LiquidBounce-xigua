@@ -50,7 +50,6 @@ class ChestStealer : Module() {
             nextDelay = TimeUtils.randomDelay(get(), maxDelayValue.get())
         }
     }
-
     private val delayOnFirstValue = BoolValue("DelayOnFirst", false)
 
     private val takeRandomizedValue = BoolValue("TakeRandomized", false)

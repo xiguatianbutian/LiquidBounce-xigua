@@ -18,7 +18,7 @@ import net.ccbluex.liquidbounce.features.module.ModuleCategory;
 import net.ccbluex.liquidbounce.features.module.ModuleInfo;
 import net.ccbluex.liquidbounce.utils.*;
 
-@ModuleInfo(name = "SuperHit", description = "Allows to hit entities from far away.", category = ModuleCategory.COMBAT)
+@ModuleInfo(name = "TeleportHit", description = "Allows to hit entities from far away.", category = ModuleCategory.COMBAT)
 public class TeleportHit extends Module {
     private IEntityLivingBase targetEntity;
     private boolean shouldHit;

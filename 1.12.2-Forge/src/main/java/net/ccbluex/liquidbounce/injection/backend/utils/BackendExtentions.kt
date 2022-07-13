@@ -12,7 +12,6 @@ import net.ccbluex.liquidbounce.api.enums.WEnumHand
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.player.WEnumPlayerModelParts
 import net.ccbluex.liquidbounce.api.minecraft.event.IClickEvent
 import net.ccbluex.liquidbounce.api.minecraft.network.play.client.*
-import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketEntityAction.WAction.*
 import net.ccbluex.liquidbounce.api.minecraft.util.*
 import net.ccbluex.liquidbounce.api.minecraft.world.IWorldSettings
 import net.ccbluex.liquidbounce.injection.backend.Backend.BACKEND_UNSUPPORTED
@@ -196,14 +195,12 @@ inline fun ICPacketResourcePackStatus.WAction.unwrap(): CPacketResourcePackStatu
 
 inline fun ICPacketEntityAction.WAction.unwrap(): CPacketEntityAction.Action {
     return when (this) {
-        START_SNEAKING -> CPacketEntityAction.Action.START_SNEAKING
-        STOP_SNEAKING -> CPacketEntityAction.Action.STOP_SNEAKING
-        STOP_SLEEPING -> CPacketEntityAction.Action.STOP_SLEEPING
-        START_SPRINTING -> CPacketEntityAction.Action.START_SPRINTING
-        STOP_SPRINTING -> CPacketEntityAction.Action.STOP_SPRINTING
-        OPEN_INVENTORY -> CPacketEntityAction.Action.OPEN_INVENTORY
-        START_RIDING_JUMP -> TODO()
-        STOP_RIDING_JUMP -> TODO()
+        ICPacketEntityAction.WAction.START_SNEAKING -> CPacketEntityAction.Action.START_SNEAKING
+        ICPacketEntityAction.WAction.STOP_SNEAKING -> CPacketEntityAction.Action.STOP_SNEAKING
+        ICPacketEntityAction.WAction.STOP_SLEEPING -> CPacketEntityAction.Action.STOP_SLEEPING
+        ICPacketEntityAction.WAction.START_SPRINTING -> CPacketEntityAction.Action.START_SPRINTING
+        ICPacketEntityAction.WAction.STOP_SPRINTING -> CPacketEntityAction.Action.STOP_SPRINTING
+        ICPacketEntityAction.WAction.OPEN_INVENTORY -> CPacketEntityAction.Action.OPEN_INVENTORY
     }
 }
 

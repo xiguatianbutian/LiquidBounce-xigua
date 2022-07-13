@@ -1,4 +1,4 @@
-Processing 156 files
+Processing 142 files
 Start Processing: co/uk/hexeption/utils/OutlineUtils.java
 Rename method net/minecraft/client/renderer/OpenGlHelper/setLightmapTextureCoords (IFF)V[1784,1808]::setLightmapTextureCoords->func_77475_a
 Rename field net/minecraft/client/renderer/OpenGlHelper/lightmapTexUnit[1810,1825]::lightmapTexUnit->field_77476_b
@@ -21,14 +21,6 @@ Import: org.lwjgl.opengl.EXTPackedDepthStencil
 Import: static org.lwjgl.opengl.GL11.*
 Import: java.awt.*
 End  Processing: co/uk/hexeption/utils/OutlineUtils.java
-
-Start Processing: net/ccbluex/liquidbounce/event/EventImpl.java
-Import: static java.lang.annotation.ElementType.METHOD
-Import: static java.lang.annotation.RetentionPolicy.RUNTIME
-Import: java.lang.annotation.Documented
-Import: java.lang.annotation.Retention
-Import: java.lang.annotation.Target
-End  Processing: net/ccbluex/liquidbounce/event/EventImpl.java
 
 Start Processing: net/ccbluex/liquidbounce/features/module/modules/combat/AutoArmor.java
 New Key: class java/util/Map
@@ -94,104 +86,6 @@ Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
 Import: net.ccbluex.liquidbounce.utils.*
 End  Processing: net/ccbluex/liquidbounce/features/module/modules/combat/TeleportHit.java
 
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/ClientSpoof.java
-Rename method net/minecraft/network/PacketBuffer/writeString (Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;[1059,1070]::writeString->func_180714_a
-Rename method net/minecraft/network/PacketBuffer/writeString (Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;[1236,1247]::writeString->func_180714_a
-Import: io.netty.buffer.Unpooled
-Import: net.ccbluex.liquidbounce.api.minecraft.network.IPacket
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.ccbluex.liquidbounce.value.ListValue
-Import: net.minecraft.network.Packet
-Import: net.minecraft.network.PacketBuffer
-Import: net.minecraft.network.play.client.CPacketCustomPayload
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/ClientSpoof.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/Disabler.java
-Rename field net/minecraft/network/play/client/CPacketPlayer/y[13201,13202]::y->field_149477_b
-Rename field net/minecraft/network/play/client/CPacketPlayer/onGround[13265,13273]::onGround->field_149474_g
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setAllowFlying (Z)V[13514,13528]::setAllowFlying->func_149109_c
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setCreativeMode (Z)V[13563,13578]::setCreativeMode->func_149111_d
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setFlying (Z)V[13612,13621]::setFlying->func_149102_b
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setInvulnerable (Z)V[13661,13676]::setInvulnerable->func_149108_a
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isAllowFlying ()Z[13710,13723]::isAllowFlying->func_149105_e
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isCreativeMode ()Z[13755,13769]::isCreativeMode->func_149103_f
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isFlying ()Z[13800,13808]::isFlying->func_149106_d
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isInvulnerable ()Z[13845,13859]::isInvulnerable->func_149112_c
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setAllowFlying (Z)V[14088,14102]::setAllowFlying->func_149491_c
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setCreativeMode (Z)V[14137,14152]::setCreativeMode->func_149493_d
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setFlying (Z)V[14186,14195]::setFlying->func_149483_b
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setInvulnerable (Z)V[14235,14250]::setInvulnerable->func_149490_a
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isAllowFlying ()Z[14284,14297]::isAllowFlying->func_149486_e
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isCreativeMode ()Z[14329,14343]::isCreativeMode->func_149484_f
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isFlying ()Z[14374,14382]::isFlying->func_149488_d
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isInvulnerable ()Z[14419,14433]::isInvulnerable->func_149494_c
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setAllowFlying (Z)V[15568,15582]::setAllowFlying->func_149109_c
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setCreativeMode (Z)V[15617,15632]::setCreativeMode->func_149111_d
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setFlying (Z)V[15666,15675]::setFlying->func_149102_b
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setInvulnerable (Z)V[15715,15730]::setInvulnerable->func_149108_a
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isAllowFlying ()Z[15764,15777]::isAllowFlying->func_149105_e
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isCreativeMode ()Z[15809,15823]::isCreativeMode->func_149103_f
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isFlying ()Z[15854,15862]::isFlying->func_149106_d
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isInvulnerable ()Z[15899,15913]::isInvulnerable->func_149112_c
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setAllowFlying (Z)V[16142,16156]::setAllowFlying->func_149491_c
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setCreativeMode (Z)V[16191,16206]::setCreativeMode->func_149493_d
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setFlying (Z)V[16240,16249]::setFlying->func_149483_b
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setInvulnerable (Z)V[16289,16304]::setInvulnerable->func_149490_a
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isAllowFlying ()Z[16338,16351]::isAllowFlying->func_149486_e
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isCreativeMode ()Z[16383,16397]::isCreativeMode->func_149484_f
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isFlying ()Z[16428,16436]::isFlying->func_149488_d
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isInvulnerable ()Z[16473,16487]::isInvulnerable->func_149494_c
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setAllowFlying (Z)V[17227,17241]::setAllowFlying->func_149109_c
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setCreativeMode (Z)V[17276,17291]::setCreativeMode->func_149111_d
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setFlying (Z)V[17325,17334]::setFlying->func_149102_b
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/setInvulnerable (Z)V[17374,17389]::setInvulnerable->func_149108_a
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isAllowFlying ()Z[17423,17436]::isAllowFlying->func_149105_e
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isCreativeMode ()Z[17468,17482]::isCreativeMode->func_149103_f
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isFlying ()Z[17513,17521]::isFlying->func_149106_d
-Rename method net/minecraft/network/play/server/SPacketPlayerAbilities/isInvulnerable ()Z[17558,17572]::isInvulnerable->func_149112_c
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setAllowFlying (Z)V[17801,17815]::setAllowFlying->func_149491_c
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setCreativeMode (Z)V[17850,17865]::setCreativeMode->func_149493_d
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setFlying (Z)V[17899,17908]::setFlying->func_149483_b
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/setInvulnerable (Z)V[17948,17963]::setInvulnerable->func_149490_a
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isAllowFlying ()Z[17997,18010]::isAllowFlying->func_149486_e
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isCreativeMode ()Z[18042,18056]::isCreativeMode->func_149484_f
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isFlying ()Z[18087,18095]::isFlying->func_149488_d
-Rename method net/minecraft/network/play/client/CPacketPlayerAbilities/isInvulnerable ()Z[18132,18146]::isInvulnerable->func_149494_c
-Rename field net/minecraft/network/play/client/CPacketPlayer/onGround[18433,18441]::onGround->field_149474_g
-Import: net.ccbluex.liquidbounce.api.minecraft.network.IPacket
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayer
-Import: net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.PacketEvent
-Import: net.ccbluex.liquidbounce.event.UpdateEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.ccbluex.liquidbounce.utils.ClientUtils
-Import: net.ccbluex.liquidbounce.utils.MovementUtils
-Import: net.ccbluex.liquidbounce.utils.timer.MSTimer
-Import: net.ccbluex.liquidbounce.value.IntegerValue
-Import: net.ccbluex.liquidbounce.value.ListValue
-Import: net.minecraft.network.Packet
-Import: net.minecraft.network.play.client.CPacketInput
-Import: net.minecraft.network.play.client.CPacketPlayer
-Import: net.minecraft.network.play.client.CPacketPlayerAbilities
-Import: net.minecraft.network.play.server.SPacketPlayerAbilities
-Import: net.minecraft.network.play.server.SPacketSpawnPosition
-Import: net.minecraft.util.math.BlockPos
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/Disabler.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/IlIl111Ill1.java
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.PacketEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.minecraft.network.play.client.CPacketClientSettings
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/IlIl111Ill1.java
-
 Start Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/ItemTeleport.java
 Import: net.ccbluex.liquidbounce.api.enums.MaterialType
 Import: net.ccbluex.liquidbounce.api.minecraft.block.state.IIBlockState
@@ -235,22 +129,6 @@ Import: net.ccbluex.liquidbounce.utils.block.BlockUtils
 Import: net.ccbluex.liquidbounce.utils.timer.TickTimer
 Import: net.ccbluex.liquidbounce.value.ListValue
 End  Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/Phase.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/Plugins.java
-Import: joptsimple.internal.Strings
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.server.ISPacketTabComplete
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.PacketEvent
-Import: net.ccbluex.liquidbounce.event.UpdateEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.ccbluex.liquidbounce.utils.ClientUtils
-Import: net.ccbluex.liquidbounce.utils.timer.TickTimer
-Import: java.util.ArrayList
-Import: java.util.Collections
-Import: java.util.List
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/Plugins.java
 
 Start Processing: net/ccbluex/liquidbounce/features/module/modules/exploit/Teleport.java
 Import: net.ccbluex.liquidbounce.api.enums.MaterialType
@@ -300,28 +178,7 @@ Import: net.ccbluex.liquidbounce.value.TextValue
 Import: java.util.Random
 End  Processing: net/ccbluex/liquidbounce/features/module/modules/misc/Spammer.java
 
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/movement/InvMove.java
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.MotionEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.minecraft.client.gui.GuiChat
-Import: org.lwjgl.input.Keyboard
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/movement/InvMove.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/movement/NoPush.java
-Import: net.ccbluex.liquidbounce.event.EventImpl
-Import: net.ccbluex.liquidbounce.event.EventMotionUpdate
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.UpdateEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/movement/NoPush.java
-
 Start Processing: net/ccbluex/liquidbounce/features/module/modules/movement/Sprint.java
-Import: kotlin.jvm.JvmField
 Import: net.ccbluex.liquidbounce.api.minecraft.potion.PotionType
 Import: net.ccbluex.liquidbounce.event.EventTarget
 Import: net.ccbluex.liquidbounce.event.UpdateEvent
@@ -332,45 +189,7 @@ Import: net.ccbluex.liquidbounce.utils.MovementUtils
 Import: net.ccbluex.liquidbounce.utils.Rotation
 Import: net.ccbluex.liquidbounce.utils.RotationUtils
 Import: net.ccbluex.liquidbounce.value.BoolValue
-Import: net.ccbluex.liquidbounce.value.ListValue
-Import: org.jetbrains.annotations.NotNull
-Import: org.jetbrains.annotations.Nullable
 End  Processing: net/ccbluex/liquidbounce/features/module/modules/movement/Sprint.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/movement/VehicleFly.java
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketEntityAction
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketUseEntity
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.UpdateEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.ccbluex.liquidbounce.value.FloatValue
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/movement/VehicleFly.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/movement/speeds/ncp/CubeCraftGround.java
-FOUND CONSTR method net/ccbluex/liquidbounce/features/module/modules/movement/speeds/ncp/CubeCraftGround/CubeCraftGround ()V net/ccbluex/liquidbounce/features/module/modules/movement/speeds/ncp/CubeCraftGround
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.MoveEvent
-Import: net.ccbluex.liquidbounce.features.module.modules.movement.speeds.SpeedMode
-Import: net.ccbluex.liquidbounce.utils.MovementUtils
-Import: net.ccbluex.liquidbounce.utils.timer.MSTimer
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/movement/speeds/ncp/CubeCraftGround.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/movement/speeds/other/MineplexHop.java
-FOUND CONSTR method net/ccbluex/liquidbounce/features/module/modules/movement/speeds/other/MineplexHop/MineplexHop ()V net/ccbluex/liquidbounce/features/module/modules/movement/speeds/other/MineplexHop
-Import: net.ccbluex.liquidbounce.api.minecraft.network.IPacket
-Import: net.ccbluex.liquidbounce.event.*
-Import: net.ccbluex.liquidbounce.features.module.modules.movement.speeds.SpeedMode
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/movement/speeds/other/MineplexHop.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/render/Bobbing.java
-Import: net.ccbluex.liquidbounce.event.EventTarget
-Import: net.ccbluex.liquidbounce.event.MotionEvent
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/render/Bobbing.java
 
 Start Processing: net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java
 Import: net.ccbluex.liquidbounce.LiquidBounce
@@ -391,44 +210,6 @@ Import: net.ccbluex.liquidbounce.value.ListValue
 Import: org.lwjgl.input.Keyboard
 Import: java.awt.*
 End  Processing: net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java
-
-Start Processing: net/ccbluex/liquidbounce/features/module/modules/world/Scaffold.java
-Rename method net/minecraft/network/play/client/CPacketHeldItemChange/getSlotId ()I[19294,19303]::getSlotId->func_149614_c
-Import: net.ccbluex.liquidbounce.LiquidBounce
-Import: net.ccbluex.liquidbounce.api.enums.BlockType
-Import: net.ccbluex.liquidbounce.api.enums.EnumFacingType
-Import: net.ccbluex.liquidbounce.api.minecraft.client.block.IBlock
-Import: net.ccbluex.liquidbounce.api.minecraft.inventory.ISlot
-Import: net.ccbluex.liquidbounce.api.minecraft.item.IItemStack
-Import: net.ccbluex.liquidbounce.api.minecraft.network.IPacket
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketEntityAction
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketHeldItemChange
-Import: net.ccbluex.liquidbounce.api.minecraft.util.*
-Import: net.ccbluex.liquidbounce.event.*
-Import: net.ccbluex.liquidbounce.features.module.Module
-Import: net.ccbluex.liquidbounce.features.module.ModuleCategory
-Import: net.ccbluex.liquidbounce.features.module.ModuleInfo
-Import: net.ccbluex.liquidbounce.features.module.modules.render.BlockOverlay
-Import: net.ccbluex.liquidbounce.ui.font.Fonts
-Import: net.ccbluex.liquidbounce.utils.*
-Import: net.ccbluex.liquidbounce.utils.block.BlockUtils
-Import: net.ccbluex.liquidbounce.utils.block.PlaceInfo
-Import: net.ccbluex.liquidbounce.utils.render.RenderUtils
-Import: net.ccbluex.liquidbounce.utils.timer.MSTimer
-Import: net.ccbluex.liquidbounce.utils.timer.TimeUtils
-Import: net.ccbluex.liquidbounce.value.BoolValue
-Import: net.ccbluex.liquidbounce.value.FloatValue
-Import: net.ccbluex.liquidbounce.value.IntegerValue
-Import: net.ccbluex.liquidbounce.value.ListValue
-Import: net.minecraft.block.Block
-Import: net.minecraft.item.ItemBlock
-Import: net.minecraft.network.play.client.CPacketHeldItemChange
-Import: net.minecraft.util.math.BlockPos
-Import: org.jetbrains.annotations.NotNull
-Import: org.lwjgl.opengl.GL11
-Import: net.ccbluex.liquidbounce.utils.Rotation
-Import: java.awt.*
-End  Processing: net/ccbluex/liquidbounce/features/module/modules/world/Scaffold.java
 
 Start Processing: net/ccbluex/liquidbounce/features/special/AntiForge.java
 Import: io.netty.buffer.Unpooled
@@ -1332,35 +1113,35 @@ Import: java.awt.*
 End  Processing: net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiChat.java
 
 Start Processing: net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiConnecting.java
-Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[2516,2526]::sendPacket->func_179290_a
-Rename method net/minecraft/network/NetworkManager/createNetworkManagerAndConnect (Ljava/net/InetAddress;IZ)Lnet/minecraft/network/NetworkManager;[3110,3140]::createNetworkManagerAndConnect->func_181124_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[3143,3145]::mc->field_146297_k
-Rename field net/minecraft/client/Minecraft/gameSettings[3158,3170]::gameSettings->field_71474_y
-Rename method net/minecraft/client/settings/GameSettings/isUsingNativeTransport ()Z[3172,3194]::isUsingNativeTransport->func_181148_f
-Rename method net/minecraft/network/NetworkManager/setNetHandler (Lnet/minecraft/network/INetHandler;)V[3221,3234]::setNetHandler->func_150719_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[3277,3279]::mc->field_146297_k
-Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3345,3355]::sendPacket->func_179290_a
-Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3452,3462]::sendPacket->func_179290_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[3572,3574]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/getSession ()Lnet/minecraft/util/Session;[3587,3597]::getSession->func_110432_I
-Rename method net/minecraft/util/Session/getProfile ()Lcom/mojang/authlib/GameProfile;[3603,3613]::getProfile->func_148256_e
-Rename field net/minecraft/client/gui/GuiScreen/mc[3843,3845]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[3858,3874]::displayGuiScreen->func_147108_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[4440,4442]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4455,4471]::displayGuiScreen->func_147108_a
-Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[4756,4766]::drawScreen->func_73863_a
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4890,4902]::getMinecraft->func_71410_x
-Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[4921,4942]::drawDefaultBackground->func_146276_q_
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[4995,5009]::getScaledWidth->func_78326_a
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5032,5047]::getScaledHeight->func_78328_b
-Rename field net/minecraft/client/gui/GuiScreen/mc[5129,5131]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/getCurrentServerData ()Lnet/minecraft/client/multiplayer/ServerData;[5144,5164]::getCurrentServerData->func_147104_D
-Rename field net/minecraft/client/multiplayer/ServerData/serverIP[5221,5229]::serverIP->field_78845_b
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5311,5325]::getScaledWidth->func_78326_a
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5348,5363]::getScaledHeight->func_78328_b
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5452,5466]::getScaledWidth->func_78326_a
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5489,5504]::getScaledHeight->func_78328_b
-Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[5547,5557]::drawScreen->func_73863_a
+Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[2658,2668]::sendPacket->func_179290_a
+Rename method net/minecraft/network/NetworkManager/createNetworkManagerAndConnect (Ljava/net/InetAddress;IZ)Lnet/minecraft/network/NetworkManager;[3252,3282]::createNetworkManagerAndConnect->func_181124_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[3285,3287]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/gameSettings[3300,3312]::gameSettings->field_71474_y
+Rename method net/minecraft/client/settings/GameSettings/isUsingNativeTransport ()Z[3314,3336]::isUsingNativeTransport->func_181148_f
+Rename method net/minecraft/network/NetworkManager/setNetHandler (Lnet/minecraft/network/INetHandler;)V[3363,3376]::setNetHandler->func_150719_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[3419,3421]::mc->field_146297_k
+Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3487,3497]::sendPacket->func_179290_a
+Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3594,3604]::sendPacket->func_179290_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[3714,3716]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getSession ()Lnet/minecraft/util/Session;[3729,3739]::getSession->func_110432_I
+Rename method net/minecraft/util/Session/getProfile ()Lcom/mojang/authlib/GameProfile;[3745,3755]::getProfile->func_148256_e
+Rename field net/minecraft/client/gui/GuiScreen/mc[3985,3987]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4000,4016]::displayGuiScreen->func_147108_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[4582,4584]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4597,4613]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[4898,4908]::drawScreen->func_73863_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[5032,5044]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[5063,5084]::drawDefaultBackground->func_146276_q_
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5137,5151]::getScaledWidth->func_78326_a
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5174,5189]::getScaledHeight->func_78328_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[5271,5273]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getCurrentServerData ()Lnet/minecraft/client/multiplayer/ServerData;[5286,5306]::getCurrentServerData->func_147104_D
+Rename field net/minecraft/client/multiplayer/ServerData/serverIP[5363,5371]::serverIP->field_78845_b
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5453,5467]::getScaledWidth->func_78326_a
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5490,5505]::getScaledHeight->func_78328_b
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5594,5608]::getScaledWidth->func_78326_a
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5631,5646]::getScaledHeight->func_78328_b
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[5689,5699]::drawScreen->func_73863_a
 Import: com.mojang.authlib.GameProfile
 Import: net.ccbluex.liquidbounce.injection.backend.ServerDataImplKt
 Import: net.ccbluex.liquidbounce.ui.font.Fonts
@@ -3062,22 +2843,6 @@ Import: javax.crypto.SecretKey
 Import: java.security.PublicKey
 End  Processing: net/ccbluex/liquidbounce/utils/ClientUtils.java
 
-Start Processing: net/ccbluex/liquidbounce/utils/EntityUtils.java
-Import: net.ccbluex.liquidbounce.LiquidBounce
-Import: net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntity
-Import: net.ccbluex.liquidbounce.api.minecraft.client.entity.player.IEntityPlayer
-Import: net.ccbluex.liquidbounce.api.minecraft.client.network.INetworkPlayerInfo
-Import: net.ccbluex.liquidbounce.api.minecraft.scoreboard.ITeam
-Import: net.ccbluex.liquidbounce.features.module.modules.combat.NoFriends
-Import: net.ccbluex.liquidbounce.features.module.modules.misc.AntiBot
-Import: net.ccbluex.liquidbounce.features.module.modules.misc.Teams
-Import: net.ccbluex.liquidbounce.utils.render.ColorUtils
-End  Processing: net/ccbluex/liquidbounce/utils/EntityUtils.java
-
-Start Processing: net/ccbluex/liquidbounce/utils/ISlotUtil.java
-Import: net.ccbluex.liquidbounce.api.minecraft.inventory.ISlot
-End  Processing: net/ccbluex/liquidbounce/utils/ISlotUtil.java
-
 Start Processing: net/ccbluex/liquidbounce/utils/InventoryUtils.java
 Import: net.ccbluex.liquidbounce.api.enums.BlockType
 Import: net.ccbluex.liquidbounce.api.minecraft.client.block.IBlock
@@ -3095,14 +2860,10 @@ Import: java.util.List
 End  Processing: net/ccbluex/liquidbounce/utils/InventoryUtils.java
 
 Start Processing: net/ccbluex/liquidbounce/utils/MinecraftInstance.java
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[757,769]::getMinecraft->func_71410_x
 Import: net.ccbluex.liquidbounce.LiquidBounce
 Import: net.ccbluex.liquidbounce.api.IClassProvider
 Import: net.ccbluex.liquidbounce.api.IExtractedFunctions
 Import: net.ccbluex.liquidbounce.api.minecraft.client.IMinecraft
-Import: net.ccbluex.liquidbounce.api.minecraft.network.IPacket
-Import: net.ccbluex.liquidbounce.event.PacketEvent
-Import: net.minecraft.client.Minecraft
 End  Processing: net/ccbluex/liquidbounce/utils/MinecraftInstance.java
 
 Start Processing: net/ccbluex/liquidbounce/utils/PathUtils.java
@@ -3126,7 +2887,6 @@ Import: net.ccbluex.liquidbounce.event.EventTarget
 Import: net.ccbluex.liquidbounce.event.Listenable
 Import: net.ccbluex.liquidbounce.event.PacketEvent
 Import: net.ccbluex.liquidbounce.event.TickEvent
-Import: net.ccbluex.liquidbounce.features.module.ModuleManager
 Import: net.ccbluex.liquidbounce.features.module.modules.combat.FastBow
 Import: org.jetbrains.annotations.NotNull
 Import: java.util.Random
@@ -3208,6 +2968,8 @@ Import: java.util.Arrays
 End  Processing: net/ccbluex/liquidbounce/utils/misc/StringUtils.java
 
 Start Processing: net/ccbluex/liquidbounce/utils/render/AnimationUtils.java
+Import: static java.lang.Math.pow
+Import: static java.lang.Math.sin
 End  Processing: net/ccbluex/liquidbounce/utils/render/AnimationUtils.java
 
 Start Processing: net/ccbluex/liquidbounce/utils/render/CustomTexture.java
@@ -3301,6 +3063,7 @@ Import: net.ccbluex.liquidbounce.api.minecraft.util.IScaledResolution
 Import: net.ccbluex.liquidbounce.utils.render.RenderUtils
 Import: net.ccbluex.liquidbounce.utils.render.shader.Shader
 Import: net.minecraft.client.gui.ScaledResolution
+Import: org.lwjgl.opengl.Display
 Import: org.lwjgl.opengl.GL20
 End  Processing: net/ccbluex/liquidbounce/utils/render/shader/shaders/BackgroundShader.java
 

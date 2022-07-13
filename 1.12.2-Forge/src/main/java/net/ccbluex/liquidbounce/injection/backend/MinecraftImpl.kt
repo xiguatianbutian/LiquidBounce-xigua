@@ -27,13 +27,6 @@ import net.ccbluex.liquidbounce.api.minecraft.util.IMovingObjectPosition
 import net.ccbluex.liquidbounce.api.minecraft.util.ISession
 import net.ccbluex.liquidbounce.api.minecraft.util.ITimer
 import net.minecraft.client.Minecraft
-import net.minecraft.client.entity.EntityPlayerSP
-import net.minecraft.client.gui.GuiScreen
-import net.minecraft.client.multiplayer.PlayerControllerMP
-import net.minecraft.client.multiplayer.WorldClient
-import net.minecraft.client.particle.ParticleManager
-import net.minecraft.client.settings.GameSettings
-import net.minecraft.network.play.INetHandlerPlayClient
 import java.io.File
 
 class MinecraftImpl(val wrapped: Minecraft) : IMinecraft {
@@ -55,8 +48,6 @@ class MinecraftImpl(val wrapped: Minecraft) : IMinecraft {
         get() = wrapped.displayHeight
     override val entityRenderer: IEntityRenderer
         get() = wrapped.entityRenderer.wrap()
-    override val effectRenderer: ParticleManager
-        get() = wrapped.effectRenderer
     override var rightClickDelayTimer: Int
         get() = wrapped.rightClickDelayTimer
         set(value) {
@@ -77,12 +68,8 @@ class MinecraftImpl(val wrapped: Minecraft) : IMinecraft {
         get() = wrapped.renderManager.wrap()
     override val playerController: IPlayerControllerMP
         get() = wrapped.playerController.wrap()
-    override val playerController2: PlayerControllerMP
-        get() = wrapped.playerController
     override val currentScreen: IGuiScreen?
         get() = wrapped.currentScreen?.wrap()
-    override val currentScreen2: GuiScreen?
-        get() = wrapped.currentScreen
     override var renderViewEntity: IEntity?
         get() = wrapped.renderViewEntity?.wrap()
         set(value) {
@@ -90,16 +77,10 @@ class MinecraftImpl(val wrapped: Minecraft) : IMinecraft {
         }
     override val netHandler: IINetHandlerPlayClient
         get() = wrapped.connection!!.wrap()
-    override val netHandler2: INetHandlerPlayClient
-        get() = wrapped.connection!!
     override val theWorld: IWorldClient?
         get() = wrapped.world?.wrap()
     override val thePlayer: IEntityPlayerSP?
         get() = wrapped.player?.wrap()
-    override val theWorld2: WorldClient?
-        get() = wrapped.world
-    override val thePlayer2: EntityPlayerSP?
-        get() = wrapped.player
     override val textureManager: ITextureManager
         get() = wrapped.textureManager.wrap()
     override val isIntegratedServerRunning: Boolean
@@ -108,8 +89,6 @@ class MinecraftImpl(val wrapped: Minecraft) : IMinecraft {
         get() = wrapped.currentServerData?.wrap()
     override val gameSettings: IGameSettings
         get() = GameSettingsImpl(wrapped.gameSettings)
-    override val gameSettings2: GameSettings
-        get() = wrapped.gameSettings
     override val fontRendererObj: IFontRenderer
         get() = wrapped.fontRenderer.wrap()
 

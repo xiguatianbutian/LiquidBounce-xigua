@@ -32,7 +32,7 @@ class WallClimb : Module() {
         if (!thePlayer.isCollidedHorizontally || thePlayer.isOnLadder || thePlayer.isInWater || thePlayer.isInLava)
             return
 
-        if (modeValue.get().equals("Simple", ignoreCase = true)) {
+        if ("simple".equals(modeValue.get(), ignoreCase = true)) {
             event.y = 0.2
             thePlayer.motionY = 0.0
         }

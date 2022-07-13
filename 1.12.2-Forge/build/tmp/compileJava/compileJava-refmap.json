@@ -359,6 +359,7 @@
         "initGui": "Lblj;b()V"
       },
       "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiConnecting": {
+        "net/minecraft/network/login/client/CPacketLoginStart": "mm",
         "connect": "Lbkr;a(Ljava/lang/String;I)V"
       },
       "net/ccbluex/liquidbounce/injection/forge/mixins/render/MixinRendererLivingEntity": {

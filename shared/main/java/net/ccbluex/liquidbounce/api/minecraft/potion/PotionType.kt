@@ -19,6 +19,5 @@ enum class PotionType {
     HARM,
     WITHER,
     POISON,
-    NIGHT_VISION,
-    GLOWING
+    NIGHT_VISION
 }

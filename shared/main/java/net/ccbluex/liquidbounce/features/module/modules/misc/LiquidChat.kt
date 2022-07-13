@@ -38,7 +38,7 @@ class LiquidChat : Module() {
         array = false
     }
 
-    private val jwtValue = object : BoolValue("JWT", false) {
+    val jwtValue = object : BoolValue("JWT", false) {
         override fun onChanged(oldValue: Boolean, newValue: Boolean) {
             if (state) {
                 state = false
@@ -169,131 +169,6 @@ class LiquidChat : Module() {
 
     private val connectTimer = MSTimer()
 
-    init {
-        LiquidBounce.commandManager.registerCommand(object : Command("chat", "lc", "irc") {
-
-            override fun execute(args: Array<String>) {
-                if (args.size > 1) {
-                    if (!state) {
-                        chat("§cError: §7LiquidChat is disabled!")
-                        return
-                    }
-
-                    if (!client.isConnected()) {
-                        chat("§cError: §LiquidChat is currently not connected to the server!")
-                        return
-                    }
-
-                    val message = StringUtils.toCompleteString(args, 1)
-
-                    client.sendMessage(message)
-                } else
-                    chatSyntax("chat <message>")
-            }
-
-        })
-
-        LiquidBounce.commandManager.registerCommand(object : Command("pchat", "privatechat", "lcpm") {
-
-            override fun execute(args: Array<String>) {
-                if (args.size > 2) {
-                    if (!state) {
-                        chat("§cError: §7LiquidChat is disabled!")
-                        return
-                    }
-
-                    if (!client.isConnected()) {
-                        chat("§cError: §LiquidChat is currently not connected to the server!")
-                        return
-                    }
-
-                    val target = args[1]
-                    val message = StringUtils.toCompleteString(args, 2)
-
-                    client.sendPrivateMessage(target, message)
-                    chat("Message was successfully sent.")
-                } else
-                    chatSyntax("pchat <username> <message>")
-            }
-
-        })
-
-        LiquidBounce.commandManager.registerCommand(object : Command("chattoken") {
-
-            override fun execute(args: Array<String>) {
-
-
-                if (args.size > 1) {
-                    when {
-                        args[1].equals("set", true) -> {
-                            if (args.size > 2) {
-                                jwtToken = StringUtils.toCompleteString(args, 2)
-                                jwtValue.set(true)
-
-                                if (state) {
-                                    state = false
-                                    state = true
-                                }
-                            } else
-                                chatSyntax("chattoken set <token>")
-                        }
-
-                        args[1].equals("generate", true) -> {
-                            if (!state) {
-                                chat("§cError: §7LiquidChat is disabled!")
-                                return
-                            }
-
-                            client.sendPacket(ServerRequestJWTPacket())
-                        }
-
-                        args[1].equals("copy", true) -> {
-                            if (jwtToken.isEmpty()) {
-                                chat("§cError: §7No token set! Generate one first using '${LiquidBounce.commandManager.prefix}chattoken generate'.")
-                                return
-                            }
-                            val stringSelection = StringSelection(jwtToken)
-                            Toolkit.getDefaultToolkit().systemClipboard.setContents(stringSelection, stringSelection)
-                            chat("§aCopied to clipboard!")
-                        }
-                    }
-                } else
-                    chatSyntax("chattoken <set/copy/generate>")
-            }
-
-        })
-
-        LiquidBounce.commandManager.registerCommand(object : Command("chatadmin") {
-
-            override fun execute(args: Array<String>) {
-                if (!state) {
-                    chat("§cError: §7LiquidChat is disabled!")
-                    return
-                }
-
-                if (args.size > 1) {
-                    when {
-                        args[1].equals("ban", true) -> {
-                            if (args.size > 2) {
-                                client.banUser(args[2])
-                            } else
-                                chatSyntax("chatadmin ban <username>")
-                        }
-
-                        args[1].equals("unban", true) -> {
-                            if (args.size > 2) {
-                                client.unbanUser(args[2])
-                            } else
-                                chatSyntax("chatadmin unban <username>")
-                        }
-                    }
-                } else
-                    chatSyntax("chatadmin <ban/unban>")
-            }
-
-        })
-    }
-
     override fun onDisable() {
         loggedIn = false
         client.disconnect()
@@ -349,7 +224,7 @@ class LiquidChat : Module() {
      * @author Forge
      */
 
-    private val urlPattern = Pattern.compile("((?:[a-z\\d]{2,}://)?(?:(?:\\d{1,3}\\.){3}\\d{1,3}|[-\\w_.]+\\.[a-z]{2,}?)(?::\\d{1,5})?.*?(?=[!\"\u00A7 \n]|$))", Pattern.CASE_INSENSITIVE)
+    private val urlPattern = Pattern.compile("((?:[a-z0-9]{2,}:\\/\\/)?(?:(?:[0-9]{1,3}\\.){3}[0-9]{1,3}|(?:[-\\w_\\.]{1,}\\.[a-z]{2,}?))(?::[0-9]{1,5})?.*?(?=[!\"\u00A7 \n]|$))", Pattern.CASE_INSENSITIVE)
 
     private fun toChatComponent(string: String): IIChatComponent {
         var component: IIChatComponent? = null
@@ -389,7 +264,7 @@ class LiquidChat : Module() {
                         component.appendSibling(link)
                     continue
                 }
-            } catch (_: URISyntaxException) {
+            } catch (e: URISyntaxException) {
             }
 
             if (component == null) {

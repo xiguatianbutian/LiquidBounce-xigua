@@ -10,14 +10,14 @@ import com.google.gson.JsonParser
 import net.ccbluex.liquidbounce.api.Wrapper
 import net.ccbluex.liquidbounce.api.minecraft.util.IResourceLocation
 import net.ccbluex.liquidbounce.cape.CapeAPI.registerCapeService
-import net.ccbluex.liquidbounce.discord.ClientRichPresence
+
 import net.ccbluex.liquidbounce.event.ClientShutdownEvent
 import net.ccbluex.liquidbounce.event.EventManager
 import net.ccbluex.liquidbounce.features.command.CommandManager
-import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleManager
 import net.ccbluex.liquidbounce.features.special.AntiForge
 import net.ccbluex.liquidbounce.features.special.BungeeCordSpoof
+import net.ccbluex.liquidbounce.features.special.ClientRichPresence
 import net.ccbluex.liquidbounce.features.special.DonatorCape
 import net.ccbluex.liquidbounce.file.FileManager
 import net.ccbluex.liquidbounce.injection.backend.Backend
@@ -36,6 +36,7 @@ import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.InventoryUtils
 import net.ccbluex.liquidbounce.utils.RotationUtils
 import net.ccbluex.liquidbounce.utils.misc.HttpUtils
+import kotlin.concurrent.thread
 
 object LiquidBounce {
 
@@ -68,7 +69,7 @@ object LiquidBounce {
     var background: IResourceLocation? = null
 
     // Discord RPC
-    private lateinit var clientRichPresence: ClientRichPresence
+    lateinit var clientRichPresence: ClientRichPresence
 
     lateinit var wrapper: Wrapper
 
@@ -92,6 +93,9 @@ object LiquidBounce {
         eventManager.registerListener(BungeeCordSpoof())
         eventManager.registerListener(DonatorCape())
         eventManager.registerListener(InventoryUtils())
+
+        // Init Discord RPC
+        clientRichPresence = ClientRichPresence()
 
         // Create command manager
         commandManager = CommandManager()
@@ -140,14 +144,6 @@ object LiquidBounce {
             ClientUtils.getLogger().error("Failed to register cape service", throwable)
         }
 
-        // Setup Discord RPC
-        try {
-            clientRichPresence = ClientRichPresence()
-            clientRichPresence.setup()
-        } catch (throwable: Throwable) {
-            ClientUtils.getLogger().error("Failed to setup Discord RPC.", throwable)
-        }
-
         // Set HUD
         hud = createDefault()
         fileManager.loadConfig(fileManager.hudConfig)
@@ -171,6 +167,17 @@ object LiquidBounce {
 
         // Load generators
         GuiAltManager.loadGenerators()
+
+        // Setup Discord RPC
+        if (clientRichPresence.showRichPresenceValue) {
+            thread {
+                try {
+                    clientRichPresence.setup()
+                } catch (throwable: Throwable) {
+                    ClientUtils.getLogger().error("Failed to setup Discord RPC.", throwable)
+                }
+            }
+        }
 
         // Set is starting status
         isStarting = false

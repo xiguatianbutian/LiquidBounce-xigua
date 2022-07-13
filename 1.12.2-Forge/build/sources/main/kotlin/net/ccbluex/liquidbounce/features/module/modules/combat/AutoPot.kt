@@ -23,7 +23,7 @@ import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
 
-@ModuleInfo(name = "AutoPotion", description = "Automatically throws healing potions.", category = ModuleCategory.COMBAT)
+@ModuleInfo(name = "AutoPot", description = "Automatically throws healing potions.", category = ModuleCategory.COMBAT)
 class AutoPot : Module() {
 
     private val healthValue = FloatValue("Health", 15F, 1F, 20F)
