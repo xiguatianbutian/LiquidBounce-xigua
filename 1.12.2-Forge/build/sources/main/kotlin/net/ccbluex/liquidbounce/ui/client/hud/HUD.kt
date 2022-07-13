@@ -17,7 +17,7 @@ import kotlin.math.min
 open class HUD : MinecraftInstance() {
 
     val elements = mutableListOf<Element>()
-    val notifications = mutableListOf<Notification>()
+    val notifications = mutableListOf<Notifications.Notification>()
 
     companion object {
 
@@ -200,11 +200,11 @@ open class HUD : MinecraftInstance() {
     /**
      * Add [notification]
      */
-    fun addNotification(notification: Notification) = elements.any { it is Notifications } && notifications.add(notification)
+    fun addNotification(notification: Notifications.Notification) = elements.any { it is Notifications } && notifications.add(notification)
 
     /**
      * Remove [notification]
      */
-    fun removeNotification(notification: Notification) = notifications.remove(notification)
+    fun removeNotification(notification: Notifications.Notification) = notifications.remove(notification)
 
 }

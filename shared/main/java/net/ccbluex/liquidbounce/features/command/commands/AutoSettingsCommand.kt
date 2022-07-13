@@ -9,7 +9,7 @@ import com.google.gson.JsonArray
 import com.google.gson.JsonParser
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.features.command.Command
-import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notification
+import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notifications
 import net.ccbluex.liquidbounce.utils.SettingsUtils
 import net.ccbluex.liquidbounce.utils.misc.HttpUtils
 import kotlin.concurrent.thread
@@ -52,7 +52,9 @@ class AutoSettingsCommand : Command("autosettings", "setting", "settings", "conf
                         chat("Applying settings...")
                         SettingsUtils.executeScript(settings)
                         chat("§6Settings applied successfully")
-                        LiquidBounce.hud.addNotification(Notification("Updated Settings"))
+                        LiquidBounce.hud.addNotification(Notifications.Notification("Updated Settings",
+                            Notifications.Notification.Type.INFO
+                        ))
                         playEdit()
                     } catch (exception: Exception) {
                         exception.printStackTrace()

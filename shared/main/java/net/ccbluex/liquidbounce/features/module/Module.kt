@@ -8,7 +8,7 @@ package net.ccbluex.liquidbounce.features.module
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.Listenable
 import net.ccbluex.liquidbounce.injection.backend.Backend
-import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notification
+import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notifications
 import net.ccbluex.liquidbounce.utils.MinecraftInstance
 import net.ccbluex.liquidbounce.utils.render.ColorUtils.stripColor
 import net.ccbluex.liquidbounce.value.Value
@@ -64,7 +64,8 @@ open class Module : MinecraftInstance(), Listenable {
             // Play sound and add notification
             if (!LiquidBounce.isStarting) {
                 mc.soundHandler.playSound("random.click", 1F)
-                LiquidBounce.hud.addNotification(Notification("${if (value) "Enabled " else "Disabled "}$name"))
+                if(value) LiquidBounce.hud.addNotification(Notifications.Notification("${if (value) "Enabled " else "Disabled "}$name",Notifications.Notification.Type.SUCCESS))
+                else LiquidBounce.hud.addNotification(Notifications.Notification("${if (value) "Enabled " else "Disabled "}$name",Notifications.Notification.Type.ERROR))
             }
 
             // Call on enabled or disabled

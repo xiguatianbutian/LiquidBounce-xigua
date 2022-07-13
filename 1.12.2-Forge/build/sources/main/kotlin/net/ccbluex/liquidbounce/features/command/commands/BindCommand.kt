@@ -7,7 +7,7 @@ package net.ccbluex.liquidbounce.features.command.commands
 
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.features.command.Command
-import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notification
+import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notifications
 import org.lwjgl.input.Keyboard
 
 class BindCommand : Command("bind") {
@@ -29,7 +29,7 @@ class BindCommand : Command("bind") {
 
             // Response to user
             chat("Bound module §a§l${module.name}§3 to key §a§l${Keyboard.getKeyName(key)}§3.")
-            LiquidBounce.hud.addNotification(Notification("Bound ${module.name} to ${Keyboard.getKeyName(key)}"))
+            LiquidBounce.hud.addNotification(Notifications.Notification("Bound ${module.name} to ${Keyboard.getKeyName(key)}",Notifications.Notification.Type.INFO))
             playEdit()
             return
         }

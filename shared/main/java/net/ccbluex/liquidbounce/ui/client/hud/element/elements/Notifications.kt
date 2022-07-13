@@ -44,118 +44,118 @@ class Notifications(x: Double = 0.0, y: Double = 30.0, scale: Float = 1F,
             exampleNotification.x = exampleNotification.textLength + 8F
 
             return Border(-98F, -58F, 0F, -30F)
-    }
+        }
         return null
-}
-class Notification(message: String, type: Type) {
-    var x = 0f
-    var textLength = 0
-    private var stay = 0f
-    private var fadeStep = 0f
-    var fadeState = FadeState.IN
-    private var stayTimer = MSTimer()
-    private var firstY = 0f
-    private var animeTime: Long = 0
-    private var message: String = ""
-    private var type: Type
-    init {
-        this.message = message
-        this.type = type
-        this.firstY = 1919F
-        this.stayTimer.reset()
-        this.textLength = Fonts.font35.getStringWidth(message)
     }
-    enum class Type {
-        SUCCESS,
-        INFO,
-        WARNING,
-        ERROR
-    }
-
-    enum class FadeState {
-        IN,STAY,OUT,END
-    }
-
-    fun drawNotification(animationY: Float) {
-        val delta = RenderUtils.deltaTime
-        val width = textLength.toFloat() + 8.0f
-        var y = animationY
-        if (firstY == 1919.0F) {
-            firstY = y
+    class Notification(message: String, type: Type) {
+        var x = 0f
+        var textLength = 0
+        private var stay = 0f
+        private var fadeStep = 0f
+        var fadeState = FadeState.IN
+        private var stayTimer = MSTimer()
+        private var firstY = 0f
+        private var animeTime: Long = 0
+        private var message: String = ""
+        private var type: Type
+        init {
+            this.message = message
+            this.type = type
+            this.firstY = 1919F
+            this.stayTimer.reset()
+            this.textLength = Fonts.font35.getStringWidth(message)
         }
-        if (firstY > y) {
-            val cacheY = firstY - (firstY - y) * ((System.currentTimeMillis() - animeTime).toFloat() / 300.0f)
-            if (cacheY <= y) {
-                firstY = cacheY
+        enum class Type {
+            SUCCESS,
+            INFO,
+            WARNING,
+            ERROR
+        }
+
+        enum class FadeState {
+            IN,STAY,OUT,END
+        }
+
+        fun drawNotification(animationY: Float) {
+            val delta = RenderUtils.deltaTime
+            val width = textLength.toFloat() + 8.0f
+            var y = animationY
+            if (firstY == 1919.0F) {
+                firstY = y
             }
-            y = cacheY
-        } else {
-            firstY = y
-            animeTime = System.currentTimeMillis()
-        }
-        RenderUtils.drawRect(-x + 8 + textLength, -y, -x - 5, -28F - y, Color(255,255,255).rgb)
-        RenderUtils.drawRect(-x -1, -y, -x - 5, -28F - y, when(type) {
-            Type.SUCCESS -> Color(80, 255, 80).rgb
-            Type.ERROR -> Color(255, 80, 80).rgb
-            Type.INFO -> Color(80, 80, 255).rgb
-            Type.WARNING -> Color(255, 255, 80).rgb
-        })
-        var replacedMessage = message
-        replacedMessage = replacedMessage.replace("Enabled ", "")
-        replacedMessage = replacedMessage.replace("Disabled ", "")
-        if(message.contains("Enabled", true) || message.contains("Disabled", true)) {
-            val stringBuilder = StringBuilder()
-            stringBuilder.append("$replacedMessage Module")
-            replacedMessage = stringBuilder.toString()
-        }
-        Fonts.font35.drawString(replacedMessage, -x + 2, -11F - y, Color(110, 110, 110).rgb)
-        Fonts.font40.drawString(if(message.contains("Enabled")) "Enabled" else if(message.contains("Disabled")) "Disabled" else type.toString(), -x + 2, -23F - y,
-            if(!message.contains("Enabled") && !message.contains("Disabled"))
-                when(type) {
-                    Type.SUCCESS -> Color(80, 255, 80).rgb
-                    Type.ERROR -> Color(255, 80, 80).rgb
-                    Type.INFO -> Color(80, 80, 255).rgb
-                    Type.WARNING -> Color(255, 255, 0).rgb
+            if (firstY > y) {
+                val cacheY = firstY - (firstY - y) * ((System.currentTimeMillis() - animeTime).toFloat() / 300.0f)
+                if (cacheY <= y) {
+                    firstY = cacheY
                 }
-            else
-                if(message.contains("Enabled"))
-                    Color(80, 255, 80).rgb
+                y = cacheY
+            } else {
+                firstY = y
+                animeTime = System.currentTimeMillis()
+            }
+            RenderUtils.drawRect(-x + 8 + textLength, -y, -x - 5, -28F - y, Color(255,255,255).rgb)
+            RenderUtils.drawRect(-x -1, -y, -x - 5, -28F - y, when(type) {
+                Type.SUCCESS -> Color(80, 255, 80).rgb
+                Type.ERROR -> Color(255, 80, 80).rgb
+                Type.INFO -> Color(80, 80, 255).rgb
+                Type.WARNING -> Color(255, 255, 80).rgb
+            })
+            var replacedMessage = message
+            replacedMessage = replacedMessage.replace("Enabled ", "")
+            replacedMessage = replacedMessage.replace("Disabled ", "")
+            if(message.contains("Enabled", true) || message.contains("Disabled", true)) {
+                val stringBuilder = StringBuilder()
+                stringBuilder.append("$replacedMessage Module")
+                replacedMessage = stringBuilder.toString()
+            }
+            Fonts.font35.drawString(replacedMessage, -x + 2, -11F - y, Color(110, 110, 110).rgb)
+            Fonts.font40.drawString(if(message.contains("Enabled")) "Enabled" else if(message.contains("Disabled")) "Disabled" else type.toString(), -x + 2, -23F - y,
+                if(!message.contains("Enabled") && !message.contains("Disabled"))
+                    when(type) {
+                        Type.SUCCESS -> Color(80, 255, 80).rgb
+                        Type.ERROR -> Color(255, 80, 80).rgb
+                        Type.INFO -> Color(80, 80, 255).rgb
+                        Type.WARNING -> Color(255, 255, 0).rgb
+                    }
                 else
-                    Color(255, 80, 80).rgb
-        )
-        GlStateManager.resetColor()
-        when (fadeState) {
-            FadeState.IN -> {
-                if (x < width) {
+                    if(message.contains("Enabled"))
+                        Color(80, 255, 80).rgb
+                    else
+                        Color(255, 80, 80).rgb
+            )
+            GlStateManager.resetColor()
+            when (fadeState) {
+                FadeState.IN -> {
+                    if (x < width) {
+                        x = AnimationUtils.easeOut(fadeStep, width) * width
+                        fadeStep += delta / 4F
+                    }
+                    if (x >= width) {
+                        fadeState = FadeState.STAY
+                        x = width
+                        fadeStep = width
+                    }
+
+                    stay = 60F
+                }
+
+                FadeState.STAY -> {
+                    if (stay > 0) {
+                        stay = 0F
+                        stayTimer.reset()
+                    }
+                    if (stayTimer.hasTimePassed(1500L))
+                        fadeState = FadeState.OUT
+                }
+
+                FadeState.OUT -> if (x > 0) {
                     x = AnimationUtils.easeOut(fadeStep, width) * width
-                    fadeStep += delta / 4F
-                }
-                if (x >= width) {
-                    fadeState = FadeState.STAY
-                    x = width
-                    fadeStep = width
-                }
+                    fadeStep -= delta / 4F
+                } else
+                    fadeState = FadeState.END
 
-                stay = 60F
-            }
-
-            FadeState.STAY -> {
-                if (stay > 0) {
-                    stay = 0F
-                    stayTimer.reset()
-                }
-                if (stayTimer.hasTimePassed(1500L))
-                    fadeState = FadeState.OUT
-            }
-
-            FadeState.OUT -> if (x > 0) {
-                x = AnimationUtils.easeOut(fadeStep, width) * width
-                fadeStep -= delta / 4F
-            } else
-                fadeState = FadeState.END
-
-            FadeState.END -> hud.removeNotification(this)
+                FadeState.END -> hud.removeNotification(this)
             }
         }
     }
- }
+}

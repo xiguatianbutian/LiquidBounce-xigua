@@ -7,7 +7,7 @@ buildscript {
 
         maven { url 'https://maven.minecraftforge.net/' }
         maven { url 'https://plugins.gradle.org/m2' }
-        maven { url 'https://repo.spongepowered.org/repository/maven-public/' }
+        maven { url 'https://repo.spongepowered.org/maven' }
     }
 
     dependencies {
