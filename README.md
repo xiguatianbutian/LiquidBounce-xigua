@@ -1,4 +1,6 @@
-# LiquidBounce
+# LiquidBounce-1.12
+lb 的1.12.2完整构建包
+请下载最新构建
 A free mixin-based injection hacked-client for Minecraft using Minecraft Forge.
 
 Website: https://liquidbounce.net \
