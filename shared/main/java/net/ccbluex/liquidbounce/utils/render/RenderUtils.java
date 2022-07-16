@@ -20,7 +20,7 @@ import net.ccbluex.liquidbounce.utils.MinecraftInstance;
 import net.ccbluex.liquidbounce.utils.block.BlockUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL14;
-
+import net.minecraft.client.renderer.GlStateManager;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -74,7 +74,35 @@ public final class RenderUtils extends MinecraftInstance {
 
         glEndList();
     }
-
+    public static void drawGradientSideways(final double left, final double top, final double right, final double bottom, final int col1, final int col2) {
+        final float f = (col1 >> 24 & 0xFF) / 255.0f;
+        final float f2 = (col1 >> 16 & 0xFF) / 255.0f;
+        final float f3 = (col1 >> 8 & 0xFF) / 255.0f;
+        final float f4 = (col1 & 0xFF) / 255.0f;
+        final float f5 = (col2 >> 24 & 0xFF) / 255.0f;
+        final float f6 = (col2 >> 16 & 0xFF) / 255.0f;
+        final float f7 = (col2 >> 8 & 0xFF) / 255.0f;
+        final float f8 = (col2 & 0xFF) / 255.0f;
+        glEnable(3042);
+        glDisable(3553);
+        glBlendFunc(770, 771);
+        glEnable(2848);
+        glShadeModel(7425);
+        glPushMatrix();
+        glBegin(7);
+        glColor4f(f2, f3, f4, f);
+        glVertex2d(left, top);
+        glVertex2d(left, bottom);
+        glColor4f(f6, f7, f8, f5);
+        glVertex2d(right, bottom);
+        glVertex2d(right, top);
+        glEnd();
+        glPopMatrix();
+        glEnable(3553);
+        glDisable(3042);
+        glDisable(2848);
+        glShadeModel(7424);
+    }
     public static void drawBlockBox(final WBlockPos blockPos, final Color color, final boolean outline) {
         final IRenderManager renderManager = mc.getRenderManager();
         final ITimer timer = mc.getTimer();
@@ -122,7 +150,20 @@ public final class RenderUtils extends MinecraftInstance {
         glDepthMask(true);
         resetCaps();
     }
+    public static int SkyRainbow(int var2, float st, float bright) {
+        double v1 = Math.ceil(System.currentTimeMillis() + (long) (var2 * 109)) / 5;
+        return Color.getHSBColor((double) ((float) ((v1 %= 360.0) / 360.0)) < 0.5 ? -((float) (v1 / 360.0)) : (float) (v1 / 360.0), st, bright).getRGB();
+    }
 
+    public static Color skyRainbow(int var2, float st, float bright) {
+        double v1 = Math.ceil(System.currentTimeMillis() + (long) (var2 * 109)) / 5;
+        return Color.getHSBColor((double) ((float) ((v1 %= 360.0) / 360.0)) < 0.5 ? -((float) (v1 / 360.0)) : (float) (v1 / 360.0), st, bright);
+    }
+    public static int getRainbowOpaque(int seconds, float saturation, float brightness, int index) {
+        float hue = ((System.currentTimeMillis() + index) % (int) (seconds * 1000)) / (float) (seconds * 1000);
+        int color = Color.HSBtoRGB(hue, saturation, brightness);
+        return color;
+    }
     public static void drawSelectionBoundingBox(IAxisAlignedBB boundingBox) {
         ITessellator tessellator = classProvider.getTessellatorInstance();
         IWorldRenderer worldrenderer = tessellator.getWorldRenderer();
@@ -685,5 +726,17 @@ public final class RenderUtils extends MinecraftInstance {
         worldrenderer.pos(x + width, y, 0.0D).tex((u + (float) uWidth) * f, v * f1).endVertex();
         worldrenderer.pos(x, y, 0.0D).tex(u * f, v * f1).endVertex();
         tessellator.draw();
+    }
+
+    public static void glColor(final Color color, final int alpha) {
+        glColor(color, alpha/255F);
+    }
+
+    public static void glColor(final Color color, final float alpha) {
+        final float red = color.getRed() / 255F;
+        final float green = color.getGreen() / 255F;
+        final float blue = color.getBlue() / 255F;
+
+        GlStateManager.color(red, green, blue, alpha);
     }
 }

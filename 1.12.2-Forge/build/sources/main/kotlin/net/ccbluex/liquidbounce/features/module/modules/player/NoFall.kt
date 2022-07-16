@@ -4,19 +4,20 @@
  * https://github.com/CCBlueX/LiquidBounce/
  */
 package net.ccbluex.liquidbounce.features.module.modules.player
-
+import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayer
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.api.enums.BlockType
 import net.ccbluex.liquidbounce.api.enums.ItemType
-import net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
 import net.ccbluex.liquidbounce.api.minecraft.util.WVec3
 import net.ccbluex.liquidbounce.event.*
 import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
 import net.ccbluex.liquidbounce.features.module.modules.render.FreeCam
+import net.ccbluex.liquidbounce.utils.MovementUtils
 import net.ccbluex.liquidbounce.utils.RotationUtils
 import net.ccbluex.liquidbounce.utils.VecRotation
+import net.ccbluex.liquidbounce.utils.block.BlockUtils
 import net.ccbluex.liquidbounce.utils.block.BlockUtils.collideBlock
 import net.ccbluex.liquidbounce.utils.misc.FallingPlayer
 import net.ccbluex.liquidbounce.utils.timer.TickTimer
@@ -24,7 +25,7 @@ import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.ListValue
 import kotlin.math.ceil
 import kotlin.math.sqrt
-
+import net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
 @ModuleInfo(name = "NoFall", description = "Prevents you from taking fall damage.", category = ModuleCategory.PLAYER)
 class NoFall : Module() {
     @JvmField
@@ -40,7 +41,9 @@ class NoFall : Module() {
             "AAC3.3.15",
             "Spartan",
             "CubeCraft",
-            "Hypixel"
+            "Hypixel",
+            "Vulcan",
+            "AAC5"
         ), "SpoofGround"
     )
     private val minFallDistance = FloatValue("MinMLGHeight", 5f, 2f, 50f)
@@ -52,7 +55,45 @@ class NoFall : Module() {
     private var currentMlgItemIndex = 0
     private var currentMlgBlock: WBlockPos? = null
 
+    private var isDmgFalling = false
+    private var modifiedTimer = false
+    private var packetModify = false
+    private var needSpoof = false
+    private var doSpoof = false
+    private var nextSpoof = false
+    private var vulcantNoFall = true
+    private var vulcanNoFall = false
+    private var lastFallDistRounded = 0
+
+    private var aac5doFlag = false
+    private var aac5Check = false
+    private var aac5Timer = 0
     @EventTarget(ignoreCondition = true)
+    override fun onEnable() {
+        aac5Check = false
+        packetModify = false
+        needSpoof = false
+        aac5doFlag = false
+        aac5Timer = 0
+        lastFallDistRounded = 0
+        isDmgFalling = false
+        nextSpoof = false
+        doSpoof = false
+    }
+    override fun onDisable() {
+        aac5Check = false
+        packetModify = false
+        needSpoof = false
+        aac5doFlag = false
+        aac5Timer = 0
+        lastFallDistRounded = 0
+        isDmgFalling = false
+        mc.timer.timerSpeed = 1.0f
+    }
+    fun onWorld(event: WorldEvent) {
+        vulcantNoFall = true
+        vulcanNoFall = false
+    }
     fun onUpdate(event: UpdateEvent?) {
         if (mc.thePlayer!!.onGround) jumped = false
 
@@ -106,6 +147,40 @@ class NoFall : Module() {
                     }
                 }
             }
+            "aac5" -> {
+                var offsetYs = 0.0
+                aac5Check = false
+
+                while (mc.thePlayer!!.motionY - 1.5 < offsetYs) {
+                    val blockPos = WBlockPos(mc.thePlayer!!.posX, mc.thePlayer!!.posY + offsetYs, mc.thePlayer!!.posZ)
+                    val block = BlockUtils.getBlock(blockPos)
+                    val axisAlignedBB = block!!.getCollisionBoundingBox(mc.theWorld!!, blockPos,
+                        BlockUtils.getState(blockPos)!!
+                    )
+                    if (axisAlignedBB != null) {
+                        offsetYs = -999.9
+                        aac5Check = true
+                    }
+                    offsetYs -= 0.5
+                }
+
+                if (mc.thePlayer!!.onGround) {
+                    mc.thePlayer!!.fallDistance = -2f
+                    aac5Check = false
+                }
+
+                if (aac5Timer > 0)
+                    aac5Timer--
+
+                if (aac5Check && mc.thePlayer!!.fallDistance > 2.5 && !mc.thePlayer!!.onGround) {
+                    aac5doFlag = true
+                    aac5Timer = 18
+                } else if (aac5Timer < 2)
+                    aac5doFlag = false
+
+//                if (aac5doFlag)
+//                    mc.netHandler.addToSendQueue(ICPacketPlayer(mc.thePlayer!!.posX, mc.thePlayer!!.posY + if (mc.thePlayer!!.onGround) 0.5 else 0.42, mc.thePlayer!!.posZ, true))
+            }
             "laac" -> if (!jumped && mc.thePlayer!!.onGround && !mc.thePlayer!!.isOnLadder && !mc.thePlayer!!.isInWater && !mc.thePlayer!!.isInWeb) mc.thePlayer!!.motionY =
                 (-6).toDouble()
             "aac3.3.11" -> if (mc.thePlayer!!.fallDistance > 2) {
@@ -140,6 +215,24 @@ class NoFall : Module() {
                         )
                     )
                     spartanTimer.reset()
+                }
+            }
+            "vulcan" -> {
+                if (!vulcanNoFall && mc.thePlayer!!.fallDistance > 3.25)
+                    vulcanNoFall = true
+                if (vulcanNoFall && vulcantNoFall && mc.thePlayer!!.onGround)
+                    vulcantNoFall = false
+                if (vulcantNoFall) return // Possible flag
+                if (nextSpoof) {
+                    mc.thePlayer!!.motionY = -0.1
+                    mc.thePlayer!!.fallDistance = -0.1F
+                    MovementUtils.strafe(0.3F)
+                    nextSpoof = false
+                }
+                if (mc.thePlayer!!.fallDistance > 3.5625F) {
+                    mc.thePlayer!!.fallDistance = 0F
+                    doSpoof = true
+                    nextSpoof = true
                 }
             }
         }

@@ -8,6 +8,9 @@ package net.ccbluex.liquidbounce.utils.render
 import java.awt.Color
 import java.util.*
 import java.util.regex.Pattern
+import kotlin.math.abs
+import kotlin.math.max
+import kotlin.math.min
 
 object ColorUtils {
     /** Array of the special characters that are allowed in any text drawing of Minecraft.  */
@@ -16,7 +19,10 @@ object ColorUtils {
     fun isAllowedCharacter(character: Char): Boolean {
         return character.toInt() != 167 && character.toInt() >= 32 && character.toInt() != 127
     }
-
+    fun healthColor(hp: Float, maxHP: Float, alpha: Int = 255): Color {
+        val pct = ((hp / maxHP) * 255F).toInt()
+        return Color(max(min(255 - pct, 255), 0), max(min(pct, 255), 0), 0, alpha)
+    }
     private val COLOR_PATTERN = Pattern.compile("(?i)§[0-9A-FK-OR]")
 
     @JvmField
@@ -39,6 +45,11 @@ object ColorUtils {
         return COLOR_PATTERN.matcher(input ?: return null).replaceAll("")
     }
 
+    @JvmStatic
+    fun LiquidSlowly(time: Long, count: Int, qd: Float, sq: Float): Color? {
+        val color = Color(Color.HSBtoRGB((time.toFloat() + count * -3000000f) / 2 / 1.0E9f, qd, sq))
+        return Color(color.red / 255.0f * 1, color.green / 255.0f * 1, color.blue / 255.0f * 1, color.alpha / 255.0f)
+    }
     @JvmStatic
     fun translateAlternateColorCodes(textToTranslate: String): String {
         val chars = textToTranslate.toCharArray()
@@ -90,10 +101,72 @@ object ColorUtils {
 
     @JvmStatic
     fun rainbow(offset: Long, alpha: Int) = rainbow(offset, alpha.toFloat() / 255)
-
+    @JvmStatic
+    fun fade(color: Color, index: Int, count: Int): Color {
+        val hsb = FloatArray(3)
+        Color.RGBtoHSB(color.red, color.green, color.blue, hsb)
+        var brightness =
+            abs(((System.currentTimeMillis() % 2000L).toFloat() / 1000.0f + index.toFloat() / count.toFloat() * 2.0f) % 2.0f - 1.0f)
+        brightness = 0.5f + 0.5f * brightness
+        hsb[2] = brightness % 2.0f
+        return Color(Color.HSBtoRGB(hsb[0], hsb[1], hsb[2]))
+    }
     @JvmStatic
     fun rainbow(offset: Long, alpha: Float): Color {
         val currentColor = Color(Color.HSBtoRGB((System.nanoTime() + offset) / 10000000000F % 1, 1F, 1F))
         return Color(currentColor.red / 255F * 1F, currentColor.green / 255f * 1F, currentColor.blue / 255F * 1F, alpha)
+    }
+    @JvmStatic
+    fun colorCode(code: String, alpha: Int = 255): Color {
+        when (code.toLowerCase()) {
+            "0" -> {
+                return Color(0, 0, 0, alpha)
+            }
+            "1" -> {
+                return Color(0, 0, 170, alpha)
+            }
+            "2" -> {
+                return Color(0, 170, 0, alpha)
+            }
+            "3" -> {
+                return Color(0, 170, 170, alpha)
+            }
+            "4" -> {
+                return Color(170, 0, 0, alpha)
+            }
+            "5" -> {
+                return Color(170, 0, 170, alpha)
+            }
+            "6" -> {
+                return Color(255, 170, 0, alpha)
+            }
+            "7" -> {
+                return Color(170, 170, 170, alpha)
+            }
+            "8" -> {
+                return Color(85, 85, 85, alpha)
+            }
+            "9" -> {
+                return Color(85, 85, 255, alpha)
+            }
+            "a" -> {
+                return Color(85, 255, 85, alpha)
+            }
+            "b" -> {
+                return Color(85, 255, 255, alpha)
+            }
+            "c" -> {
+                return Color(255, 85, 85, alpha)
+            }
+            "d" -> {
+                return Color(255, 85, 255, alpha)
+            }
+            "e" -> {
+                return Color(255, 255, 85, alpha)
+            }
+            else -> {
+                return Color(255, 255, 255, alpha)
+            }
+        }
     }
 }

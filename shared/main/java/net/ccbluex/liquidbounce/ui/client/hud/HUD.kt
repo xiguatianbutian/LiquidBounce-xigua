@@ -29,6 +29,7 @@ open class HUD : MinecraftInstance() {
                 Model::class.java,
                 Notifications::class.java,
                 TabGUI::class.java,
+                PlayerList::class.java,
                 Text::class.java,
                 ScoreboardElement::class.java,
                 Target::class.java,
@@ -48,6 +49,7 @@ open class HUD : MinecraftInstance() {
                 .addElement(Armor())
                 .addElement(Effects())
                 .addElement(Notifications())
+                .addElement(PlayerList())
                 .addElement(SpeedGraph())
 
     }

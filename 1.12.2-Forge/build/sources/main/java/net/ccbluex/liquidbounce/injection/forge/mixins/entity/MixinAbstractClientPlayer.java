@@ -11,6 +11,7 @@ import net.ccbluex.liquidbounce.cape.CapeInfo;
 import net.ccbluex.liquidbounce.features.module.modules.misc.NameProtect;
 import net.ccbluex.liquidbounce.features.module.modules.render.NoFOV;
 import net.ccbluex.liquidbounce.injection.backend.ResourceLocationImplKt;
+import net.ccbluex.liquidbounce.features.module.modules.render.Cape;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.resources.DefaultPlayerSkin;
@@ -33,6 +34,10 @@ public abstract class MixinAbstractClientPlayer extends MixinEntityPlayer {
 
     @Inject(method = "getLocationCape", at = @At("HEAD"), cancellable = true)
     private void getCape(CallbackInfoReturnable<ResourceLocation> callbackInfoReturnable) {
+        final Cape capeMod = (Cape) LiquidBounce.moduleManager.getModule(Cape.class);
+        if (capeMod.getState() && Objects.equals(getGameProfile().getName(), Minecraft.getMinecraft().player.getGameProfile().getName())) {
+            callbackInfoReturnable.setReturnValue(capeMod.getCapeLocation(capeMod.getStyleValue().get()));
+        }
         if (!CapeAPI.INSTANCE.hasCapeService())
             return;
 

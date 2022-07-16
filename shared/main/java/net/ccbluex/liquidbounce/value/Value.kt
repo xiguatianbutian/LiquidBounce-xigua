@@ -15,9 +15,12 @@ import net.ccbluex.liquidbounce.utils.ClientUtils
 import java.util.*
 
 abstract class Value<T>(val name: String, protected var value: T) {
-
+    private var displayableFunc: () -> Boolean = { true }
     var isSupported = true
-
+    fun displayable(func: () -> Boolean): Value<T> {
+        displayableFunc = func
+        return this
+    }
     fun set(newValue: T) {
         if (newValue == value)
             return
@@ -65,6 +68,7 @@ open class BoolValue(name: String, value: Boolean) : Value<Boolean>(name, value)
 /**
  * Integer value represents a value with a integer
  */
+
 open class IntegerValue(name: String, value: Int, val minimum: Int = 0, val maximum: Int = Integer.MAX_VALUE)
     : Value<Int>(name, value) {
 

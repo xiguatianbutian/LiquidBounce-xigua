@@ -6,7 +6,6 @@ import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Slot;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-
 @Mixin(GuiContainer.class)
 public abstract class MixinGuiContainer implements IMixinGuiContainer {
     @Shadow
@@ -16,4 +15,5 @@ public abstract class MixinGuiContainer implements IMixinGuiContainer {
     public void publicHandleMouseClick(Slot slot, int slotNumber, int clickedButton, ClickType clickType) {
         this.handleMouseClick(slot, slotNumber, clickedButton, clickType);
     }
+
 }

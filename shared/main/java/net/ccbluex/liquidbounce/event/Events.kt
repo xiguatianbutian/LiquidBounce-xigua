@@ -13,7 +13,7 @@ import net.ccbluex.liquidbounce.api.minecraft.network.IPacket
 import net.ccbluex.liquidbounce.api.minecraft.util.IAxisAlignedBB
 import net.ccbluex.liquidbounce.api.minecraft.util.IEnumFacing
 import net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
-
+import net.ccbluex.liquidbounce.api.minecraft.network.IPacketF
 /**
  * Called when player attacks other entity
  *
@@ -174,4 +174,10 @@ class WorldEvent(val worldClient: IWorldClient?) : Event()
 /**
  * Called when window clicked
  */
+class PacketEventFDP(val packet: IPacketF<*>, val type: Type) : CancellableEvent() {
+    enum class Type {
+        RECEIVE,
+        SEND
+    }
+}
 class ClickWindowEvent(val windowId: Int, val slotId: Int, val mouseButtonClicked: Int, val mode: Int) : CancellableEvent()

@@ -5,6 +5,7 @@
  */
 package net.ccbluex.liquidbounce.injection.forge.mixins.client;
 
+import Xigua.Getapi.Getapi;
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.event.*;
 import net.ccbluex.liquidbounce.features.module.modules.combat.AutoClicker;
@@ -49,7 +50,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.util.Random;
 
 @Mixin(Minecraft.class)
 @SideOnly(Side.CLIENT)
@@ -112,7 +115,14 @@ public abstract class MixinMinecraft {
 
     @Inject(method = "createDisplay", at = @At(value = "INVOKE", target = "Lorg/lwjgl/opengl/Display;setTitle(Ljava/lang/String;)V", shift = At.Shift.AFTER))
     private void createDisplay(CallbackInfo callbackInfo) {
-        Display.setTitle(LiquidBounce.CLIENT_NAME + " b" + LiquidBounce.CLIENT_VERSION + " | " + LiquidBounce.MINECRAFT_VERSION + (LiquidBounce.IN_DEV ? " | DEVELOPMENT BUILD" : ""));
+        try {
+            Display.setTitle("LiquidXigua" + " " + "DEV" + " | " + LiquidBounce.MINECRAFT_VERSION + " | " + Getapi.get("https://v1.hitokoto.cn/?c=a&encode=text"));
+        } catch (IOException e) {
+            String[] RandomTitle = {"热爱可抵岁月漫长","我的眼里有星星有月亮有蓬勃大海有你，可你眼中却始终没有我","万物更新，旧疾当愈，长安常安","世间情动,不过盛夏白瓷梅子汤,碎冰碰壁当啷响","我们是在宁静的海洋上航行的水手，我们感受到了微风的吹拂","朝暮与岁月并往，愿我们一同行至天光","太阳升起就该把昨天忘掉","所有过往 皆是序章","我这一生都是坚定不移的唯物主义者，唯有你我希望有来生","所有人都祝你快乐， 我只愿你遍历山河","花开花落，到看尽人间繁华时，便洒脱离去","Never Settle",""};
+            Random rad = new Random();
+            int index = rad.nextInt(RandomTitle.length);
+            Display.setTitle("LiquidXigua" + " " + "DEV" + " | " + LiquidBounce.MINECRAFT_VERSION + " | " + RandomTitle[index]);
+        }
     }
 
     @Inject(method = "displayGuiScreen", at = @At(value = "FIELD", target = "Lnet/minecraft/client/Minecraft;currentScreen:Lnet/minecraft/client/gui/GuiScreen;", shift = At.Shift.AFTER))

@@ -5,6 +5,7 @@
  */
 package net.ccbluex.liquidbounce.features.module
 
+import Xigua.AntiVoid.AntiVoid
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.EventTarget
 import net.ccbluex.liquidbounce.event.KeyEvent
@@ -39,6 +40,7 @@ class ModuleManager : Listenable {
         ClientUtils.getLogger().info("[ModuleManager] Loading modules...")
 
         registerModules(
+                AntiVoid::class.java,
                 AutoArmor::class.java,
                 AutoBow::class.java,
                 AutoLeave::class.java,
@@ -47,6 +49,7 @@ class ModuleManager : Listenable {
                 AutoWeapon::class.java,
                 BowAimbot::class.java,
                 Criticals::class.java,
+                ChinaHat::class.java,
                 KillAura::class.java,
                 Trigger::class.java,
                 Velocity::class.java,
@@ -169,6 +172,7 @@ class ModuleManager : Listenable {
                 NoJumpDelay::class.java,
                 BlockWalk::class.java,
                 AntiAFK::class.java,
+                Cape::class.java,
                 PerfectHorseJump::class.java,
                 HUD::class.java,
                 TNTESP::class.java,

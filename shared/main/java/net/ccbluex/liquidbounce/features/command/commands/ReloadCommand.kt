@@ -9,6 +9,7 @@ import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.features.command.Command
 import net.ccbluex.liquidbounce.features.command.CommandManager
 import net.ccbluex.liquidbounce.ui.client.clickgui.ClickGui
+import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notifications
 import net.ccbluex.liquidbounce.ui.font.Fonts
 
 class ReloadCommand : Command("reload", "configreload") {
@@ -47,5 +48,8 @@ class ReloadCommand : Command("reload", "configreload") {
         LiquidBounce.fileManager.loadConfig(LiquidBounce.fileManager.clickGuiConfig)
         LiquidBounce.isStarting = false
         chat("Reloaded.")
+        LiquidBounce.hud.addNotification(
+            Notifications.Notification("Reloaded!",
+                Notifications.Notification.Type.INFO))
     }
 }

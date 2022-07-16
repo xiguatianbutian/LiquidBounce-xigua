@@ -8,7 +8,6 @@ package net.ccbluex.liquidbounce.features.module.modules.combat
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.api.MinecraftVersion
 import net.ccbluex.liquidbounce.api.enums.EnumFacingType
-import net.ccbluex.liquidbounce.api.enums.WEnumHand
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntity
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntityLivingBase
 import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayerDigging
@@ -39,8 +38,8 @@ import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
-import net.minecraft.client.settings.KeyBinding
 import org.lwjgl.input.Keyboard
+import org.lwjgl.opengl.GL11
 import java.awt.Color
 import java.util.*
 import kotlin.math.*
@@ -149,7 +148,12 @@ class KillAura : Module() {
     // Visuals
     private val markValue = BoolValue("Mark", true)
     private val fakeSharpValue = BoolValue("FakeSharp", true)
-
+    private val accuracyValue = IntegerValue("Accuracy", 59, 0, 59)
+    private val circleValue = BoolValue("Circle", true)
+    private val red = IntegerValue("Red", 0, 0, 255)
+    private val green = IntegerValue("Green", 0, 0, 255)
+    private val blue = IntegerValue("Blue", 0, 0, 255)
+    private val alpha = IntegerValue("Alpha", 0, 0, 255)
     /**
      * MODULE
      */
@@ -327,6 +331,38 @@ class KillAura : Module() {
      */
     @EventTarget
     fun onRender3D(event: Render3DEvent) {
+        val thePlayer = mc.thePlayer!!
+        val renderManager = mc.renderManager
+        if (circleValue.get()) {
+            GL11.glPushMatrix()
+            GL11.glTranslated(
+                thePlayer.posX+ (thePlayer.posX - thePlayer.lastTickPosX) * mc.timer.renderPartialTicks - mc.renderManager.renderPosX,
+                thePlayer.lastTickPosY + (thePlayer.posY - thePlayer.lastTickPosY) * mc.timer.renderPartialTicks - mc.renderManager.renderPosY,
+                thePlayer.lastTickPosZ + (thePlayer.posZ - thePlayer.lastTickPosZ) * mc.timer.renderPartialTicks - mc.renderManager.renderPosZ
+            )
+            GL11.glEnable(GL11.GL_BLEND)
+            GL11.glEnable(GL11.GL_LINE_SMOOTH)
+            GL11.glDisable(GL11.GL_TEXTURE_2D)
+            GL11.glDisable(GL11.GL_DEPTH_TEST)
+            GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA)
+
+            GL11.glLineWidth(1F)
+            GL11.glColor4f(red.get().toFloat() / 255.0F, green.get().toFloat() / 255.0F, blue.get().toFloat() / 255.0F, alpha.get().toFloat() / 255.0F)
+            GL11.glRotatef(90F, 1F, 0F, 0F)
+            GL11.glBegin(GL11.GL_LINE_STRIP)
+            // You can change circle accuracy  (60 - accuracy)
+            for (i in 0..360 step 60 - accuracyValue.get())
+                GL11.glVertex2f(Math.cos(i * Math.PI / 180.0).toFloat() * rangeValue.get(), (sin(i * Math.PI / 180.0).toFloat() * rangeValue.get()))
+
+            GL11.glEnd()
+
+            GL11.glDisable(GL11.GL_BLEND)
+            GL11.glEnable(GL11.GL_TEXTURE_2D)
+            GL11.glEnable(GL11.GL_DEPTH_TEST)
+            GL11.glDisable(GL11.GL_LINE_SMOOTH)
+
+            GL11.glPopMatrix()
+        }
         if (cancelRun) {
             target = null
             currentTarget = null

@@ -190,7 +190,7 @@ public class NullStyle extends Style {
 
                         GlStateManager.resetColor();
                         Fonts.font35.drawString(text, moduleElement.getX() + moduleElement.getWidth() + 6, yPos + 4, 0xffffff);
-                        yPos += 22;
+                        yPos += Fonts.font35.getFontHeight() + 1;
                     }else if(value instanceof FontValue) {
                         final FontValue fontValue = (FontValue) value;
                         final IFontRenderer fontRenderer = fontValue.get();

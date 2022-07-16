@@ -86,7 +86,7 @@ public class Fonts extends MinecraftInstance {
 
             if (!outputFile.exists()) {
                 ClientUtils.getLogger().info("Downloading fonts...");
-                HttpUtils.download(LiquidBounce.CLIENT_CLOUD + "/fonts/Roboto.zip", outputFile);
+                HttpUtils.download( "https://github.91chi.fun/https://github.com/xiguatianbutian/LiquidBounce-1.12/releases/download/FONT/roboto.zip", outputFile);
                 ClientUtils.getLogger().info("Extract fonts...");
                 extractZip(outputFile.getPath(), LiquidBounce.fileManager.fontsDir.getPath());
             }

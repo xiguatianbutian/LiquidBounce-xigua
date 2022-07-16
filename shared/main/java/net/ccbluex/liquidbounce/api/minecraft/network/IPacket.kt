@@ -26,3 +26,19 @@ interface IPacket {
     fun asCPacketCustomPayload(): ICPacketCustomPayload
     fun asCPacketHandshake(): ICPacketHandshake
 }
+interface IPacketF<T> : IPacket {
+    override fun asSPacketAnimation(): ISPacketAnimation
+    override fun asSPacketEntity(): ISPacketEntity
+    override fun asCPacketPlayer(): ICPacketPlayer
+    override fun asCPacketUseEntity(): ICPacketUseEntity
+    override fun asSPacketEntityVelocity(): ISPacketEntityVelocity
+    override fun asCPacketChatMessage(): ICPacketChatMessage
+    override fun asSPacketCloseWindow(): ISPacketCloseWindow
+    override fun asSPacketTabComplete(): ISPacketTabComplete
+    override fun asSPacketPosLook(): ISPacketPosLook
+    override fun asSPacketResourcePackSend(): ISPacketResourcePackSend
+    override fun asCPacketHeldItemChange(): ICPacketHeldItemChange
+    override fun asSPacketWindowItems(): ISPacketWindowItems
+    override fun asCPacketCustomPayload(): ICPacketCustomPayload
+    override fun asCPacketHandshake(): ICPacketHandshake
+}

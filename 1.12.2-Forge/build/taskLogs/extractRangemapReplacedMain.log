@@ -2,13 +2,86 @@ Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\java\
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\kotlin\api
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
-Processing 143 files
+Processing 151 files
+startProcessing "Xigua/Bunjee/ColorManager.java" md5: 49923f512f504089493a77e73b65f9be
+endProcessing "Xigua/Bunjee/ColorManager.java"
+
+startProcessing "Xigua/FDP/RenderWings.java" md5: a35511f33e3c726b3f7512f3816ee977
+endProcessing "Xigua/FDP/RenderWings.java"
+
+startProcessing "Xigua/Getapi/Getapi.java" md5: 0960c4408d43a8ef7f0f045b39b37ae6
+endProcessing "Xigua/Getapi/Getapi.java"
+
 startProcessing "co/uk/hexeption/utils/OutlineUtils.java" md5: 368b7316da3e0c976b96bdfed5b69819
 endProcessing "co/uk/hexeption/utils/OutlineUtils.java"
 
+startProcessing "net/ccbluex/liquidbounce/api/lbplus/BlendUtils.java" md5: 96a91d2502b3f6b4eb85814b882a83e5
+endProcessing "net/ccbluex/liquidbounce/api/lbplus/BlendUtils.java"
+
+startProcessing "net/ccbluex/liquidbounce/api/lbplus/ColorElement.java" md5: 552e2b8dc25c090e58a931f7f2979ab1
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(634) The method onChanged(Integer, Integer) of type ColorElement must override or implement a supertype method
+endProcessing "net/ccbluex/liquidbounce/api/lbplus/ColorElement.java"
+
+startProcessing "net/ccbluex/liquidbounce/api/lbplus/ColorMixer.java" md5: d979e5619d0b876ebd165e4c48b8e905
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleInfo cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
+    Compile Error! Pb(2) ModuleInfo cannot be resolved to a type
+    Compile Error! Pb(83) ModuleCategory cannot be resolved to a variable
+    Compile Error! Pb(2) Module cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(634) The method onChanged(Integer, Integer) of type new IntegerValue(){} must override or implement a supertype method
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(50) LiquidBounce cannot be resolved
+    Compile Error! Pb(50) LiquidBounce cannot be resolved
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(100) The method get() is undefined for the type ColorElement
+    Compile Error! Pb(100) The method get() is undefined for the type ColorElement
+    Compile Error! Pb(100) The method get() is undefined for the type ColorElement
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+endProcessing "net/ccbluex/liquidbounce/api/lbplus/ColorMixer.java"
+
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/AutoArmor.java" md5: 469fefdfc63f4b1ba34e60b80b0f3dca
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
@@ -96,16 +169,16 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/AutoArm
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/AutoArmor.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/Ignite.java" md5: 60fb987f056659a808ce3341b221f131
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
@@ -170,11 +243,11 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/Ignite.
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/Ignite.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/TeleportHit.java" md5: 67285a7e8cc6594cb44b837904959ca0
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -214,12 +287,12 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/Telepor
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/TeleportHit.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/ItemTeleport.java" md5: 9a76274f10d49060a9810cb75c67bb90
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -317,11 +390,11 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/ItemTe
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/ItemTeleport.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Phase.java" md5: c8de47b01399eedfa0c7187bbf68cdc7
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
@@ -420,16 +493,16 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Phase.
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Phase.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Teleport.java" md5: 20da06e03dbad0c10417bcb37a927830
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
@@ -570,7 +643,7 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/misc/Spammer.j
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/misc/Spammer.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/movement/Sprint.java" md5: 666f06c61486ae39d1c3c3f10e7d08cf
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
@@ -618,9 +691,41 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/movement/Sprin
     Compile Error! Pb(50) mc cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/movement/Sprint.java"
 
-startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java" md5: 7ae34070afdf83adbfa73f6adb31c648
+startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/Animation.java" md5: c31960a2ffb5bc785cabfd2ff2149a09
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleInfo cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
+    Compile Error! Pb(2) ModuleInfo cannot be resolved to a type
+    Compile Error! Pb(83) ModuleCategory cannot be resolved to a variable
+    Compile Error! Pb(2) Module cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) ListValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(634) The method onChanged(Float, Float) of type new FloatValue(){} must override or implement a supertype method
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) FloatValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
+endProcessing "net/ccbluex/liquidbounce/features/module/modules/render/Animation.java"
+
+startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java" md5: 16f74ed1f1af9650d1f7dcf6b191cb5a
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
@@ -671,9 +776,26 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGU
     Compile Error! Pb(50) mc cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/render/ClickGUI.java"
 
+startProcessing "net/ccbluex/liquidbounce/features/module/modules/render/WIngs.java" md5: 15eb3558803cef66c639392d2a016eed
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleInfo cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
+    Compile Error! Pb(2) ModuleInfo cannot be resolved to a type
+    Compile Error! Pb(83) ModuleCategory cannot be resolved to a variable
+    Compile Error! Pb(2) Module cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+    Compile Error! Pb(2) EventTarget cannot be resolved to a type
+    Compile Error! Pb(2) Render3DEvent cannot be resolved to a type
+    Compile Error! Pb(2) BoolValue cannot be resolved to a type
+endProcessing "net/ccbluex/liquidbounce/features/module/modules/render/WIngs.java"
+
 startProcessing "net/ccbluex/liquidbounce/features/special/AntiForge.java" md5: 1af1807230bbd7351dd7b9170c9f46e9
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -793,7 +915,7 @@ endProcessing "net/ccbluex/liquidbounce/file/configs/ValuesConfig.java"
 
 startProcessing "net/ccbluex/liquidbounce/file/configs/XRayConfig.java" md5: a3481ef63d7f67e263526b7eb7c39a92
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.XRay cannot be resolved
     Compile Error! Pb(2) XRay cannot be resolved to a type
     Compile Error! Pb(2) XRay cannot be resolved to a type
@@ -902,7 +1024,7 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/block/MixinBloc
     Compile Error! Pb(2) NoSlow cannot be resolved to a type
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/block/MixinBlockSoulSand.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/client/MixinMinecraft.java" md5: fa481cecc6a6e3eacecfa89549df71c5
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/client/MixinMinecraft.java" md5: 9ba17d5f3f15919ffbbd5ebe1f39a84c
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.combat.AutoClicker cannot be resolved
@@ -931,8 +1053,6 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/client/MixinMin
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(2) GuiUpdate cannot be resolved to a type
-    Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
-    Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(50) GuiScreenImplKt cannot be resolved
@@ -982,14 +1102,19 @@ endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/client/MixinProfi
 startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/client/MixinResourcePackRepository.java" md5: a97c1e9a101acaa2941a4e334908bf7d
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/client/MixinResourcePackRepository.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinAbstractClientPlayer.java" md5: 2411a435a09d097f45e34ba0b691ac33
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinAbstractClientPlayer.java" md5: 6ab3312643cf4469bb62a9e3f0eee2cc
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.cape cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.cape cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.misc.NameProtect cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.NoFOV cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.injection.backend.ResourceLocationImplKt cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.Cape cannot be resolved
     Compile Error! Pb(2) CapeInfo cannot be resolved to a type
+    Compile Error! Pb(2) Cape cannot be resolved to a type
+    Compile Error! Pb(2) Cape cannot be resolved to a type
+    Compile Error! Pb(50) LiquidBounce cannot be resolved
+    Compile Error! Pb(2) Cape cannot be resolved to a type
     Compile Error! Pb(50) CapeAPI cannot be resolved
     Compile Error! Pb(2) CapeInfo cannot be resolved to a type
     Compile Error! Pb(2) CapeInfo cannot be resolved to a type
@@ -1051,8 +1176,10 @@ endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntit
 startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayer.java" md5: e2dc7813e5f929dccaca029da6bd7ba9
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayer.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayerSP.java" md5: d7f85baaad11aeb0370fe70cd155c171
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayerSP.java" md5: a4adba97ae8d8214c75cf967e2d852a5
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.combat.KillAura cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.exploit.AntiHunger cannot be resolved
@@ -1192,7 +1319,7 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiCon
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiConnecting.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiContainer.java" md5: 7f51091e61af5cf87869714c5ab8d1c3
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiContainer.java" md5: 90e62e39bd99203ee14919bd3da1e4b1
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiContainer.java"
 
 startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiDisconnected.java" md5: 19969ffbdc725382a91610a34165f15d
@@ -1640,9 +1767,9 @@ endProcessing "net/ccbluex/liquidbounce/script/remapper/injection/transformers/A
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/GuiAntiForge.java" md5: 057bb660b0e0a7a7c38b74ffcca7b4f4
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiButton cannot be resolved to a type
@@ -1705,11 +1832,11 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/GuiAntiForge.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.java" md5: 9389be756de1dc220b955c0756678759
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.altgenerator cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.altgenerator cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.login.LoginUtils cannot be resolved
@@ -1808,9 +1935,9 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiAdd.java" md5: ac578c312a169d3a209e61c4c78a674e
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiButton cannot be resolved to a type
     Compile Error! Pb(2) IGuiButton cannot be resolved to a type
@@ -1902,9 +2029,9 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiAdd.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiChangeName.java" md5: 256b61f7c5335582b75edfd60c1deb96
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiTextField cannot be resolved to a type
@@ -1973,10 +2100,10 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiChangeName
 endProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiChangeName.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiDirectLogin.java" md5: d09a8e5e6e2fb34b7a39c398e716716c
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.render.ColorUtils cannot be resolved
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiScreen cannot be resolved to a type
@@ -2073,8 +2200,8 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiDirectLogin.
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/ClickGui.java" md5: 04ed8038229d7f9e3a024448192c5f9e
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.hud cannot be resolved
@@ -2191,7 +2318,7 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/Style.java" m
 endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/Style.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackStyle.java" md5: 2fad8ee294adb91b0101c5bd4fe895d3
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.AWTFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.GameFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
@@ -2257,8 +2384,8 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/BlackSty
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/LiquidBounceStyle.java" md5: 734ee8890a10c7a54b8f4311f9fa98b6
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.AWTFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.GameFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
@@ -2333,9 +2460,9 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/Liquid
     Compile Error! Pb(50) AWTFontRenderer cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/LiquidBounceStyle.java"
 
-startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/NullStyle.java" md5: ec51c7f34f15497d8211d8d39c46f0ab
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/NullStyle.java" md5: 8a4f606b8d56972e5d101be46cf5d1bd
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.AWTFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.GameFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
@@ -2389,6 +2516,7 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/NullSt
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(50) WMathHelper cannot be resolved
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) FontValue cannot be resolved to a type
     Compile Error! Pb(2) FontValue cannot be resolved to a type
     Compile Error! Pb(2) FontValue cannot be resolved to a type
@@ -2407,8 +2535,8 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/NullSt
 endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/NullStyle.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/SlowlyStyle.java" md5: f96b2516872681d301d3f6a0b22812b5
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.AWTFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.font.GameFontRenderer cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
@@ -2478,10 +2606,10 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/Slowly
 endProcessing "net/ccbluex/liquidbounce/ui/client/clickgui/style/styles/SlowlyStyle.java"
 
 startProcessing "net/ccbluex/liquidbounce/ui/client/tools/GuiPortScanner.java" md5: 3530493331ce969193161de3010b172a
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.util cannot be resolved
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiScreen cannot be resolved to a type
     Compile Error! Pb(2) IGuiTextField cannot be resolved to a type
@@ -2583,9 +2711,9 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/tools/GuiPortScanner.java"
 startProcessing "net/ccbluex/liquidbounce/ui/font/FontDetails.java" md5: 4cc22e4faea5c3f57673f8f35653ce3b
 endProcessing "net/ccbluex/liquidbounce/ui/font/FontDetails.java"
 
-startProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java" md5: 3df0178492081ca31cf639062c2ede9b
+startProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java" md5: 63d2e52fd11b7a3d8180e71552fd27f7
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.misc.HttpUtils cannot be resolved
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
@@ -2609,7 +2737,6 @@ startProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java" md5: 3df0178492081
     Compile Error! Pb(2) GameFontRenderer cannot be resolved to a type
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(50) HttpUtils cannot be resolved
-    Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
@@ -2632,8 +2759,8 @@ endProcessing "net/ccbluex/liquidbounce/utils/CPSCounter.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/ClientUtils.java" md5: 55fcc721564350df68e847d52507bfdf
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(2) INetworkManager cannot be resolved to a type
     Compile Error! Pb(2) ISPacketEncryptionRequest cannot be resolved to a type
@@ -2644,12 +2771,12 @@ startProcessing "net/ccbluex/liquidbounce/utils/ClientUtils.java" md5: 55fcc7215
 endProcessing "net/ccbluex/liquidbounce/utils/ClientUtils.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/InventoryUtils.java" md5: fd31debf61bbe544598647c147419d96
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -2724,9 +2851,9 @@ endProcessing "net/ccbluex/liquidbounce/utils/InventoryUtils.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/MinecraftInstance.java" md5: 99c6d197459dc1ef0c81d4fc7ff88966
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.IClassProvider cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.IExtractedFunctions cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
@@ -2755,11 +2882,11 @@ endProcessing "net/ccbluex/liquidbounce/utils/RollingArrayLongBuffer.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/RotationUtils.java" md5: 293a6d4902ce5a6d8475af730efd967d
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
@@ -2857,7 +2984,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/RotationUtils.java" md5: 293a6d4
 endProcessing "net/ccbluex/liquidbounce/utils/RotationUtils.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/ServerUtils.java" md5: 3553e0df27553ea5ab18f55fe5236ca4
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.GuiMainMenu cannot be resolved
     Compile Error! Pb(2) IServerData cannot be resolved to a type
     Compile Error! Pb(2) IServerData cannot be resolved to a type
@@ -2874,16 +3001,16 @@ startProcessing "net/ccbluex/liquidbounce/utils/ServerUtils.java" md5: 3553e0df2
 endProcessing "net/ccbluex/liquidbounce/utils/ServerUtils.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/TabUtils.java" md5: dd8020958d92b35191d4959f0935dd74
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IGuiTextField cannot be resolved to a type
     Compile Error! Pb(2) IGuiTextField cannot be resolved to a type
 endProcessing "net/ccbluex/liquidbounce/utils/TabUtils.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/item/ArmorComparator.java" md5: 9053d7a66cec9ef8b46b709a13158aeb
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IEnchantment cannot be resolved to a type
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
     Compile Error! Pb(83) EnchantmentType cannot be resolved to a variable
@@ -2925,7 +3052,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/item/ArmorComparator.java" md5: 
 endProcessing "net/ccbluex/liquidbounce/utils/item/ArmorComparator.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/item/ArmorPiece.java" md5: fc976c8872a2f68dc327430274b60fee
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IItemStack cannot be resolved to a type
     Compile Error! Pb(2) IItemStack cannot be resolved to a type
     Compile Error! Pb(2) IItemStack cannot be resolved to a type
@@ -2935,11 +3062,11 @@ startProcessing "net/ccbluex/liquidbounce/utils/item/ArmorPiece.java" md5: fc976
 endProcessing "net/ccbluex/liquidbounce/utils/item/ArmorPiece.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/item/ItemUtils.java" md5: 62e71b1fb1035b2af16a6c5c228379ea
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IItemStack cannot be resolved to a type
     Compile Error! Pb(2) IItem cannot be resolved to a type
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
@@ -2963,9 +3090,9 @@ startProcessing "net/ccbluex/liquidbounce/utils/login/MinecraftAccount.java" md5
 endProcessing "net/ccbluex/liquidbounce/utils/login/MinecraftAccount.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/misc/FallingPlayer.java" md5: 2548cc5bb73c45ee949a4dcd0149dace
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
     Compile Error! Pb(2) WVec3 cannot be resolved to a type
     Compile Error! Pb(2) WVec3 cannot be resolved to a type
@@ -3011,16 +3138,16 @@ endProcessing "net/ccbluex/liquidbounce/utils/render/IconUtils.java"
 startProcessing "net/ccbluex/liquidbounce/utils/render/ParticleUtils.java" md5: 3799ce4390e058838095e66da16347c3
 endProcessing "net/ccbluex/liquidbounce/utils/render/ParticleUtils.java"
 
-startProcessing "net/ccbluex/liquidbounce/utils/render/RenderUtils.java" md5: 16ddf9b20a5342d0ed81ed573e15c795
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+startProcessing "net/ccbluex/liquidbounce/utils/render/RenderUtils.java" md5: d14a49230af56ed28b819614cff9b1b6
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.enums cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.injection.backend.Backend cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.block cannot be resolved
     Compile Error! Pb(2) WBlockPos cannot be resolved to a type
@@ -3108,7 +3235,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/render/WorldToScreen.java" md5: 
 endProcessing "net/ccbluex/liquidbounce/utils/render/WorldToScreen.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/render/shader/FramebufferShader.java" md5: 65df9552fd557d078f3a1b01610aaf0f
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
@@ -3133,7 +3260,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/render/shader/Shader.java" md5: 
 endProcessing "net/ccbluex/liquidbounce/utils/render/shader/Shader.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/render/shader/shaders/BackgroundShader.java" md5: 657682c69832ce4895e4b1626a311995
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/utils/render/shader/shaders/BackgroundShader.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/render/shader/shaders/GlowShader.java" md5: 8bac47e4bb59fb83db7c41e54a269579
