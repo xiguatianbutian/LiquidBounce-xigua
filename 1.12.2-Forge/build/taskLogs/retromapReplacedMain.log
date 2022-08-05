@@ -843,186 +843,184 @@ Import: org.spongepowered.asm.mixin.Shadow
 End  Processing: net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayer.java
 
 Start Processing: net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayerSP.java
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6395,6405]::sendPacket->func_147297_a
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6233,6243]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketEntityAction
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6564,6574]::sendPacket->func_147297_a
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6402,6412]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketEntityAction
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6982,6992]::sendPacket->func_147297_a
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6820,6830]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketEntityAction
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[7150,7160]::sendPacket->func_147297_a
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[6988,6998]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketEntityAction
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[8228,8232]::minY->field_72338_b
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[8734,8744]::sendPacket->func_147297_a
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[8066,8070]::minY->field_72338_b
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[8572,8582]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketPlayer
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[8979,8989]::sendPacket->func_147297_a
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[8817,8827]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketPlayer
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[9053,9057]::minY->field_72338_b
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[9198,9208]::sendPacket->func_147297_a
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[8891,8895]::minY->field_72338_b
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[9036,9046]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketPlayer
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[9264,9268]::minY->field_72338_b
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[9371,9381]::sendPacket->func_147297_a
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[9102,9106]::minY->field_72338_b
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[9209,9219]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketPlayer
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[9560,9570]::sendPacket->func_147297_a
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[9754,9758]::minY->field_72338_b
-Rename field net/minecraft/client/Minecraft/gameSettings[10129,10141]::gameSettings->field_71474_y
-Rename field net/minecraft/client/settings/GameSettings/autoJump[10143,10151]::autoJump->field_189989_R
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[10649,10659]::sendPacket->func_147297_a
-Rename field net/minecraft/client/Minecraft/currentScreen[11624,11637]::currentScreen->field_71462_r
-Rename field net/minecraft/client/Minecraft/currentScreen[11658,11671]::currentScreen->field_71462_r
-Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[11672,11688]::doesGuiPauseGame->func_73868_f
-Rename field net/minecraft/client/Minecraft/currentScreen[11788,11801]::currentScreen->field_71462_r
-Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[11912,11928]::displayGuiScreen->func_147108_a
-Rename method net/minecraft/client/Minecraft/getSoundHandler ()Lnet/minecraft/client/audio/SoundHandler;[12017,12032]::getSoundHandler->func_147118_V
-Rename method net/minecraft/client/audio/SoundHandler/playSound (Lnet/minecraft/client/audio/ISound;)V[12033,12042]::playSound->func_147682_a
-Rename method net/minecraft/client/audio/PositionedSoundRecord/getMasterRecord (Lnet/minecraft/util/SoundEvent;F)Lnet/minecraft/client/audio/PositionedSoundRecord;[12069,12084]::getMasterRecord->func_184371_a
-Rename field net/minecraft/init/SoundEvents/BLOCK_PORTAL_TRIGGER[12095,12115]::BLOCK_PORTAL_TRIGGER->field_187814_ei
-Rename field net/minecraft/init/MobEffects/NAUSEA[12396,12402]::NAUSEA->field_76431_k
-Rename field net/minecraft/init/MobEffects/NAUSEA[12452,12458]::NAUSEA->field_76431_k
-Rename method net/minecraft/potion/PotionEffect/getDuration ()I[12467,12478]::getDuration->func_76459_b
-Rename field net/minecraft/util/MovementInput/jump[12998,13002]::jump->field_78901_c
-Rename field net/minecraft/util/MovementInput/sneak[13056,13061]::sneak->field_78899_d
-Rename field net/minecraft/util/MovementInput/moveForward[13138,13149]::moveForward->field_192832_b
-Rename method net/minecraft/util/MovementInput/updatePlayerMoveState ()V[13189,13210]::updatePlayerMoveState->func_78898_a
-Rename method net/minecraft/client/Minecraft/getTutorial ()Lnet/minecraft/client/tutorial/Tutorial;[13504,13515]::getTutorial->func_193032_ao
-Rename method net/minecraft/client/tutorial/Tutorial/handleMovement (Lnet/minecraft/util/MovementInput;)V[13521,13535]::handleMovement->func_193293_a
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[13625,13632]::getItem->func_77973_b
-Rename field net/minecraft/util/MovementInput/moveStrafe[13891,13901]::moveStrafe->field_78902_a
-Rename field net/minecraft/util/MovementInput/moveForward[13966,13977]::moveForward->field_192832_b
-Rename field net/minecraft/util/MovementInput/jump[14222,14226]::jump->field_78901_c
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[14647,14651]::minY->field_72338_b
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[14799,14803]::minY->field_72338_b
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[14951,14955]::minY->field_72338_b
-Rename field net/minecraft/util/math/AxisAlignedBB/minY[15103,15107]::minY->field_72338_b
-Rename method net/minecraft/util/FoodStats/getFoodLevel ()I[15348,15360]::getFoodLevel->func_75116_a
-Rename field net/minecraft/entity/player/PlayerCapabilities/allowFlying[15391,15402]::allowFlying->field_75101_c
-Rename field net/minecraft/util/MovementInput/moveForward[15475,15486]::moveForward->field_192832_b
-Rename field net/minecraft/init/MobEffects/BLINDNESS[15589,15598]::BLINDNESS->field_76440_q
-Rename field net/minecraft/client/Minecraft/gameSettings[15663,15675]::gameSettings->field_71474_y
-Rename field net/minecraft/client/settings/GameSettings/keyBindSprint[15677,15690]::keyBindSprint->field_151444_V
-Rename method net/minecraft/client/settings/KeyBinding/isKeyDown ()Z[15692,15701]::isKeyDown->func_151470_d
-Rename field net/minecraft/util/MovementInput/moveForward[15896,15907]::moveForward->field_192832_b
-Rename field net/minecraft/init/MobEffects/BLINDNESS[16010,16019]::BLINDNESS->field_76440_q
-Rename field net/minecraft/client/Minecraft/gameSettings[16036,16048]::gameSettings->field_71474_y
-Rename field net/minecraft/client/settings/GameSettings/keyBindSprint[16050,16063]::keyBindSprint->field_151444_V
-Rename method net/minecraft/client/settings/KeyBinding/isKeyDown ()Z[16065,16074]::isKeyDown->func_151470_d
-Rename field net/minecraft/client/Minecraft/player[16535,16541]::player->field_71439_g
-Rename field net/minecraft/entity/Entity/rotationYaw[16549,16560]::rotationYaw->field_70177_z
-Rename field net/minecraft/client/Minecraft/player[16567,16573]::player->field_71439_g
-Rename field net/minecraft/entity/Entity/rotationPitch[16581,16594]::rotationPitch->field_70125_A
-Rename field net/minecraft/util/MovementInput/moveForward[16697,16708]::moveForward->field_192832_b
-Rename field net/minecraft/entity/player/PlayerCapabilities/allowFlying[16841,16852]::allowFlying->field_75101_c
-Rename field net/minecraft/client/Minecraft/playerController[16882,16898]::playerController->field_71442_b
-Rename method net/minecraft/client/multiplayer/PlayerControllerMP/isSpectatorMode ()Z[16896,16911]::isSpectatorMode->func_178887_k
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[16954,16962]::isFlying->field_75100_b
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17009,17017]::isFlying->field_75100_b
-Rename field net/minecraft/util/MovementInput/jump[17148,17152]::jump->field_78901_c
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17331,17339]::isFlying->field_75100_b
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17366,17374]::isFlying->field_75100_b
-Rename field net/minecraft/util/MovementInput/jump[17548,17552]::jump->field_78901_c
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17660,17668]::isFlying->field_75100_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[17792,17799]::getItem->func_77973_b
-Rename field net/minecraft/init/Items/ELYTRA[17816,17822]::ELYTRA->field_185160_cR
-Rename method net/minecraft/item/ItemElytra/isUsable (Lnet/minecraft/item/ItemStack;)Z[17846,17854]::isUsable->func_185069_d
-Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[17906,17916]::sendPacket->func_147297_a
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[9398,9408]::sendPacket->func_147297_a
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[9592,9596]::minY->field_72338_b
+Rename field net/minecraft/client/Minecraft/gameSettings[9967,9979]::gameSettings->field_71474_y
+Rename field net/minecraft/client/settings/GameSettings/autoJump[9981,9989]::autoJump->field_189989_R
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[10487,10497]::sendPacket->func_147297_a
+Rename field net/minecraft/client/Minecraft/currentScreen[11462,11475]::currentScreen->field_71462_r
+Rename field net/minecraft/client/Minecraft/currentScreen[11496,11509]::currentScreen->field_71462_r
+Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[11510,11526]::doesGuiPauseGame->func_73868_f
+Rename field net/minecraft/client/Minecraft/currentScreen[11626,11639]::currentScreen->field_71462_r
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[11750,11766]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/Minecraft/getSoundHandler ()Lnet/minecraft/client/audio/SoundHandler;[11855,11870]::getSoundHandler->func_147118_V
+Rename method net/minecraft/client/audio/SoundHandler/playSound (Lnet/minecraft/client/audio/ISound;)V[11871,11880]::playSound->func_147682_a
+Rename method net/minecraft/client/audio/PositionedSoundRecord/getMasterRecord (Lnet/minecraft/util/SoundEvent;F)Lnet/minecraft/client/audio/PositionedSoundRecord;[11907,11922]::getMasterRecord->func_184371_a
+Rename field net/minecraft/init/SoundEvents/BLOCK_PORTAL_TRIGGER[11933,11953]::BLOCK_PORTAL_TRIGGER->field_187814_ei
+Rename field net/minecraft/init/MobEffects/NAUSEA[12234,12240]::NAUSEA->field_76431_k
+Rename field net/minecraft/init/MobEffects/NAUSEA[12290,12296]::NAUSEA->field_76431_k
+Rename method net/minecraft/potion/PotionEffect/getDuration ()I[12305,12316]::getDuration->func_76459_b
+Rename field net/minecraft/util/MovementInput/jump[12836,12840]::jump->field_78901_c
+Rename field net/minecraft/util/MovementInput/sneak[12894,12899]::sneak->field_78899_d
+Rename field net/minecraft/util/MovementInput/moveForward[12976,12987]::moveForward->field_192832_b
+Rename method net/minecraft/util/MovementInput/updatePlayerMoveState ()V[13027,13048]::updatePlayerMoveState->func_78898_a
+Rename method net/minecraft/client/Minecraft/getTutorial ()Lnet/minecraft/client/tutorial/Tutorial;[13342,13353]::getTutorial->func_193032_ao
+Rename method net/minecraft/client/tutorial/Tutorial/handleMovement (Lnet/minecraft/util/MovementInput;)V[13359,13373]::handleMovement->func_193293_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[13463,13470]::getItem->func_77973_b
+Rename field net/minecraft/util/MovementInput/moveStrafe[13729,13739]::moveStrafe->field_78902_a
+Rename field net/minecraft/util/MovementInput/moveForward[13804,13815]::moveForward->field_192832_b
+Rename field net/minecraft/util/MovementInput/jump[14060,14064]::jump->field_78901_c
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[14485,14489]::minY->field_72338_b
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[14637,14641]::minY->field_72338_b
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[14789,14793]::minY->field_72338_b
+Rename field net/minecraft/util/math/AxisAlignedBB/minY[14941,14945]::minY->field_72338_b
+Rename method net/minecraft/util/FoodStats/getFoodLevel ()I[15186,15198]::getFoodLevel->func_75116_a
+Rename field net/minecraft/entity/player/PlayerCapabilities/allowFlying[15229,15240]::allowFlying->field_75101_c
+Rename field net/minecraft/util/MovementInput/moveForward[15313,15324]::moveForward->field_192832_b
+Rename field net/minecraft/init/MobEffects/BLINDNESS[15427,15436]::BLINDNESS->field_76440_q
+Rename field net/minecraft/client/Minecraft/gameSettings[15501,15513]::gameSettings->field_71474_y
+Rename field net/minecraft/client/settings/GameSettings/keyBindSprint[15515,15528]::keyBindSprint->field_151444_V
+Rename method net/minecraft/client/settings/KeyBinding/isKeyDown ()Z[15530,15539]::isKeyDown->func_151470_d
+Rename field net/minecraft/util/MovementInput/moveForward[15734,15745]::moveForward->field_192832_b
+Rename field net/minecraft/init/MobEffects/BLINDNESS[15848,15857]::BLINDNESS->field_76440_q
+Rename field net/minecraft/client/Minecraft/gameSettings[15874,15886]::gameSettings->field_71474_y
+Rename field net/minecraft/client/settings/GameSettings/keyBindSprint[15888,15901]::keyBindSprint->field_151444_V
+Rename method net/minecraft/client/settings/KeyBinding/isKeyDown ()Z[15903,15912]::isKeyDown->func_151470_d
+Rename field net/minecraft/client/Minecraft/player[16373,16379]::player->field_71439_g
+Rename field net/minecraft/entity/Entity/rotationYaw[16387,16398]::rotationYaw->field_70177_z
+Rename field net/minecraft/client/Minecraft/player[16405,16411]::player->field_71439_g
+Rename field net/minecraft/entity/Entity/rotationPitch[16419,16432]::rotationPitch->field_70125_A
+Rename field net/minecraft/util/MovementInput/moveForward[16535,16546]::moveForward->field_192832_b
+Rename field net/minecraft/entity/player/PlayerCapabilities/allowFlying[16679,16690]::allowFlying->field_75101_c
+Rename field net/minecraft/client/Minecraft/playerController[16720,16736]::playerController->field_71442_b
+Rename method net/minecraft/client/multiplayer/PlayerControllerMP/isSpectatorMode ()Z[16734,16749]::isSpectatorMode->func_178887_k
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[16792,16800]::isFlying->field_75100_b
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[16847,16855]::isFlying->field_75100_b
+Rename field net/minecraft/util/MovementInput/jump[16986,16990]::jump->field_78901_c
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17169,17177]::isFlying->field_75100_b
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17204,17212]::isFlying->field_75100_b
+Rename field net/minecraft/util/MovementInput/jump[17386,17390]::jump->field_78901_c
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17498,17506]::isFlying->field_75100_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[17630,17637]::getItem->func_77973_b
+Rename field net/minecraft/init/Items/ELYTRA[17654,17660]::ELYTRA->field_185160_cR
+Rename method net/minecraft/item/ItemElytra/isUsable (Lnet/minecraft/item/ItemStack;)Z[17684,17692]::isUsable->func_185069_d
+Rename method net/minecraft/client/network/NetHandlerPlayClient/sendPacket (Lnet/minecraft/network/Packet;)V[17744,17754]::sendPacket->func_147297_a
 New Key: class net/minecraft/network/play/client/CPacketEntityAction
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[18132,18140]::isFlying->field_75100_b
-Rename field net/minecraft/util/MovementInput/sneak[18214,18219]::sneak->field_78899_d
-Rename field net/minecraft/util/MovementInput/moveStrafe[18266,18276]::moveStrafe->field_78902_a
-Rename field net/minecraft/util/MovementInput/moveStrafe[18319,18329]::moveStrafe->field_78902_a
-Rename field net/minecraft/util/MovementInput/moveForward[18377,18388]::moveForward->field_192832_b
-Rename field net/minecraft/util/MovementInput/moveForward[18431,18442]::moveForward->field_192832_b
-Rename method net/minecraft/entity/player/PlayerCapabilities/getFlySpeed ()F[18505,18516]::getFlySpeed->func_75093_a
-Rename field net/minecraft/util/MovementInput/jump[18578,18582]::jump->field_78901_c
-Rename method net/minecraft/entity/player/PlayerCapabilities/getFlySpeed ()F[18645,18656]::getFlySpeed->func_75093_a
-Rename field net/minecraft/util/MovementInput/jump[19089,19093]::jump->field_78901_c
-Rename method net/minecraft/entity/IJumpingMount/setJumpPower (I)V[19186,19198]::setJumpPower->func_110206_u
-Rename method net/minecraft/util/math/MathHelper/floor (F)I[19211,19216]::floor->func_76141_d
-Rename field net/minecraft/util/MovementInput/jump[19350,19354]::jump->field_78901_c
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[19987,19995]::isFlying->field_75100_b
-Rename field net/minecraft/client/Minecraft/playerController[20013,20029]::playerController->field_71442_b
-Rename method net/minecraft/client/multiplayer/PlayerControllerMP/isSpectatorMode ()Z[20027,20042]::isSpectatorMode->func_178887_k
-Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[20076,20084]::isFlying->field_75100_b
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[20651,20657]::offset->func_72317_d
-Rename method net/minecraft/world/World/getTotalWorldTime ()J[20810,20827]::getTotalWorldTime->func_82737_E
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[17970,17978]::isFlying->field_75100_b
+Rename field net/minecraft/util/MovementInput/sneak[18052,18057]::sneak->field_78899_d
+Rename field net/minecraft/util/MovementInput/moveStrafe[18104,18114]::moveStrafe->field_78902_a
+Rename field net/minecraft/util/MovementInput/moveStrafe[18157,18167]::moveStrafe->field_78902_a
+Rename field net/minecraft/util/MovementInput/moveForward[18215,18226]::moveForward->field_192832_b
+Rename field net/minecraft/util/MovementInput/moveForward[18269,18280]::moveForward->field_192832_b
+Rename method net/minecraft/entity/player/PlayerCapabilities/getFlySpeed ()F[18343,18354]::getFlySpeed->func_75093_a
+Rename field net/minecraft/util/MovementInput/jump[18416,18420]::jump->field_78901_c
+Rename method net/minecraft/entity/player/PlayerCapabilities/getFlySpeed ()F[18483,18494]::getFlySpeed->func_75093_a
+Rename field net/minecraft/util/MovementInput/jump[18927,18931]::jump->field_78901_c
+Rename method net/minecraft/entity/IJumpingMount/setJumpPower (I)V[19024,19036]::setJumpPower->func_110206_u
+Rename method net/minecraft/util/math/MathHelper/floor (F)I[19049,19054]::floor->func_76141_d
+Rename field net/minecraft/util/MovementInput/jump[19188,19192]::jump->field_78901_c
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[19825,19833]::isFlying->field_75100_b
+Rename field net/minecraft/client/Minecraft/playerController[19851,19867]::playerController->field_71442_b
+Rename method net/minecraft/client/multiplayer/PlayerControllerMP/isSpectatorMode ()Z[19865,19880]::isSpectatorMode->func_178887_k
+Rename field net/minecraft/entity/player/PlayerCapabilities/isFlying[19914,19922]::isFlying->field_75100_b
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[20489,20495]::offset->func_72317_d
+Rename method net/minecraft/world/World/getTotalWorldTime ()J[20648,20665]::getTotalWorldTime->func_82737_E
 New Key: class net/minecraft/util/EnumFacing
-Rename method net/minecraft/util/math/MathHelper/clamp (DDD)D[21142,21147]::clamp->func_151237_a
+Rename method net/minecraft/util/math/MathHelper/clamp (DDD)D[20980,20985]::clamp->func_151237_a
 New Key: class net/minecraft/util/EnumFacing
-Rename method net/minecraft/util/math/MathHelper/clamp (DDD)D[21557,21562]::clamp->func_151237_a
+Rename method net/minecraft/util/math/MathHelper/clamp (DDD)D[21395,21400]::clamp->func_151237_a
 New Key: class net/minecraft/util/EnumFacing
-Rename method net/minecraft/util/math/MathHelper/clamp (DDD)D[22054,22059]::clamp->func_151237_a
-Rename field net/minecraft/world/World/profiler[22388,22396]::profiler->field_72984_F
-Rename method net/minecraft/profiler/Profiler/startSection (Ljava/lang/String;)V[22402,22414]::startSection->func_76320_a
-Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[23200,23217]::getCollisionBoxes->func_184144_a
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[23274,23280]::offset->func_72317_d
-Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[23654,23671]::getCollisionBoxes->func_184144_a
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[23728,23734]::offset->func_72317_d
-Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[24121,24138]::getCollisionBoxes->func_184144_a
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[24195,24201]::offset->func_72317_d
-Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[24872,24889]::getCollisionBoxes->func_184144_a
-Rename method net/minecraft/util/math/AxisAlignedBB/expand (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[24946,24952]::expand->func_72321_a
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[25193,25209]::calculateYOffset->func_72323_b
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[25328,25334]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateXOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[25530,25546]::calculateXOffset->func_72316_a
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[25702,25708]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateZOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[25922,25938]::calculateZOffset->func_72322_c
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[26094,26100]::offset->func_72317_d
-Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[26762,26779]::getCollisionBoxes->func_184144_a
-Rename method net/minecraft/util/math/AxisAlignedBB/expand (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[26836,26842]::expand->func_72321_a
-Rename method net/minecraft/util/math/AxisAlignedBB/expand (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27000,27006]::expand->func_72321_a
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27186,27202]::calculateYOffset->func_72323_b
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27287,27293]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateXOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27478,27494]::calculateXOffset->func_72316_a
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27580,27586]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateZOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27772,27788]::calculateZOffset->func_72322_c
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27874,27880]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[28141,28157]::calculateYOffset->func_72323_b
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[28243,28249]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateXOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[28435,28451]::calculateXOffset->func_72316_a
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[28537,28543]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateZOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[28729,28745]::calculateZOffset->func_72322_c
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[28831,28837]::offset->func_72317_d
-Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[29469,29485]::calculateYOffset->func_72323_b
-Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[29604,29610]::offset->func_72317_d
-Rename field net/minecraft/world/World/profiler[30005,30013]::profiler->field_72984_F
-Rename method net/minecraft/profiler/Profiler/endSection ()V[30019,30029]::endSection->func_76319_b
-Rename field net/minecraft/world/World/profiler[30058,30066]::profiler->field_72984_F
-Rename method net/minecraft/profiler/Profiler/startSection (Ljava/lang/String;)V[30072,30084]::startSection->func_76320_a
-Rename method net/minecraft/util/math/MathHelper/floor (D)I[30419,30424]::floor->func_76128_c
-Rename method net/minecraft/util/math/MathHelper/floor (D)I[30476,30481]::floor->func_76128_c
-Rename method net/minecraft/util/math/MathHelper/floor (D)I[30556,30561]::floor->func_76128_c
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[30688,30701]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[30742,30753]::getMaterial->func_185904_a
-Rename field net/minecraft/block/material/Material/AIR[30770,30773]::AIR->field_151579_a
-Rename method net/minecraft/util/math/BlockPos/down ()Lnet/minecraft/util/math/BlockPos;[30834,30838]::down->func_177977_b
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[30905,30918]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[30975,30983]::getBlock->func_177230_c
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[31507,31515]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/onLanded (Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;)V[31574,31582]::onLanded->func_176216_a
-Rename field net/minecraft/init/Blocks/LADDER[31974,31980]::LADDER->field_150468_ap
-Rename method net/minecraft/block/Block/onEntityWalk (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/Entity;)V[32124,32136]::onEntityWalk->func_176199_a
-Rename method net/minecraft/util/math/MathHelper/sqrt (D)F[32326,32330]::sqrt->func_76133_a
-Rename method net/minecraft/util/math/MathHelper/sqrt (D)F[32497,32501]::sqrt->func_76133_a
-Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[32656,32667]::getMaterial->func_185904_a
-Rename field net/minecraft/block/material/Material/AIR[32684,32687]::AIR->field_151579_a
-Rename method net/minecraft/util/math/MathHelper/sqrt (D)F[33126,33130]::sqrt->func_76133_a
-Rename field net/minecraft/entity/Entity/motionX[33146,33153]::motionX->field_70159_w
-Rename field net/minecraft/entity/Entity/motionX[33169,33176]::motionX->field_70159_w
-Rename field net/minecraft/entity/Entity/motionY[33215,33222]::motionY->field_70181_x
-Rename field net/minecraft/entity/Entity/motionY[33238,33245]::motionY->field_70181_x
-Rename field net/minecraft/entity/Entity/motionZ[33261,33268]::motionZ->field_70179_y
-Rename field net/minecraft/entity/Entity/motionZ[33284,33291]::motionZ->field_70179_y
-Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[33790,33801]::getMaterial->func_185904_a
-Rename field net/minecraft/block/material/Material/AIR[33818,33821]::AIR->field_151579_a
-Rename method net/minecraft/crash/CrashReport/makeCrashReport (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/crash/CrashReport;[34117,34132]::makeCrashReport->func_85055_a
-Rename method net/minecraft/crash/CrashReport/makeCategory (Ljava/lang/String;)Lnet/minecraft/crash/CrashReportCategory;[34247,34259]::makeCategory->func_85058_a
-Rename method net/minecraft/world/World/isFlammableWithin (Lnet/minecraft/util/math/AxisAlignedBB;)Z[34504,34521]::isFlammableWithin->func_147470_e
-Rename method net/minecraft/util/math/AxisAlignedBB/shrink (D)Lnet/minecraft/util/math/AxisAlignedBB;[34546,34552]::shrink->func_186664_h
-Rename field net/minecraft/init/SoundEvents/ENTITY_GENERIC_EXTINGUISH_FIRE[35000,35030]::ENTITY_GENERIC_EXTINGUISH_FIRE->field_187541_bC
-Rename field net/minecraft/world/World/profiler[35181,35189]::profiler->field_72984_F
-Rename method net/minecraft/profiler/Profiler/endSection ()V[35195,35205]::endSection->func_76319_b
+Rename method net/minecraft/util/math/MathHelper/clamp (DDD)D[21892,21897]::clamp->func_151237_a
+Rename field net/minecraft/world/World/profiler[22226,22234]::profiler->field_72984_F
+Rename method net/minecraft/profiler/Profiler/startSection (Ljava/lang/String;)V[22240,22252]::startSection->func_76320_a
+Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[23038,23055]::getCollisionBoxes->func_184144_a
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[23112,23118]::offset->func_72317_d
+Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[23492,23509]::getCollisionBoxes->func_184144_a
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[23566,23572]::offset->func_72317_d
+Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[23959,23976]::getCollisionBoxes->func_184144_a
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[24033,24039]::offset->func_72317_d
+Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[24710,24727]::getCollisionBoxes->func_184144_a
+Rename method net/minecraft/util/math/AxisAlignedBB/expand (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[24784,24790]::expand->func_72321_a
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[25031,25047]::calculateYOffset->func_72323_b
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[25166,25172]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateXOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[25368,25384]::calculateXOffset->func_72316_a
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[25540,25546]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateZOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[25760,25776]::calculateZOffset->func_72322_c
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[25932,25938]::offset->func_72317_d
+Rename method net/minecraft/world/World/getCollisionBoxes (Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[26600,26617]::getCollisionBoxes->func_184144_a
+Rename method net/minecraft/util/math/AxisAlignedBB/expand (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[26674,26680]::expand->func_72321_a
+Rename method net/minecraft/util/math/AxisAlignedBB/expand (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[26838,26844]::expand->func_72321_a
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27024,27040]::calculateYOffset->func_72323_b
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27125,27131]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateXOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27316,27332]::calculateXOffset->func_72316_a
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27418,27424]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateZOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27610,27626]::calculateZOffset->func_72322_c
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[27712,27718]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[27979,27995]::calculateYOffset->func_72323_b
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[28081,28087]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateXOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[28273,28289]::calculateXOffset->func_72316_a
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[28375,28381]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateZOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[28567,28583]::calculateZOffset->func_72322_c
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[28669,28675]::offset->func_72317_d
+Rename method net/minecraft/util/math/AxisAlignedBB/calculateYOffset (Lnet/minecraft/util/math/AxisAlignedBB;D)D[29307,29323]::calculateYOffset->func_72323_b
+Rename method net/minecraft/util/math/AxisAlignedBB/offset (DDD)Lnet/minecraft/util/math/AxisAlignedBB;[29442,29448]::offset->func_72317_d
+Rename field net/minecraft/world/World/profiler[29843,29851]::profiler->field_72984_F
+Rename method net/minecraft/profiler/Profiler/endSection ()V[29857,29867]::endSection->func_76319_b
+Rename field net/minecraft/world/World/profiler[29896,29904]::profiler->field_72984_F
+Rename method net/minecraft/profiler/Profiler/startSection (Ljava/lang/String;)V[29910,29922]::startSection->func_76320_a
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[30257,30262]::floor->func_76128_c
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[30314,30319]::floor->func_76128_c
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[30394,30399]::floor->func_76128_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[30526,30539]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[30580,30591]::getMaterial->func_185904_a
+Rename field net/minecraft/block/material/Material/AIR[30608,30611]::AIR->field_151579_a
+Rename method net/minecraft/util/math/BlockPos/down ()Lnet/minecraft/util/math/BlockPos;[30672,30676]::down->func_177977_b
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[30743,30756]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[30813,30821]::getBlock->func_177230_c
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[31345,31353]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/onLanded (Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;)V[31412,31420]::onLanded->func_176216_a
+Rename field net/minecraft/init/Blocks/LADDER[31812,31818]::LADDER->field_150468_ap
+Rename method net/minecraft/block/Block/onEntityWalk (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/Entity;)V[31962,31974]::onEntityWalk->func_176199_a
+Rename method net/minecraft/util/math/MathHelper/sqrt (D)F[32164,32168]::sqrt->func_76133_a
+Rename method net/minecraft/util/math/MathHelper/sqrt (D)F[32335,32339]::sqrt->func_76133_a
+Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[32494,32505]::getMaterial->func_185904_a
+Rename field net/minecraft/block/material/Material/AIR[32522,32525]::AIR->field_151579_a
+Rename method net/minecraft/util/math/MathHelper/sqrt (D)F[32964,32968]::sqrt->func_76133_a
+Rename field net/minecraft/entity/Entity/motionX[32984,32991]::motionX->field_70159_w
+Rename field net/minecraft/entity/Entity/motionX[33007,33014]::motionX->field_70159_w
+Rename field net/minecraft/entity/Entity/motionY[33053,33060]::motionY->field_70181_x
+Rename field net/minecraft/entity/Entity/motionY[33076,33083]::motionY->field_70181_x
+Rename field net/minecraft/entity/Entity/motionZ[33099,33106]::motionZ->field_70179_y
+Rename field net/minecraft/entity/Entity/motionZ[33122,33129]::motionZ->field_70179_y
+Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[33628,33639]::getMaterial->func_185904_a
+Rename field net/minecraft/block/material/Material/AIR[33656,33659]::AIR->field_151579_a
+Rename method net/minecraft/crash/CrashReport/makeCrashReport (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/crash/CrashReport;[33955,33970]::makeCrashReport->func_85055_a
+Rename method net/minecraft/crash/CrashReport/makeCategory (Ljava/lang/String;)Lnet/minecraft/crash/CrashReportCategory;[34085,34097]::makeCategory->func_85058_a
+Rename method net/minecraft/world/World/isFlammableWithin (Lnet/minecraft/util/math/AxisAlignedBB;)Z[34342,34359]::isFlammableWithin->func_147470_e
+Rename method net/minecraft/util/math/AxisAlignedBB/shrink (D)Lnet/minecraft/util/math/AxisAlignedBB;[34384,34390]::shrink->func_186664_h
+Rename field net/minecraft/init/SoundEvents/ENTITY_GENERIC_EXTINGUISH_FIRE[34838,34868]::ENTITY_GENERIC_EXTINGUISH_FIRE->field_187541_bC
+Rename field net/minecraft/world/World/profiler[35019,35027]::profiler->field_72984_F
+Rename method net/minecraft/profiler/Profiler/endSection ()V[35033,35043]::endSection->func_76319_b
 Import: net.ccbluex.liquidbounce.LiquidBounce
-Import: net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntityPlayerSP
-Import: net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketEntityAction
 Import: net.ccbluex.liquidbounce.event.*
 Import: net.ccbluex.liquidbounce.features.module.modules.combat.KillAura
 Import: net.ccbluex.liquidbounce.features.module.modules.exploit.AntiHunger
@@ -1033,7 +1031,7 @@ Import: net.ccbluex.liquidbounce.features.module.modules.movement.NoSlow
 Import: net.ccbluex.liquidbounce.features.module.modules.movement.Sneak
 Import: net.ccbluex.liquidbounce.features.module.modules.movement.Sprint
 Import: net.ccbluex.liquidbounce.features.module.modules.render.NoSwing
-Import: net.ccbluex.liquidbounce.features.module.modules.world.Scaffold
+Import: net.ccbluex.liquidbounce.features.module.modules.movement.BlockFly
 Import: net.ccbluex.liquidbounce.utils.MovementUtils
 Import: net.ccbluex.liquidbounce.utils.Rotation
 Import: net.ccbluex.liquidbounce.utils.RotationUtils

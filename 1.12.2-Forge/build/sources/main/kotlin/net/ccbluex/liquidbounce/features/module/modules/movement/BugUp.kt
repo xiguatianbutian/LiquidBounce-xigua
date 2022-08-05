@@ -14,7 +14,6 @@ import net.ccbluex.liquidbounce.event.UpdateEvent
 import net.ccbluex.liquidbounce.features.module.Module
 import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
-import net.ccbluex.liquidbounce.features.module.modules.world.Scaffold
 import net.ccbluex.liquidbounce.utils.MovementUtils
 import net.ccbluex.liquidbounce.utils.block.BlockUtils
 import net.ccbluex.liquidbounce.utils.misc.FallingPlayer
@@ -23,6 +22,7 @@ import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
+import net.ccbluex.liquidbounce.utils.ClientUtils
 import org.lwjgl.opengl.GL11
 import java.awt.Color
 import kotlin.math.abs
@@ -31,6 +31,7 @@ import kotlin.math.max
 
 @ModuleInfo(name = "BugUp", description = "Automatically setbacks you after falling a certain distance.", category = ModuleCategory.MOVEMENT)
 class BugUp : Module() {
+
     private val modeValue = ListValue("Mode", arrayOf("Blink","TeleportBack", "FlyFlag", "OnGroundSpoof", "MotionTeleport-Flag"), "FlyFlag")
     private val maxFallDistance = IntegerValue("MaxFallDistance", 10, 2, 255)
     private val maxDistanceWithoutGround = FloatValue("MaxDistanceToSetback", 2.5f, 1f, 30f)
@@ -56,6 +57,7 @@ class BugUp : Module() {
 
 
     override fun onEnable() {
+        ClientUtils.getLogger().info("还没修好,后果自负")
         blink = false
         canBlink = false
     }
@@ -155,7 +157,7 @@ class BugUp : Module() {
                                 }
 
                                 if (autoScaffoldValue.get()) {
-                                    LiquidBounce.moduleManager[Scaffold::class.java]!!.state = true
+                                    LiquidBounce.moduleManager[BlockFly::class.java]!!.state = true
                                 }
 
                                 packetCache.clear()
@@ -239,4 +241,5 @@ class BugUp : Module() {
 
         classProvider.getGlStateManager().resetColor()
     }
+
 }

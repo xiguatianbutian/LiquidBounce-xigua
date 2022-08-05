@@ -9,6 +9,7 @@ import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.Listenable
 import net.ccbluex.liquidbounce.injection.backend.Backend
 import net.ccbluex.liquidbounce.ui.client.hud.element.elements.Notifications
+import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.MinecraftInstance
 import net.ccbluex.liquidbounce.utils.render.ColorUtils.stripColor
 import net.ccbluex.liquidbounce.value.Value
@@ -109,7 +110,10 @@ open class Module : MinecraftInstance(), Listenable {
      * Called when module toggled
      */
     open fun onToggle(state: Boolean) {}
-
+    private fun displayAlert(message: String) {
+        ClientUtils.displayChatMessage("§8[" + LiquidBounce.COLORED_NAME + "§8] §f" + message)
+    }
+    protected fun alert(msg: String) = displayAlert(msg)
     /**
      * Called when module enabled
      */

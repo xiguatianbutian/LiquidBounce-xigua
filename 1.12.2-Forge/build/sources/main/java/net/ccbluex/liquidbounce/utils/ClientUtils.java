@@ -49,4 +49,5 @@ public final class ClientUtils extends MinecraftInstance {
 
         mc.getThePlayer().addChatMessage(LiquidBounce.wrapper.getFunctions().jsonToComponent(jsonObject.toString()));
     }
+
 }

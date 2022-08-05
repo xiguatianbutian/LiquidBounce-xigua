@@ -3,7 +3,7 @@ Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\classes\kotli
 Unsupposrted library path: C:\LiquidBounce-1.12\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
 Processing 151 files
-startProcessing "Xigua/Bunjee/ColorManager.java" md5: 49923f512f504089493a77e73b65f9be
+startProcessing "Xigua/Bunjee/ColorManager.java" md5: e5f1b568309a4e0c479129baac2462f6
 endProcessing "Xigua/Bunjee/ColorManager.java"
 
 startProcessing "Xigua/FDP/RenderWings.java" md5: a35511f33e3c726b3f7512f3816ee977
@@ -1176,10 +1176,8 @@ endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntit
 startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayer.java" md5: e2dc7813e5f929dccaca029da6bd7ba9
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayer.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayerSP.java" md5: a4adba97ae8d8214c75cf967e2d852a5
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEntityPlayerSP.java" md5: 9cdd07db3a44e683734827706a450287
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.combat.KillAura cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.exploit.AntiHunger cannot be resolved
@@ -1189,7 +1187,7 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEnt
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.movement.NoSlow cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.movement.Sneak cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.NoSwing cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.world cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.movement.BlockFly cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.MovementUtils cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.Rotation cannot be resolved
     Compile Error! Pb(50) LiquidBounce cannot be resolved
@@ -1242,10 +1240,10 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/entity/MixinEnt
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) Scaffold cannot be resolved to a type
-    Compile Error! Pb(2) Scaffold cannot be resolved to a type
+    Compile Error! Pb(2) BlockFly cannot be resolved to a type
+    Compile Error! Pb(2) BlockFly cannot be resolved to a type
     Compile Error! Pb(50) LiquidBounce cannot be resolved
-    Compile Error! Pb(2) Scaffold cannot be resolved to a type
+    Compile Error! Pb(2) BlockFly cannot be resolved to a type
     Compile Error! Pb(100) The method getState() is undefined for the type Sprint
     Compile Error! Pb(2) BoolValue cannot be resolved to a type
     Compile Error! Pb(2) BoolValue cannot be resolved to a type
@@ -2757,7 +2755,7 @@ endProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java"
 startProcessing "net/ccbluex/liquidbounce/utils/CPSCounter.java" md5: 51650578feb1f12f82eeb7fd619fa128
 endProcessing "net/ccbluex/liquidbounce/utils/CPSCounter.java"
 
-startProcessing "net/ccbluex/liquidbounce/utils/ClientUtils.java" md5: 55fcc721564350df68e847d52507bfdf
+startProcessing "net/ccbluex/liquidbounce/utils/ClientUtils.java" md5: 4a1137d4d4f4bf81c7817a8d3153aab3
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api.minecraft cannot be resolved

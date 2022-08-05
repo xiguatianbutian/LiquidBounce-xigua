@@ -47,7 +47,7 @@ object LiquidBounce {
     const val CLIENT_CREATOR = "CCBlueX"
     const val MINECRAFT_VERSION = Backend.MINECRAFT_VERSION
     const val CLIENT_CLOUD = "https://cloud.liquidbounce.net/LiquidBounce"
-
+    const val COLORED_NAME = "§7[§b!§7] §b§LiquidBounce §c» "
     var isStarting = false
 
     // Managers

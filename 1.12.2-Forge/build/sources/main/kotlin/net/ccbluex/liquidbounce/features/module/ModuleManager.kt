@@ -5,6 +5,7 @@
  */
 package net.ccbluex.liquidbounce.features.module
 
+import DannerTomas.AutoChat.AutoChat
 import Xigua.AntiVoid.AntiVoid
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.EventTarget
@@ -21,6 +22,7 @@ import net.ccbluex.liquidbounce.features.module.modules.render.*
 import net.ccbluex.liquidbounce.features.module.modules.world.*
 import net.ccbluex.liquidbounce.features.module.modules.world.Timer
 import net.ccbluex.liquidbounce.utils.ClientUtils
+
 import java.util.*
 
 
@@ -40,6 +42,7 @@ class ModuleManager : Listenable {
         ClientUtils.getLogger().info("[ModuleManager] Loading modules...")
 
         registerModules(
+//                Disabler::class.java,
                 AntiVoid::class.java,
                 AutoArmor::class.java,
                 AutoBow::class.java,
@@ -47,6 +50,7 @@ class ModuleManager : Listenable {
                 AutoPot::class.java,
                 AutoSoup::class.java,
                 AutoWeapon::class.java,
+                AutoChat::class.java,
                 BowAimbot::class.java,
                 Criticals::class.java,
                 ChinaHat::class.java,
@@ -66,7 +70,7 @@ class ModuleManager : Listenable {
                 Teams::class.java,
                 NoRotateSet::class.java,
                 ChestStealer::class.java,
-                Scaffold::class.java,
+                BlockFly::class.java,
                 CivBreak::class.java,
                 Tower::class.java,
                 FastBreak::class.java,

@@ -14,6 +14,7 @@ import net.ccbluex.liquidbounce.api.minecraft.util.IAxisAlignedBB
 import net.ccbluex.liquidbounce.api.minecraft.util.IEnumFacing
 import net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
 import net.ccbluex.liquidbounce.api.minecraft.network.IPacketF
+import net.minecraft.network.Packet
 /**
  * Called when player attacks other entity
  *
@@ -109,7 +110,14 @@ class MoveEvent(var x: Double, var y: Double, var z: Double) : CancellableEvent(
  * Called when receive or send a packet
  */
 class PacketEvent(val packet: IPacket) : CancellableEvent()
+class PacketEventF(val packet: Packet<*>, val type: Type) : CancellableEvent() {
+    enum class Type {
+        RECEIVE,
+        SEND
+    }
 
+    fun isServerSide() = type == Type.RECEIVE
+}
 /**
  * Called when a block tries to push you
  */
